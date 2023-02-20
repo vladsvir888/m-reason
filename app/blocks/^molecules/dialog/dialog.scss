@@ -1,0 +1,18 @@
+.dialog {
+  display: none;
+  max-width: rem(1045);
+  width: 100%;
+
+  &__close {
+    display: flex;
+    margin-left: auto;
+    color: var(--pallette-black);
+
+    &-icon {
+      width: rem(15);
+      height: rem(15);
+      stroke: currentColor;
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<div class="modal">
+  <header class="modal__header">
+    {% block header %}
+      <h2 class="modal__title">{{ modal.header.title }}</h2>
+      <button type="button" class="modal__close" aria-label="Close">x</button>
+    {% endblock %}
+  </header>
+  <div class="modal__content">
+    {% block content %}{% endblock %}
+  </div>
+  <footer class="modal__footer">
+    {% block footer %}
+      <button type="button" class="{{ bem('modal', '', 'test')}}">Close</button>
+    {% endblock %}
+  </footer>
+</div>

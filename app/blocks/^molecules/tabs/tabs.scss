@@ -1,0 +1,13 @@
+.tabs {
+  $this: &;
+
+  &--hidden {
+    display: none;
+  }
+
+  &__btn {
+    &[aria-selected=true] {
+      background-color: var(--pallette-atlantis);
+    }
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "test": "\n        <button class='btn dialog__close' data-fancybox-close='' data-orig-tabindex='null' tabindex='-1'>\n          <svg class='icon btn__icon dialog__close-icon' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'>\n            <path d='M1 1.47217L31 31.4722'></path>\n            <path d='M1 31L31 0.999998'></path>\n          </svg>\n        </button>\n        <h2>Hello, world!</h2>\n        <p>\n          Help me!\n        </p>\n  <p>\n          Help me!\n        </p>       <button data-fancybox-close='' data-orig-tabindex='null' tabindex='-1'>Close popup</button>\n        <button class='fetch-btn' data-orig-tabindex='null' tabindex='-1'>Click for open &amp;dialog_help_2</button>\n"
+}

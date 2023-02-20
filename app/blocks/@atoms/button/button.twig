@@ -1,0 +1,40 @@
+<{{ button.href ? "a" : "button" }}
+  {% if button.href %}href="{{ button.href }}"{% endif %}
+  class="btn {{ button.class }}"
+  {% if button.id %}id="{{ button.id }}"{% endif %}
+  {% if button.attrs %}{{ button.attrs }}{% endif %}
+>
+  {% if button.svg_as_code %}
+    {{ button.svg_as_code }}
+  {% endif %}
+
+  {% if button.icon %}
+    {% view "@icon" with {
+      icon: button.icon|default({})|merge({
+        class: "btn__icon" ~ (button.icon.class is defined ? " " ~ button.icon.class : "")
+      })
+    } %}
+  {% endif %}
+
+  <span class="btn__text {{ button.text.class }}">
+    {{ button.text.text }}
+  </span>
+
+  {% if button.right_icon %}
+    {% view "@icon" with {
+      icon: button.right_icon|default({})|merge({
+        class: "btn__icon" ~ (button.right_icon.class is defined ? " " ~ button.right_icon.class : "")
+      })
+    } %}
+  {% endif %}
+
+  {% if button.icons %}
+    {% for icon in button.icons %}
+      {% view "@icon" with {
+        icon: icon|default({})|merge({
+          class: "btn__icon" ~ (icon.class is defined ? " " ~ icon.class : "")
+        })
+      } %}
+    {% endfor %}
+  {% endif %}
+</{{ button.href ? "a" : "button" }}>

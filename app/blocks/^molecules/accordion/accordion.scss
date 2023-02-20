@@ -1,0 +1,19 @@
+.accordion {
+  $this: &;
+
+  &__item {
+    &.show {
+      #{$this}__content {
+        max-height: unset;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-height var(--transition);
+  }
+}

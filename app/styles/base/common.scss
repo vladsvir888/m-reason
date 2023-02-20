@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+:focus-visible {
+  outline: rem(2) dotted var(--pallette-atlantis);
+  outline-offset: rem(2);
+}
+
+.lock {
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+  scrollbar-color: var(--pallette-atlantis) transparent;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+body {
+  @include flex-column;
+  height: 100%;
+}
+
+.header {
+  flex-shrink: 0;
+}
+
+.main {
+  position: relative;
+  flex: 1 0 auto;
+  padding: rem(20) rem(10) rem(35);
+}
+
+.footer {
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.offset-x > *:not(:last-child) {
+  margin-right: var(--offset-x, 1rem);
+}
+
+.offset-y > *:not(:last-child) {
+  margin-bottom: var(--offset-y, 1rem);
+}
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--pallette-atlantis);
+  border-radius: 0.5rem;
+}
+
+address {
+  font-style: normal;
+}
+
+small {
+  font-size: inherit;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  @include container;
+}
+
+// делаем обычный курсор на оверлэе
+.fancybox__carousel.is-draggable .fancybox__slide,
+.fancybox__carousel.is-draggable .fancybox__slide .fancybox__content {
+  cursor: default;
+}
+
+// убираем фокус
+.fancybox__content :focus:not(.carousel__button.is-close) {
+  outline: none;
+}
+
+// делаем альтернативу фокусу
+.fancybox__content :focus-visible:not(.carousel__button.is-close) {
+  outline: rem(2) dotted var(--pallette-atlantis);
+  outline-offset: rem(2);
+}

@@ -1,0 +1,9 @@
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--primary {
+    border: rem(2) solid var(--pallette-black);
+  }
+}

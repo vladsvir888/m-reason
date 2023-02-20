@@ -1,0 +1,21 @@
+{% set level = title.level|default("1") %}
+
+{% if not title.link %}
+  <h{{ level }}
+    {% if title.id %}id="{{ title.id }}"{% endif %}
+    class="title {% if title.class %}{{ title.class }}{% endif %}"
+    {% if title.attrs %}{{ title.attrs }}{% endif %}
+  >
+    {{ title.text }}
+  </h{{ level }}>
+{% else %}
+  <h{{ level }}
+    {% if title.id %}id="{{ title.id }}"{% endif %}
+    class="title {% if title.class %}{{ title.class }}{% endif %}"
+    {% if title.attrs %}{{ title.attrs }}{% endif %}
+  >
+    <a class="title__link {{ title.link.class }}" href="#">
+      {{ title.text }}
+    </a>
+  </h{{ level }}>
+{% endif %}

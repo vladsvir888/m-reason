@@ -1,0 +1,32 @@
+<div class="accordion">
+  {% for item in accordion.items %}
+    <div class="accordion__item {{ item.class }}">
+      <h3 class="accordion__heading">
+        {% view "@button" with {
+          button: item.button|default({})|merge({
+            class: "accordion__btn" ~ (item.button.class is defined ? " " ~ item.button.class : "")
+          })
+        } %}
+      </h3>
+
+      {% if item.content %}
+        <div
+          {% if item.content.id %}id="{{ item.content.id }}"{% endif %}
+          class="accordion__content {{ item.content.class }}"
+          role="region"
+          {{ item.content.attrs }}
+        >
+        {% if item.content.data.type == '@list' %}
+          {% view "@list" with {
+            list: item.content.data.content
+          } %}
+        {% elseif item.content.data.type == '@button' %}
+          {% view "@button" with {
+            button: item.content.data.content
+          } %}
+        {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
