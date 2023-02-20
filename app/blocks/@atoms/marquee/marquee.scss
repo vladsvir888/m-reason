@@ -1,0 +1,20 @@
+.marquee {
+  @include font-size(24, 33);
+  padding: rem(20) 0;
+  color: var(--pallette-white);
+  text-transform: uppercase;
+  background-color: var(--pallette-cod-gray);
+  white-space: nowrap;
+  overflow: hidden;
+
+  &__text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 25s linear infinite;
+  }
+}
+
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}

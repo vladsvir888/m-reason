@@ -1,0 +1,23 @@
+<button class="btn burger" aria-expanded="false" aria-controls="menu" aria-label="Переключить меню">
+  {% view "@icon" with {
+    icon: {
+      class: "burger__icon burger__icon--menu",
+      name: "sprite-mono.svg#burger_menu"
+    }
+  } %}
+
+  <span class="burger__text burger__text--menu">
+    Меню
+  </span>
+
+  {% view "@icon" with {
+    icon: {
+      class: "burger__icon burger__icon--close",
+      name: "sprite-mono.svg#burger_close"
+    }
+  } %}
+
+  <span class="burger__text burger__text--close">
+    Закрыть
+  </span>
+</button>

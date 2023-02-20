@@ -1,0 +1,39 @@
+{
+  "meta_nav": {
+    "list": {
+      "items": [{
+        "button": {
+          "icon": {
+            "class": "meta-nav__btn-icon",
+            "name": "sprite-mono.svg#magnifying-glass"
+          },
+          "attrs": "aria-label='Поиск'"
+        }
+      }, {
+        "button": {
+          "icon": {
+            "class": "meta-nav__btn-icon",
+            "name": "sprite-mono.svg#heart"
+          },
+          "attrs": "aria-label='Избранное'"
+        }
+      }, {
+        "button": {
+          "icon": {
+            "class": "meta-nav__btn-icon",
+            "name": "sprite-mono.svg#cart-shopping"
+          },
+          "attrs": "aria-label='Корзина'"
+        }
+      }, {
+        "button": {
+          "icon": {
+            "class": "meta-nav__btn-icon",
+            "name": "sprite-mono.svg#user"
+          },
+          "attrs": "aria-label='Профиль'"
+        }
+      }]
+    }
+  }
+}

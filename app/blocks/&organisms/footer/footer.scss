@@ -1,0 +1,44 @@
+.main-footer {
+  $this: &;
+
+  padding: rem(156) rem(338) rem(194);
+  color: var(--pallette-white);
+  background-color: var(--pallette-cod-gray);
+
+  &__inner {
+    display: flex;
+    gap: rem(284);
+  }
+
+  &__list {
+    @include font-size(24, 33);
+    @include flex-column;
+    gap: rem(37);
+    letter-spacing: 0.05em;
+  }
+
+  &__item {
+    &--bottom {
+      margin-top: auto;
+    }
+  }
+
+  &__btn {
+    &:hover {
+      color: var(--pallette-atlantis);
+    }
+  }
+
+  &__callback {
+    margin-left: auto;
+    width: rem(935);
+  }
+
+  &__logo {
+    &-img {
+      width: rem(611);
+      height: rem(40);
+      flex-shrink: 0;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.form {
+  &--callback {
+    @include flex-column;
+    gap: rem(20);
+  }
+}

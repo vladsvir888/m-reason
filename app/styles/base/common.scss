@@ -58,9 +58,12 @@ input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
 }
 
+input[type="checkbox"] {
+  margin: 0;
+}
+
 :focus-visible {
-  outline: rem(2) dotted var(--pallette-atlantis);
-  outline-offset: rem(2);
+  outline: rem(2) solid var(--pallette-atlantis);
 }
 
 .lock {
@@ -77,6 +80,8 @@ html {
 body {
   @include flex-column;
   height: 100%;
+  font-family: var(--font-primary);
+  padding-top: rem(170);
 }
 
 .header {
@@ -86,7 +91,32 @@ body {
 .main {
   position: relative;
   flex: 1 0 auto;
-  padding: rem(20) rem(10) rem(35);
+
+  &--start {
+    .container {
+      @include flex-column;
+      gap: rem(20);
+      padding: rem(69) rem(343) rem(72);
+    }
+
+    .last-update {
+      font-size: rem(30);
+    }
+
+    .title {
+      font-size: rem(80);
+    }
+
+    .page-list {
+      &__link {
+        font-size: rem(25);
+
+        &:hover {
+          color: var(--pallette-atlantis);
+        }
+      }
+    }
+  }
 }
 
 .footer {
@@ -114,8 +144,8 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0.625rem;
-  height: 0.625rem;
+  width: rem(18);
+  height: rem(18);
   background-color: transparent;
 }
 
@@ -140,10 +170,6 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-.container {
-  @include container;
-}
-
 // делаем обычный курсор на оверлэе
 .fancybox__carousel.is-draggable .fancybox__slide,
 .fancybox__carousel.is-draggable .fancybox__slide .fancybox__content {
@@ -159,4 +185,9 @@ a {
 .fancybox__content :focus-visible:not(.carousel__button.is-close) {
   outline: rem(2) dotted var(--pallette-atlantis);
   outline-offset: rem(2);
+}
+
+.container {
+  max-width: rem(3840);
+  margin: 0 auto;
 }

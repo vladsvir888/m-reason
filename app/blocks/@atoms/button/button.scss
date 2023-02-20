@@ -1,9 +1,78 @@
 .btn {
+  padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  text-align: center;
+  color: inherit;
+  transition: color var(--transition), background-color var(--transition);
+
+  &__text {
+    position: relative;
+    z-index: 1;
+  }
+
+  &--animate {
+    @include font-size(24, 33);
+    position: relative;
+    overflow: hidden;
+    padding: rem(37.5) rem(10) rem(42.5);
+    transition: color var(--transition-2);
+
+    &::before {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      transform: translate3d(-130%, 0, 0) skew(-25deg);
+      animation: out var(--transition-2) cubic-bezier(0.4, 0, 0, 1);
+      content: '';
+    }
+
+    &:hover {
+      &::before {
+        transform: none;
+        animation: in var(--transition-2) cubic-bezier(0.4, 0, 0, 1);
+      }
+    }
+  }
 
   &--primary {
-    border: rem(2) solid var(--pallette-black);
+    background-color: var(--pallette-white);
+
+    &::before {
+      background-color: var(--pallette-cod-gray);
+    }
+
+    &:hover {
+      color: var(--pallette-white);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--pallette-white);
+
+    &::before {
+      background-color: var(--pallette-atlantis);
+    }
+  }
+}
+
+@keyframes in {
+  0% {
+    transform: translate3d(-110%, 0, 0) skew(-25deg);
+  }
+
+  to {
+    transform: translateZ(0) skew(0);
+  }
+}
+
+@keyframes out {
+  0% {
+    transform: translateZ(0);
+  }
+
+  to {
+    transform: translate3d(110%, 0, 0) skew(25deg);
   }
 }

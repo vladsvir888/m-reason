@@ -1,0 +1,206 @@
+{
+  "footer": {
+    "list_1": {
+      "items": [{
+        "button": {
+          "text": {
+            "text": "Каталог"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Акции"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Программа лояльности"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Доставка и оплата"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Обмен и возврат"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Таблица размеров"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Уход за одеждой"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Подарочные карты"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Оформление заказа"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Часто задаваемые вопросы"
+          }
+        }
+      }]
+    },
+    "list_2": {
+      "items": [{
+        "button": {
+          "text": {
+            "text": "О бренде"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Магазины"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Стилистам"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Новости"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Контакты"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Вакансии"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Оптовым покупателям"
+          }
+        }
+      }, {
+        "class": "main-footer__item--bottom"
+      }, {
+        "button": {
+          "text": {
+            "text": "Политика конфиденциальности"
+          }
+        }
+      }, {
+        "button": {
+          "text": {
+            "text": "Оферта"
+          }
+        }
+      }]
+    },
+    "callback": {
+      "class": "main-footer__callback",
+      "logo": {
+        "type": "footer",
+        "class": "main-footer__logo",
+        "attrs": "aria-label='Главная'"
+      },
+      "form": {
+        "type": "callback",
+        "class": "form--callback",
+        "input_email": {
+          "class": "input-block--with-label",
+          "label": {
+            "id": "callback_email",
+            "text": "Дарим 1500 бонусных рублей на следующую покупку"
+          },
+          "element": {
+            "id": "callback_email",
+            "type": "email",
+            "text": "E-mail",
+            "name": "email",
+            "attrs": "required"
+          },
+          "button": {
+            "text": {
+              "text": "OK"
+            },
+            "attrs": "aria-label='Отправить'"
+          }
+        },
+        "input_checkboxes": {
+          "items": [{
+            "class": "input-block--checkbox",
+            "label": {
+              "id": "callback_checkbox_1",
+              "text": "Даю согласие на получение рекламно-информационных рассылок"
+            },
+            "element": {
+              "id": "callback_checkbox_1",
+              "class": "visually-hidden",
+              "type": "checkbox",
+              "name": "callback_checkbox_1",
+              "attrs": "required checked"
+            }
+          }, {
+            "class": "input-block--checkbox",
+            "label": {
+              "id": "callback_checkbox_2",
+              "text": "Даю согласие на обработку персональных данных"
+            },
+            "element": {
+              "id": "callback_checkbox_2",
+              "class": "visually-hidden",
+              "type": "checkbox",
+              "name": "callback_checkbox_2",
+              "attrs": "required checked"
+            }
+          }]
+        }
+      },
+      "btns": {
+        "items": [{
+          "button": {
+            "href": "https://t.me/mreasonofficial",
+            "text": {
+              "text": "Телеграм"
+            },
+            "attrs": "target='_blank'"
+          }
+        }, {
+          "button": {
+            "href": "https://vk.com/mreason",
+            "text": {
+              "text": "Вконтакте"
+            },
+            "attrs": "target='_blank'"
+          }
+        }]
+      }
+    }
+  }
+}

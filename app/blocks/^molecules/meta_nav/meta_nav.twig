@@ -1,0 +1,14 @@
+<nav class="meta-nav" aria-label="Мета">
+  <ul class="meta-nav__list">
+    {% for item in meta_nav.list.items %}
+      <li class="meta-nav__item">
+        {% view "@button" with {
+          button: item.button|merge({
+            href: "#",
+            class: "meta-nav__btn"
+          })
+        } %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

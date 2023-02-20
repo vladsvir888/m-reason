@@ -1,1 +1,13 @@
-<header class="header"></header>
+<header class="main-header">
+  <div class="container">
+    <div class="main-header__inner">
+      {% view "@burger" %}
+
+      {% view "@logo" with {
+        logo: header.logo
+      } %}
+
+      {% view "^meta_nav" %}
+    </div>
+  </div>
+</header>

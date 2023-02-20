@@ -1,0 +1,49 @@
+{% set input_type = input.element.type|default('text') %}
+
+{% if input_type == 'checkbox' %}
+  <div class="input-block {{ input.class }}">
+    <input
+      {% if input.element.id %}id="{{ input.element.id }}"{% endif %}
+      class="input-block__input {{ input.element.class }}"
+      type="{{ input_type }}"
+      name="{{ input.element.name }}"
+      {% if input.element.text %}placeholder="{{ input.element.text }}"{% endif %}
+      {{ input.element.attrs }}
+    >
+
+    <span class="input-block__custom-checkbox"></span>
+
+    <label
+      {% if input.label.id %}for="{{ input.label.id }}"{% endif %}
+      class="input-block__label"
+    >
+      {{ input.label.text }}
+    </label>
+  </div>
+{% else %}
+  <div class="input-block {{ input.class }}">
+    <label
+      {% if input.label.id %}for="{{ input.label.id }}"{% endif %}
+      class="input-block__label"
+    >
+      {{ input.label.text }}
+    </label>
+
+    <input
+      {% if input.element.id %}id="{{ input.element.id }}"{% endif %}
+      class="input-block__input"
+      type="{{ input_type }}"
+      name="{{ input.element.name }}"
+      {% if input.element.text %}placeholder="{{ input.element.text }}"{% endif %}
+      {{ input.element.attrs }}
+    >
+
+    {% if input.button %}
+      {% view "@button" with {
+        button: input.button|merge({
+          class: "input-block__btn"
+        })
+      } %}
+    {% endif %}
+  </div>
+{% endif %}

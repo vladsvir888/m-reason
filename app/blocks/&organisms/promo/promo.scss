@@ -1,0 +1,31 @@
+.promo {
+  $this: &;
+
+  &__inner {
+    position: relative;
+    display: grid;
+    color: var(--pallette-white);
+    text-transform: uppercase;
+  }
+
+  &__content {
+    @include flex-center-column;
+    grid-area: 1 / 2;
+    gap: rem(32);
+    padding: rem(25);
+  }
+
+  &__text {
+    @include font-size(60, 82);
+    letter-spacing: 0.15em;
+  }
+
+  &__title {
+    @include font-size(100, 136);
+    letter-spacing: 0.15em;
+  }
+
+  &__picture {
+    grid-area: 1 / 2;
+  }
+}

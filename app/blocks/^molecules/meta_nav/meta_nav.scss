@@ -1,0 +1,25 @@
+.meta-nav {
+  $this: &;
+
+  &__list {
+    display: flex;
+    gap: rem(100);
+  }
+
+  &__btn {
+    display: flex;
+
+    &:hover {
+      #{$this}__btn-icon {
+        stroke: var(--pallette-atlantis);
+      }
+    }
+
+    &-icon {
+      width: rem(30);
+      height: rem(30);
+      fill: transparent;
+      stroke: var(--pallette-cod-gray);
+    }
+  }
+}

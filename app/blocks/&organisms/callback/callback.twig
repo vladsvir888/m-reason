@@ -1,0 +1,27 @@
+<section class="callback {{ callback.class }}">
+  {% view "@title" with {
+    title: {
+      level: 2,
+      class: "visually-hidden",
+      text: "Обратная связь"
+    }
+  } %}
+
+  {% view "@logo" with {
+    logo: callback.logo
+  } %}
+
+  {% view "^form" with {
+    form: callback.form
+  } %}
+
+  <div class="callback__btns">
+    {% for item in callback.btns.items %}
+      {% view "@button" with {
+        button: item.button|merge({
+          class: "btn--secondary btn--animate callback__btn"
+        })
+      } %}
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,11 @@
+.title {
+  &__link {
+    color: inherit;
+
+    &::before {
+      position: absolute;
+      inset: 0;
+      content: '';
+    }
+  }
+}

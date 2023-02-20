@@ -1,0 +1,73 @@
+.burger {
+  $this: &;
+
+  @include flex-center-y;
+  gap: rem(20);
+  text-transform: uppercase;
+
+  &:hover {
+    #{$this}__text {
+      color: var(--pallette-atlantis);
+    }
+
+    #{$this}__icon {
+      stroke: var(--pallette-atlantis);
+    }
+  }
+
+  &[aria-expanded=false] {
+    #{$this}__text {
+      &--close {
+        display: none;
+      }
+    }
+
+    #{$this}__icon {
+      &--close {
+        display: none;
+      }
+    }
+  }
+
+  &[aria-expanded=true] {
+    #{$this}__text {
+      &--menu {
+        display: none;
+      }
+
+      &--close {
+        display: block;
+      }
+    }
+
+    #{$this}__icon {
+      &--menu {
+        display: none;
+      }
+
+      &--close {
+        display: block;
+      }
+    }
+  }
+
+  &__text {
+    @include font-size(24, 33);
+    letter-spacing: 0.15em;
+    transition: color var(--transition);
+  }
+
+  &__icon {
+    stroke: currentColor;
+
+    &--menu {
+      width: rem(46);
+      height: rem(18);
+    }
+
+    &--close {
+      width: rem(30);
+      height: rem(30);
+    }
+  }
+}

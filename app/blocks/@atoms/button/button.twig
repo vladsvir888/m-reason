@@ -16,9 +16,11 @@
     } %}
   {% endif %}
 
-  <span class="btn__text {{ button.text.class }}">
-    {{ button.text.text }}
-  </span>
+  {% if button.text %}
+    <span class="btn__text {{ button.text.class }}">
+      {{ button.text.text }}
+    </span>
+  {% endif %}
 
   {% if button.right_icon %}
     {% view "@icon" with {

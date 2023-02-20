@@ -1,0 +1,56 @@
+.input-block {
+  $this: &;
+
+  &--with-label {
+    display: grid;
+    grid-template-columns: 1fr rem(94);
+    gap: rem(16) 0;
+
+    #{$this}__label {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &--checkbox {
+    @include flex-center-y;
+    gap: rem(15);
+  }
+
+  &__input {
+    @include font-size(24, 35);
+    letter-spacing: 0.05em;
+    border: none;
+    padding: rem(30);
+
+    &::placeholder {
+      @include font-size(24, 35);
+      letter-spacing: 0.05em;
+      font-style: italic;
+      opacity: 0.3;
+    }
+  }
+
+  &__label {
+    @include font-size(24, 35);
+  }
+
+  &__btn {
+    @include font-size(24, 33);
+    color: var(--pallette-cod-gray);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    background-color: var(--pallette-white);
+    border-left: rem(1) solid var(--pallette-cod-gray);
+
+    &:hover {
+      background-color: var(--pallette-atlantis);
+    }
+  }
+
+  &__custom-checkbox {
+    position: relative;
+    width: rem(30);
+    height: rem(30);
+    border: rem(1) solid var(--pallette-white);
+  }
+}

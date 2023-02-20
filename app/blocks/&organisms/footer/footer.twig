@@ -1,1 +1,39 @@
-<footer class="footer"></footer>
+<footer class="main-footer">
+  <div class="container">
+    <div class="main-footer__inner">
+      <ul class="main-footer__list">
+        {% for item in footer.list_1.items %}
+          <li class="main-footer__item {{ item.class }}">
+            {% if item.button %}
+              {% view "@button" with {
+                button: item.button|merge({
+                  href: "#",
+                  class: "main-footer__btn"
+                })
+              } %}
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+
+      <ul class="main-footer__list">
+        {% for item in footer.list_2.items %}
+          <li class="main-footer__item {{ item.class }}">
+            {% if item.button %}
+              {% view "@button" with {
+                button: item.button|merge({
+                  href: "#",
+                  class: "main-footer__btn"
+                })
+              } %}
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% view "&callback" with {
+        callback: footer.callback
+      } %}
+    </div>
+  </div>
+</footer>

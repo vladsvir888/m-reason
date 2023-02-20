@@ -1,0 +1,9 @@
+{
+  "header": {
+    "logo": {
+      "type": "header",
+      "class": "main-header__logo",
+      "attrs": "aria-label='Главная'"
+    }
+  }
+}

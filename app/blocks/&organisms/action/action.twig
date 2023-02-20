@@ -1,0 +1,31 @@
+<section class="action">
+  <div class="container">
+    <div class="action__inner">
+      {% view "@image" with {
+        image: action.image|merge({
+          picture: {
+            class: "action__picture"
+          }
+        })
+      } %}
+
+      <div class="action__content">
+        {% view "@title" with {
+          title: action.content.title|merge({
+            class: "action__title"
+          })
+        } %}
+
+        <p class="action__text">
+          {{ action.content.text }}
+        </p>
+
+        {% view "@button" with {
+          button: action.content.button|merge({
+            class: "btn--primary btn--animate action__btn"
+          })
+        } %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -3,9 +3,16 @@
   --base: 16;
 
   // pallette
-
-  // containers
+  --pallette-atlantis: #b2d235;
+  --pallette-cod-gray: #1e1e1e;
+  --pallette-white: #fff;
 
   // transitions
   --transition: 0.3s;
+  --transition-2: 0.2s;
+
+  // fonts
+  --font-primary: 'OpenSans', sans-serif;
+
+  font-size: 50%;
 }

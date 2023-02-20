@@ -1,0 +1,26 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding: rem(69) rem(343) rem(72);
+  background-color: var(--pallette-white);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(50);
+  }
+
+  &__logo {
+    display: flex;
+
+    &-img {
+      flex-shrink: 0;
+      width: rem(405);
+      height: rem(29);
+    }
+  }
+}
