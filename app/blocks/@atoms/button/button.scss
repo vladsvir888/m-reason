@@ -19,6 +19,10 @@
     padding: rem(37.5) rem(10) rem(42.5);
     transition: color var(--transition-2);
 
+    @include media('600', max) {
+      padding: rem(18) rem(10);
+    }
+
     &::before {
       position: absolute;
       inset: 0;

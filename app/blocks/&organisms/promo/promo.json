@@ -8,7 +8,18 @@
       }
     },
     "image": {
+      "picture": {
+        "class": "promo__picture"
+      },
+      "class": "promo__img",
+      "adaptive": {
+        "media": {
+          "value": 600
+        }
+      },
+      "lazy": false,
       "name": "promo/01.jpg",
+      "name_2": "promo/01_mobile.jpg",
       "alt": "Девушки, одетые в красивое пальто."
     }
   }

@@ -15,4 +15,8 @@
   --font-primary: 'OpenSans', sans-serif;
 
   font-size: 50%;
+
+  @include media('600', max) {
+    font-size: unset;
+  }
 }

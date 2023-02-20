@@ -15,7 +15,17 @@
       }
     },
     "image": {
+      "picture": {
+        "class": "action__picture"
+      },
+      "class": "action__img",
+      "adaptive": {
+        "media": {
+          "value": 600
+        }
+      },
       "name": "action/01.jpg",
+      "name_2": "action/01_mobile.jpg",
       "alt": "Девушка в красивом пиджаке, которая сидит на кресле."
     }
   }

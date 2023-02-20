@@ -2,7 +2,7 @@
   {% view "@icon" with {
     icon: {
       class: "burger__icon burger__icon--menu",
-      name: "sprite-mono.svg#burger_menu"
+      name: "sprite-mono.svg#burger-menu"
     }
   } %}
 
@@ -13,11 +13,18 @@
   {% view "@icon" with {
     icon: {
       class: "burger__icon burger__icon--close",
-      name: "sprite-mono.svg#burger_close"
+      name: "sprite-mono.svg#burger-close"
     }
   } %}
 
   <span class="burger__text burger__text--close">
     Закрыть
   </span>
+
+  {% view "@icon" with {
+    icon: {
+      class: "burger__icon burger__icon--menu-and-loupe",
+      name: "sprite-mono.svg#burger-menu-and-loupe"
+    }
+  } %}
 </button>

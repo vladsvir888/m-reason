@@ -6,32 +6,100 @@
     grid-template-columns: 1fr rem(94);
     gap: rem(16) 0;
 
+    @include media('600', max) {
+      grid-template-columns: 1fr rem(48);
+    }
+
     #{$this}__label {
       grid-column: 1 / 3;
+    }
+
+    #{$this}__input {
+      @include font-size(24, 35);
+      letter-spacing: 0.05em;
+      border: none;
+      padding: rem(30);
+
+      &::placeholder {
+        @include font-size(24, 35);
+        letter-spacing: 0.05em;
+        font-style: italic;
+        opacity: 0.3;
+
+        @include media('600', max) {
+          @include font-size(10, 15);
+          letter-spacing: 0.15em;
+        }
+      }
+
+      @include media('600', max) {
+        @include font-size(10, 15);
+        letter-spacing: 0.15em;
+        padding: rem(17) rem(20);
+      }
     }
   }
 
   &--checkbox {
     @include flex-center-y;
     gap: rem(15);
-  }
 
-  &__input {
-    @include font-size(24, 35);
-    letter-spacing: 0.05em;
-    border: none;
-    padding: rem(30);
+    @include media('600', max) {
+      gap: rem(6);
+    }
 
-    &::placeholder {
-      @include font-size(24, 35);
-      letter-spacing: 0.05em;
-      font-style: italic;
-      opacity: 0.3;
+    #{$this}__input {
+      appearance: none;
+      margin: 0;
+      width: rem(30);
+      height: rem(30);
+      flex-shrink: 0;
+      border: rem(1) solid var(--pallette-white);
+      transition: transform var(--transition);
+
+      &:checked {
+        transform: rotateX(180deg);
+
+        &::before {
+          display: block;
+          width: rem(26);
+          height: rem(26);
+          background: var(--pallette-white);
+          border: rem(1) solid var(--pallette-cod-gray);
+          content: '';
+
+          @include media('600', max) {
+            width: rem(14);
+            height: rem(14);
+          }
+        }
+      }
+
+      @include media('600', max) {
+        width: rem(16);
+        height: rem(16);
+      }
+    }
+
+    #{$this}__label {
+      @include media('600', max) {
+        @include font-size(8, 12);
+        letter-spacing: 0.05em;
+      }
     }
   }
 
   &__label {
     @include font-size(24, 35);
+
+    @include media('600', max) {
+      @include font-size(10, 15);
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__input {
+    border-radius: 0;
   }
 
   &__btn {
@@ -45,12 +113,9 @@
     &:hover {
       background-color: var(--pallette-atlantis);
     }
-  }
 
-  &__custom-checkbox {
-    position: relative;
-    width: rem(30);
-    height: rem(30);
-    border: rem(1) solid var(--pallette-white);
+    @include media('600', max) {
+      @include font-size(14, 19);
+    }
   }
 }

@@ -2,11 +2,7 @@
   <div class="container">
     <div class="action__inner">
       {% view "@image" with {
-        image: action.image|merge({
-          picture: {
-            class: "action__picture"
-          }
-        })
+        image: action.image
       } %}
 
       <div class="action__content">

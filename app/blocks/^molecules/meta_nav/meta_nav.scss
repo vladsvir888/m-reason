@@ -1,6 +1,10 @@
 .meta-nav {
   $this: &;
 
+  @include media('900', max) {
+    display: none;
+  }
+
   &__list {
     display: flex;
     gap: rem(100);
@@ -19,7 +23,7 @@
       width: rem(30);
       height: rem(30);
       fill: transparent;
-      stroke: var(--pallette-cod-gray);
+      stroke: currentColor;
     }
   }
 }

@@ -2,12 +2,7 @@
   <div class="container">
     <div class="promo__inner">
       {% view "@image" with {
-        image: promo.image|merge({
-          picture: {
-            class: "promo__picture"
-          },
-          lazy: false,
-        })
+        image: promo.image
       } %}
 
       <div class="promo__content">

@@ -2,12 +2,20 @@
   @include flex-column;
   gap: rem(38);
 
+  @include media('600', max) {
+    gap: rem(35);
+  }
+
   &__btns {
     display: flex;
     gap: rem(20);
 
     > * {
       width: 50%;
+    }
+
+    @include media('600', max) {
+      display: none;
     }
   }
 

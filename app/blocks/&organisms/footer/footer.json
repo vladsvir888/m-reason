@@ -161,7 +161,6 @@
             },
             "element": {
               "id": "callback_checkbox_1",
-              "class": "visually-hidden",
               "type": "checkbox",
               "name": "callback_checkbox_1",
               "attrs": "required checked"
@@ -174,7 +173,6 @@
             },
             "element": {
               "id": "callback_checkbox_2",
-              "class": "visually-hidden",
               "type": "checkbox",
               "name": "callback_checkbox_2",
               "attrs": "required checked"
