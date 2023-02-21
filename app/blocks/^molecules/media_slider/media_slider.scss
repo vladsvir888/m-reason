@@ -1,0 +1,53 @@
+.media-slider {
+  $this: &;
+  position: relative;
+
+  &__btn {
+    width: rem(86);
+    height: rem(86);
+    color: var(--pallette-cod-gray);
+
+    &::before,
+    &::after {
+      content: none;
+    }
+
+    &:hover {
+      color: var(--pallette-atlantis);
+    }
+
+    &--prev {
+      left: rem(-80);
+    }
+
+    &--next {
+      right: rem(-80);
+    }
+
+    &.swiper-button-disabled {
+      cursor: not-allowed;
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    &-icon {
+      width: rem(45);
+      height: rem(45);
+      stroke: currentColor;
+    }
+  }
+
+  .swiper-scrollbar {
+    left: 0;
+    bottom: rem(-26);
+    width: 100%;
+    border-radius: 0;
+    background: var(--pallette-cod-gray-with-alpha);
+    height: rem(5);
+
+    &-drag {
+      background-color: var(--pallette-cod-gray);
+      border-radius: 0;
+    }
+  }
+}

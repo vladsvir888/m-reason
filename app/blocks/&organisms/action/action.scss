@@ -62,14 +62,14 @@
     }
   }
 
-  &__picture {
+  &__media {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-  }
 
-  &__img {
-    @include media('600', max) {
-      width: 100%;
+    &-img {
+      @include media('600', max) {
+        width: 100%;
+      }
     }
   }
 }

@@ -1,0 +1,17 @@
+{
+  "fashion_look": {
+    "card": {
+      "image": {
+        "name": "fashion_look/01.jpg",
+        "alt": "Девушка, одетая в коричневый пиджак."
+      },
+      "button": {
+        "class": "btn--animate btn--primary media-card__btn",
+        "href": "#",
+        "text": {
+          "text": "Смотреть все готовые образы"
+        }
+      }
+    }
+  }
+}

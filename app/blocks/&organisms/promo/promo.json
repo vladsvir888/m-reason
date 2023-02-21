@@ -9,9 +9,9 @@
     },
     "image": {
       "picture": {
-        "class": "promo__picture"
+        "class": "promo__media"
       },
-      "class": "promo__img",
+      "class": "promo__media-img",
       "adaptive": {
         "media": {
           "value": 600

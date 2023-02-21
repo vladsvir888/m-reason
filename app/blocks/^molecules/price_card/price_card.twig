@@ -1,0 +1,33 @@
+<div class="price-card">
+  {% view "@image" with {
+    image: price_card.image
+  } %}
+
+  <div class="price-card__content">
+    <p class="price-card__text">
+      {{ price_card.content.text }}
+    </p>
+
+    <div class="price-card__price">
+      {% if not price_card.content.price.with_discount %}
+        <p>
+          {{ price_card.content.price.text }}
+        </p>
+      {% else %}
+        <p>
+          <s>
+            {{ price_card.content.price.text }}
+          </s>
+        </p>
+        <p class="price-card__price--with-discount">
+          <span>
+            {{ price_card.content.price.with_discount.discount }}
+          </span>
+          <span>
+            {{ price_card.content.price.with_discount.text }}
+          </span>
+        </p>
+      {% endif %}
+    </div>
+  </div>
+</div>

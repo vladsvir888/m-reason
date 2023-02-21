@@ -16,9 +16,9 @@
     },
     "image": {
       "picture": {
-        "class": "action__picture"
+        "class": "action__media"
       },
-      "class": "action__img",
+      "class": "action__media-img",
       "adaptive": {
         "media": {
           "value": 600

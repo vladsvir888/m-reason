@@ -1,0 +1,15 @@
+.fashion-look {
+  $this: &;
+
+  &__inner {
+    display: flex;
+
+    > * {
+      width: 50%;
+    }
+  }
+
+  &__slider {
+    padding: rem(135) rem(316) rem(120);
+  }
+}

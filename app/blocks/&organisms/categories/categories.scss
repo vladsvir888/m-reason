@@ -1,0 +1,18 @@
+.categories {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+      width: calc(100% / 3);
+
+      @include media('900', max) {
+        width: calc(100% / 2);
+      }
+
+      @include media('600', max) {
+        width: 100%;
+      }
+    }
+  }
+}

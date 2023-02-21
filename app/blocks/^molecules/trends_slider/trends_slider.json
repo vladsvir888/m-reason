@@ -1,0 +1,47 @@
+{
+  "trends_slider": {
+    "items": [{
+      "class": "category-card--secondary",
+      "title": {
+        "link": true,
+        "level": 3,
+        "text": "Офис: новый сезон"
+      },
+      "image": {
+        "picture": {
+          "class": "category-card__media"
+        },
+        "name": "trends_slider/01.jpg",
+        "alt": "Девушка в черном пальто сидит на желтом диване."
+      }
+    }, {
+      "class": "category-card--secondary",
+      "title": {
+        "link": true,
+        "level": 3,
+        "text": "Топы и блузки из&nbsp;коллекции весна’23"
+      },
+      "image": {
+        "picture": {
+          "class": "category-card__media"
+        },
+        "name": "trends_slider/02.jpg",
+        "alt": "Девушка в салатовом пальто стоит возле кресла."
+      }
+    }, {
+      "class": "category-card--secondary",
+      "title": {
+        "link": true,
+        "level": 3,
+        "text": "Топы и блузки из&nbsp;коллекции весна’23"
+      },
+      "image": {
+        "picture": {
+          "class": "category-card__media"
+        },
+        "name": "fashion_look/01.jpg",
+        "alt": "Девушка в бежевом пиджаке."
+      }
+    }]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "categories": {
+    "items": [{
+      "title": {
+        "link": true,
+        "level": 3,
+        "text": "Акции"
+      },
+      "image": {
+        "picture": {
+          "class": "category-card__media"
+        },
+        "name": "categories/01.jpg",
+        "alt": "Девушки, одетые в красивое пальто."
+      },
+      "text": "Последние события"
+    }, {
+      "title": {
+        "link": true,
+        "level": 3,
+        "text": "Новости"
+      },
+      "image": {
+        "picture": {
+          "class": "category-card__media"
+        },
+        "name": "categories/02.jpg",
+        "alt": "Девушка, одетая в красивое черное платье."
+      },
+      "text": "Тут будет что-то написано <br /> про этот раздел"
+    }, {
+      "title": {
+        "link": true,
+        "level": 3,
+        "text": "Стилистам"
+      },
+      "image": {
+        "picture": {
+          "class": "category-card__media"
+        },
+        "name": "categories/03.jpg",
+        "alt": "Девушка, одетая в красивое бежевое пальто."
+      },
+      "text": "И здесь тоже будет что-то написано"
+    }]
+  }
+}

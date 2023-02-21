@@ -1,0 +1,17 @@
+<div class="category-card {{ category_card.class }}">
+  {% view "@image" with {
+    image: category_card.image
+  } %}
+
+  <div class="category-card__content">
+    {% view "@title" with {
+      title: category_card.title|merge({
+        class: "category-card__title"
+      })
+    } %}
+
+    <p class="category-card__text">
+      {{ category_card.text }}
+    </p>
+  </div>
+</div>

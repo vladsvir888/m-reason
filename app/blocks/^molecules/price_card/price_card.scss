@@ -1,0 +1,23 @@
+.price-card {
+  position: relative;
+
+  &__content {
+    @include font-size(24, 33);
+    letter-spacing: 0.05em;
+    position: absolute;
+    bottom: rem(82);
+    left: rem(96);
+  }
+
+  &__price {
+    @include flex-center-y;
+    gap: rem(15);
+
+    &--with-discount {
+      @include flex-center-y;
+      gap: rem(21);
+      padding: rem(5) rem(13);
+      background-color: var(--pallette-atlantis);
+    }
+  }
+}

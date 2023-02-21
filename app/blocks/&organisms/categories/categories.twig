@@ -1,0 +1,19 @@
+<section class="categories">
+  {% view "@title" with {
+    title: {
+      level: 2,
+      class: "visually-hidden",
+      text: "Категории"
+    }
+  } %}
+
+  <div class="container">
+    <div class="categories__inner">
+      {% for item in categories.items %}
+        {% view "^category_card" with {
+          category_card: item
+        } %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

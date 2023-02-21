@@ -1,0 +1,20 @@
+<section class="fashion-look">
+  {% view "@title" with {
+    title: {
+      class: "visually-hidden",
+      level: 2,
+      text: "Современные образы одежды"
+    }
+  } %}
+  <div class="container">
+    <div class="fashion-look__inner">
+      {% view "^media_card" with {
+        media_card: fashion_look.card
+      } %}
+
+      <div class="fashion-look__slider">
+        {% view "^media_slider" %}
+      </div>
+    </div>
+  </div>
+</section>

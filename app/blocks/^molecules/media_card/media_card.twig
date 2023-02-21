@@ -1,0 +1,15 @@
+<div class="media-card">
+  <a href="#">
+    {% view "@image" with {
+      image: media_card.image|merge({
+        picture: {
+          class: "media-card__media"
+        }
+      })
+    } %}
+  </a>
+
+  {% view "@button" with {
+    button: media_card.button
+  } %}
+</div>

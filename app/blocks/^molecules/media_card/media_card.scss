@@ -1,0 +1,11 @@
+.media-card {
+  position: relative;
+
+  &__btn {
+    position: absolute;
+    bottom: rem(122);
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(757);
+  }
+}

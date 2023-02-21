@@ -1,0 +1,57 @@
+.trends-slider {
+  $this: &;
+
+  &:hover {
+    #{$this}__btn {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+  }
+
+  &__btn {
+    width: rem(86);
+    height: rem(86);
+    padding: 0;
+    color: var(--pallette-cod-gray);
+    border: none;
+    background-color: var(--pallette-white);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(rem(20));
+    transition:
+      opacity var(--transition),
+      background-color var(--transition),
+      transform var(--transition);
+
+    @include media('1200', max) {
+      opacity: 1;
+      visibility: visible;
+      transform: unset;
+    }
+
+    @include media('600', max) {
+      display: none;
+    }
+
+    &:hover {
+      background-color: var(--pallette-atlantis);
+    }
+
+    &::before,
+    &::after {
+      content: none;
+    }
+
+    &.swiper-button-disabled {
+      cursor: not-allowed;
+      pointer-events: auto;
+    }
+
+    &-icon {
+      width: rem(45);
+      height: rem(45);
+      stroke: currentColor;
+    }
+  }
+}
