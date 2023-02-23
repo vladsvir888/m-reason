@@ -9,5 +9,25 @@
         input: item
       } %}
     {% endfor %}
+  {% elseif form.type == 'auth_and_registration' or form.type == 'auth' or form.type == 'registration' %}
+    {% view "@input" with {
+      input: form.input_phone
+    } %}
+
+    {% if form.input_checkboxes %}
+      <div class="form__checkbox-wrap">
+        {% for item in form.input_checkboxes.items %}
+          {% view "@input" with {
+            input: item
+          } %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endif %}
+
+  {% if form.submit_btn %}
+    {% view "@button" with {
+      button: form.submit_btn
+    } %}
   {% endif %}
 </form>

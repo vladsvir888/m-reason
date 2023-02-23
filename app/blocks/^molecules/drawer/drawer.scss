@@ -1,0 +1,58 @@
+.drawer {
+  $this: &;
+
+  visibility: hidden;
+
+  &--active {
+    visibility: visible;
+
+    #{$this}__content {
+      transform: translateX(0);
+    }
+
+    #{$this}__backdrop {
+      opacity: 1;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-self: flex-end;
+    padding: rem(70) rem(100) rem(85);
+  }
+
+  &__content {
+    @include flex-column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: rem(1297);
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: var(--pallette-white);
+    transition: all var(--transition);
+  }
+
+  &__backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background-color: var(--pallette-cod-gray-with-alpha-2);
+    opacity: 0;
+    transition: opacity var(--transition);
+  }
+
+  &__close {
+    @include flex-center-y;
+    @include font-size(24, 33);
+    letter-spacing: 0.15em;
+    gap: rem(20);
+
+    &-icon {
+      width: rem(30);
+      height: rem(30);
+      stroke: currentColor;
+    }
+  }
+}

@@ -6,9 +6,8 @@ const trendsSlider = () => {
     slidesPerView: 1.05,
     speed: 600,
     navigation: {
-      nextEl: '.trends-slider__btn--next',
-      prevEl: '.trends-slider__btn--prev',
-      // disabledClass: 'trends-slider__btn--disabled',
+      nextEl: '.slider-with-square-btns__btn--next',
+      prevEl: '.slider-with-square-btns__btn--prev',
     },
     breakpoints: {
       601: {

@@ -5,7 +5,7 @@
         {% view "@button" with {
           button: item.button|merge({
             href: "#",
-            class: "meta-nav__btn"
+            class: "meta-nav__btn" ~ (item.button.class is defined ? " " ~ item.button.class : "")
           })
         } %}
       </li>

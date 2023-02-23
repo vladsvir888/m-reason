@@ -1,0 +1,23 @@
+{
+  "popup_basket": {
+    "type": "basket",
+    "id": "popup_basket",
+    "class": "popup--basket",
+    "title": "Товар добавлен в корзину",
+    "btns": {
+      "items": [{
+        "href": "#",
+        "class": "btn--animate btn--tertiary popup__btn",
+        "text": {
+          "text": "Оформить заказ"
+        }
+      }, {
+        "class": "btn--animate btn--quaternary popup__btn",
+        "text": {
+          "text": "Продолжить покупки"
+        },
+        "attrs": "data-fancybox-close"
+      }]
+    }
+  }
+}

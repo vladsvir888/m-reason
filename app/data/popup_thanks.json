@@ -1,0 +1,8 @@
+{
+  "popup_thanks": {
+    "type": "thanks",
+    "id": "popup_thanks",
+    "class": "popup--thanks",
+    "title": "Спасибо!"
+  }
+}

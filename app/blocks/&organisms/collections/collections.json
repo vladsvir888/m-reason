@@ -1,0 +1,164 @@
+{
+  "collections": {
+    "type": "slider",
+    "data": {
+      "items": [{
+        "image": {
+          "name": "collections/01.jpg"
+        },
+        "image_2": {
+          "name": "collections/02.jpg"
+        },
+        "link": {
+          "attrs": "aria-label='Смотреть образ'"
+        },
+        "fake_btn": {
+          "text": "Смотреть образ"
+        }
+      }, {
+        "image": {
+          "name": "collections/02.jpg"
+        },
+        "image_2": {
+          "name": "collections/03.jpg"
+        },
+        "link": {
+          "attrs": "aria-label='Смотреть образ'"
+        },
+        "fake_btn": {
+          "text": "Смотреть образ"
+        }
+      }, {
+        "image": {
+          "name": "collections/03.jpg"
+        },
+        "image_2": {
+          "name": "collections/01.jpg"
+        },
+        "link": {
+          "attrs": "aria-label='Смотреть образ'"
+        },
+        "fake_btn": {
+          "text": "Смотреть образ"
+        }
+      }, {
+        "image": {
+          "name": "collections/04.jpg"
+        },
+        "image_2": {
+          "name": "collections/01.jpg"
+        },
+        "link": {
+          "attrs": "aria-label='Смотреть образ'"
+        },
+        "fake_btn": {
+          "text": "Смотреть образ"
+        }
+      }, {
+        "image": {
+          "name": "collections/05.jpg"
+        },
+        "image_2": {
+          "name": "collections/06.jpg"
+        },
+        "link": {
+          "attrs": "aria-label='Смотреть образ'"
+        },
+        "fake_btn": {
+          "text": "Смотреть образ"
+        }
+      }, {
+        "image": {
+          "name": "collections/06.jpg"
+        },
+        "image_2": {
+          "name": "collections/07.jpg"
+        },
+        "link": {
+          "attrs": "aria-label='Смотреть образ'"
+        },
+        "fake_btn": {
+          "text": "Смотреть образ"
+        }
+      }, {
+        "image": {
+          "name": "collections/07.jpg"
+        },
+        "image_2": {
+          "name": "collections/08.jpg"
+        },
+        "link": {
+          "attrs": "aria-label='Смотреть образ'"
+        },
+        "fake_btn": {
+          "text": "Смотреть образ"
+        }
+      }, {
+        "image": {
+          "name": "collections/08.jpg"
+        },
+        "image_2": {
+          "name": "collections/09.jpg"
+        },
+        "link": {
+          "attrs": "aria-label='Смотреть образ'"
+        },
+        "fake_btn": {
+          "text": "Смотреть образ"
+        }
+      }, {
+        "image": {
+          "name": "collections/09.jpg"
+        },
+        "image_2": {
+          "name": "collections/10.jpg"
+        },
+        "link": {
+          "attrs": "aria-label='Смотреть образ'"
+        },
+        "fake_btn": {
+          "text": "Смотреть образ"
+        }
+      }, {
+        "image": {
+          "name": "collections/10.jpg"
+        },
+        "image_2": {
+          "name": "collections/11.jpg"
+        },
+        "link": {
+          "attrs": "aria-label='Смотреть образ'"
+        },
+        "fake_btn": {
+          "text": "Смотреть образ"
+        }
+      }, {
+        "image": {
+          "name": "collections/11.jpg"
+        },
+        "image_2": {
+          "name": "collections/12.jpg"
+        },
+        "link": {
+          "attrs": "aria-label='Смотреть образ'"
+        },
+        "fake_btn": {
+          "text": "Смотреть образ"
+        }
+      }, {
+        "image": {
+          "name": "collections/12.jpg"
+        },
+        "image_2": {
+          "name": "collections/11.jpg"
+        },
+        "link": {
+          "attrs": "aria-label='Смотреть образ'"
+        },
+        "fake_btn": {
+          "text": "Смотреть образ"
+        }
+      }]
+    }
+  }
+}

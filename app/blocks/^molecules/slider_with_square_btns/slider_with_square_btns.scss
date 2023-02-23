@@ -1,11 +1,16 @@
-.trends-slider {
+.slider-with-square-btns {
   $this: &;
 
-  &:hover {
+  &:hover,
+  &:focus {
     #{$this}__btn {
       opacity: 1;
       visibility: visible;
       transform: translateX(0);
+
+      &.swiper-button-disabled {
+        opacity: 0.35;
+      }
     }
   }
 
@@ -34,18 +39,14 @@
       display: none;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: var(--pallette-atlantis);
     }
 
     &::before,
     &::after {
       content: none;
-    }
-
-    &.swiper-button-disabled {
-      cursor: not-allowed;
-      pointer-events: auto;
     }
 
     &-icon {

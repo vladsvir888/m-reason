@@ -1,0 +1,81 @@
+.collection-card {
+  $this: &;
+
+  position: relative;
+  display: grid;
+
+  &:hover {
+    #{$this}__btn {
+      color: var(--pallette-white);
+      opacity: 1;
+
+      &::before {
+        transform: none;
+        animation: in var(--transition-2) cubic-bezier(0.4, 0, 0, 1);
+      }
+    }
+  }
+
+  &--active-media {
+    #{$this}__media {
+      &--1 {
+        opacity: 0;
+      }
+
+      &--2 {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  &__content {
+    @include flex-center-column;
+    padding: rem(121);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    @include media('1200', max) {
+      padding: rem(40);
+    }
+  }
+
+  &__btn {
+    margin-top: auto;
+    pointer-events: none;
+    transition:
+      opacity var(--transition-2),
+      color var(--transition-2),
+      background-color var(--transition-2);
+
+    @include media('1201', min) {
+      opacity: 0;
+    }
+
+    @include media('1600', max) {
+      min-width: unset;
+      width: 100%;
+    }
+
+    @include media('600', max) {
+      display: none;
+    }
+  }
+
+  &__media {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    opacity: 0;
+    transition: opacity var(--transition);
+
+    &--1 {
+      opacity: 1;
+    }
+  }
+}

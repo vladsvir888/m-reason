@@ -1,0 +1,22 @@
+<div class="drawer">
+  <div class="drawer__content">
+    <div class="drawer__header">
+      {% view "@button" with {
+        button: {
+          class: "drawer__close",
+          text: {
+            text: "Закрыть"
+          },
+          right_icon: {
+            class: "drawer__close-icon",
+            name: "sprite-mono.svg#close"
+          },
+          attrs: 'aria-label="Закрыть"'
+        }
+      } %}
+    </div>
+    <div class="drawer__body"></div>
+    <div class="drawer__footer"></div>
+  </div>
+  <div class="drawer__backdrop"></div>
+</div>

@@ -2,9 +2,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
-  padding: rem(69) rem(343) rem(72);
+  padding: rem(70) rem(343);
   background-color: var(--pallette-white);
 
   @include media('1400', max) {

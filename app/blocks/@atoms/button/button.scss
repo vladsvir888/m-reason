@@ -16,11 +16,14 @@
     @include font-size(24, 33);
     position: relative;
     overflow: hidden;
-    padding: rem(37.5) rem(10) rem(42.5);
+    min-width: rem(757);
+    padding: rem(40) rem(10);
     transition: color var(--transition-2);
 
     @include media('600', max) {
-      padding: rem(18) rem(10);
+      @include font-size(10, 14);
+      padding: rem(13) rem(10);
+      min-width: unset;
     }
 
     &::before {
@@ -59,10 +62,35 @@
       background-color: var(--pallette-atlantis);
     }
   }
+
+  &--tertiary {
+    color: var(--pallette-white);
+    background-color: var(--pallette-cod-gray);
+
+    &::before {
+      background-color: var(--pallette-atlantis);
+    }
+
+    &:hover {
+      color: var(--pallette-cod-gray);
+    }
+  }
+
+  &--quaternary {
+    border: rem(1) solid var(--pallette-cod-gray);
+
+    &::before {
+      background-color: var(--pallette-cod-gray);
+    }
+
+    &:hover {
+      color: var(--pallette-white);
+    }
+  }
 }
 
 @keyframes in {
-  0% {
+  from {
     transform: translate3d(-110%, 0, 0) skew(-25deg);
   }
 
@@ -72,7 +100,7 @@
 }
 
 @keyframes out {
-  0% {
+  from {
     transform: translateZ(0);
   }
 

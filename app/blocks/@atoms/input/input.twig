@@ -1,10 +1,10 @@
 {% set input_type = input.element.type|default('text') %}
 
 {% if input_type == 'checkbox' %}
-  <div class="input-block {{ input.class }}">
+  <div class="input-check {{ input.class }}">
     <input
       {% if input.element.id %}id="{{ input.element.id }}"{% endif %}
-      class="input-block__input {{ input.element.class }}"
+      class="input-check__input {{ input.element.class }}"
       type="{{ input_type }}"
       name="{{ input.element.name }}"
       {% if input.element.text %}placeholder="{{ input.element.text }}"{% endif %}
@@ -13,7 +13,7 @@
 
     <label
       {% if input.label.id %}for="{{ input.label.id }}"{% endif %}
-      class="input-block__label"
+      class="input-check__label {{ input.label.class }}"
     >
       {{ input.label.text }}
     </label>
@@ -22,14 +22,14 @@
   <div class="input-block {{ input.class }}">
     <label
       {% if input.label.id %}for="{{ input.label.id }}"{% endif %}
-      class="input-block__label"
+      class="input-block__label {{ input.label.class }}"
     >
       {{ input.label.text }}
     </label>
 
     <input
       {% if input.element.id %}id="{{ input.element.id }}"{% endif %}
-      class="input-block__input"
+      class="input-block__input {{ input.element.class }}"
       type="{{ input_type }}"
       name="{{ input.element.name }}"
       {% if input.element.text %}placeholder="{{ input.element.text }}"{% endif %}

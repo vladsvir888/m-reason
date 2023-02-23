@@ -1,0 +1,23 @@
+<section class="collections {{ collections.class }}">
+  {% view "@title" with {
+    title: {
+      class: "visually-hidden",
+      level: 2,
+      text: "Коллекции"
+    }
+  } %}
+
+  <div class="container">
+    {% if collections.type == 'slider' %}
+      {% view "^collections_slider" %}
+    {% elseif collections.type == 'grid' %}
+      <div class="collections__grid">
+        {% for item in collections.data.items %}
+          {% view "^collection_card" with {
+            collection_card: item
+          } %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,33 @@
+{
+  "popup_auth": {
+    "type": "auth",
+    "id": "popup_auth",
+    "title": "Вход",
+    "data": {
+      "form": {
+        "type": "auth",
+        "class": "form--popup",
+        "input_phone": {
+          "label": {
+            "id": "auth_code",
+            "text": "Введите код из SMS"
+          },
+          "element": {
+            "id": "auth_code",
+            "type": "text",
+            "text": "000",
+            "name": "code",
+            "attrs": "required inputmode='numeric' autocomplete='one-time-code'"
+          }
+        },
+        "submit_btn": {
+          "class": "btn--animate btn--tertiary popup__btn",
+          "text": {
+            "text": "Получить код SMS"
+          },
+          "attrs": "type='submit'"
+        }
+      }
+    }
+  }
+}

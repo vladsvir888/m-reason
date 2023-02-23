@@ -2,15 +2,27 @@
   "fashion_look": {
     "card": {
       "image": {
+        "class": "media-card__media-img",
+        "adaptive": {
+          "media": {
+            "value": 600
+          }
+        },
         "name": "fashion_look/01.jpg",
+        "name_2": "fashion_look/01.jpg",
         "alt": "Девушка, одетая в коричневый пиджак."
       },
-      "button": {
-        "class": "btn--animate btn--primary media-card__btn",
-        "href": "#",
-        "text": {
-          "text": "Смотреть все готовые образы"
+      "link": {
+        "attrs": "aria-label='Смотреть все готовые образы'"
+      },
+      "content": {
+        "title": {
+          "level": 3,
+          "text": "Офисный стиль"
         }
+      },
+      "fake_btn": {
+        "text": "Смотреть все готовые образы"
       }
     }
   }

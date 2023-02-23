@@ -1,10 +1,16 @@
 .input-block {
   $this: &;
 
-  &--with-label {
-    display: grid;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(16) 0;
+
+  @include media('600', max) {
+    gap: rem(5) 0;
+  }
+
+  &--with-btn {
     grid-template-columns: 1fr rem(94);
-    gap: rem(16) 0;
 
     @include media('600', max) {
       grid-template-columns: 1fr rem(48);
@@ -13,84 +19,11 @@
     #{$this}__label {
       grid-column: 1 / 3;
     }
-
-    #{$this}__input {
-      @include font-size(24, 35);
-      letter-spacing: 0.05em;
-      border: none;
-      padding: rem(30);
-
-      &::placeholder {
-        @include font-size(24, 35);
-        letter-spacing: 0.05em;
-        font-style: italic;
-        opacity: 0.3;
-
-        @include media('600', max) {
-          @include font-size(10, 15);
-          letter-spacing: 0.15em;
-        }
-      }
-
-      @include media('600', max) {
-        @include font-size(10, 15);
-        letter-spacing: 0.15em;
-        padding: rem(17) rem(20);
-      }
-    }
-  }
-
-  &--checkbox {
-    @include flex-center-y;
-    gap: rem(15);
-
-    @include media('600', max) {
-      gap: rem(6);
-    }
-
-    #{$this}__input {
-      appearance: none;
-      margin: 0;
-      width: rem(30);
-      height: rem(30);
-      flex-shrink: 0;
-      border: rem(1) solid var(--pallette-white);
-      transition: transform var(--transition);
-
-      &:checked {
-        transform: rotateX(180deg);
-
-        &::before {
-          display: block;
-          width: rem(26);
-          height: rem(26);
-          background: var(--pallette-white);
-          border: rem(1) solid var(--pallette-cod-gray);
-          content: '';
-
-          @include media('600', max) {
-            width: rem(14);
-            height: rem(14);
-          }
-        }
-      }
-
-      @include media('600', max) {
-        width: rem(16);
-        height: rem(16);
-      }
-    }
-
-    #{$this}__label {
-      @include media('600', max) {
-        @include font-size(8, 12);
-        letter-spacing: 0.05em;
-      }
-    }
   }
 
   &__label {
     @include font-size(24, 35);
+    color: inherit;
 
     @include media('600', max) {
       @include font-size(10, 15);
@@ -99,7 +32,29 @@
   }
 
   &__input {
+    @include font-size(24, 35);
+    padding: rem(30) rem(15) rem(30) rem(35);
+    letter-spacing: 0.05em;
     border-radius: 0;
+    border: rem(1) solid var(--pallette-cod-gray);
+
+    @include media('600', max) {
+      @include font-size(10, 15);
+      letter-spacing: 0.15em;
+      padding: rem(15) rem(10);
+    }
+
+    &::placeholder {
+      @include font-size(24, 35);
+      letter-spacing: 0.05em;
+      font-style: italic;
+      opacity: 0.3;
+
+      @include media('600', max) {
+        @include font-size(10, 15);
+        letter-spacing: 0.15em;
+      }
+    }
   }
 
   &__btn {
@@ -108,14 +63,84 @@
     font-weight: 700;
     letter-spacing: 0.05em;
     background-color: var(--pallette-white);
-    border-left: rem(1) solid var(--pallette-cod-gray);
+    border: rem(1) solid var(--pallette-cod-gray);
+    border-left: unset;
 
-    &:hover {
+    &:active {
       background-color: var(--pallette-atlantis);
     }
 
     @include media('600', max) {
       @include font-size(14, 19);
+    }
+  }
+}
+
+.input-check {
+  $this: &;
+
+  display: flex;
+  gap: rem(15);
+
+  @include media('600', max) {
+    gap: rem(6);
+  }
+
+  &--secondary {
+    #{$this}__input {
+      border: rem(1) solid var(--pallette-cod-gray);
+
+      &:checked {
+        &::before {
+          background: var(--pallette-cod-gray);
+          border: rem(1) solid var(--pallette-white);
+        }
+      }
+    }
+  }
+
+  &__input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    width: rem(30);
+    height: rem(30);
+    flex-shrink: 0;
+    border: rem(1) solid var(--pallette-white);
+    border-radius: 0;
+    transition: transform var(--transition);
+
+    &:checked {
+      transform: rotateX(180deg);
+
+      &::before {
+        display: block;
+        width: rem(26);
+        height: rem(26);
+        background: var(--pallette-white);
+        border: rem(1) solid var(--pallette-cod-gray);
+        content: '';
+
+        @include media('600', max) {
+          width: rem(14);
+          height: rem(14);
+        }
+      }
+    }
+
+    @include media('600', max) {
+      width: rem(16);
+      height: rem(16);
+    }
+  }
+
+  &__label {
+    @include font-size(24, 35);
+    color: inherit;
+
+    @include media('600', max) {
+      @include font-size(10, 15);
+      letter-spacing: 0.05em;
     }
   }
 }

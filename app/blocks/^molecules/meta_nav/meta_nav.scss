@@ -12,11 +12,10 @@
 
   &__btn {
     display: flex;
+    color: var(--pallette-cod-gray);
 
     &:hover {
-      #{$this}__btn-icon {
-        stroke: var(--pallette-atlantis);
-      }
+      color: var(--pallette-atlantis);
     }
 
     &-icon {

@@ -1,0 +1,42 @@
+<div
+  id="{{ popup.id }}"
+  class="popup {{ popup.class }}"
+>
+  {% view "@button" with {
+    button: {
+      class: "popup__close",
+      icon: {
+        class: "popup__close-icon",
+        name: "sprite-mono.svg#burger-close"
+      },
+      attrs: "data-fancybox-close aria-label='Закрыть'"
+    }
+  } %}
+
+  <div class="popup__title">
+    {{ popup.title }}
+  </div>
+
+  {% if popup.type == 'thanks' %}
+    <p class="popup__text">
+      Вам на e-mail отправлено письмо со ссылкой для подтверждения.
+    </p>
+    <p class="popup__text">
+      Если письмо не пришло, поищите его в папке со спамом или повторите подписку.
+    </p>
+  {% elseif popup.type == 'auth_and_registration' or popup.type == 'auth' or popup.type == 'registration' %}
+    {% view "^form" with {
+      form: popup.data.form
+    } %}
+  {% endif %}
+
+  {% if popup.btns %}
+    <div class="popup__btns">
+      {% for item in popup.btns.items %}
+        {% view "@button" with {
+          button: item
+        } %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

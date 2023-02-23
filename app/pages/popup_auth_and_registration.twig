@@ -1,0 +1,22 @@
+{% extends "../blocks/layout/base.twig" %}
+
+{% block content %}
+<main class="main">
+  <script type="module">
+    import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+
+    Fancybox.show([{
+      src: "#popup_auth_and_registration",
+      type: "inline",
+      closeButton: false,
+      dragToClose: false,
+      autoFocus: false,
+      showClass: 'fancybox-fadeIn',
+    }]);
+  </script>
+
+  {% view "^popup" with {
+    popup: popup_auth_and_registration
+  } %}
+</main>
+{% endblock %}

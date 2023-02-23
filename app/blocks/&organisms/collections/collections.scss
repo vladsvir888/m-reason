@@ -1,0 +1,48 @@
+.collections {
+  overflow-x: hidden;
+
+  &--secondary {
+    .collection {
+      &-card {
+        &__btn {
+          width: 100%;
+          min-width: unset;
+          padding: rem(15) rem(10);
+        }
+
+        &__content {
+          padding: rem(60) rem(110);
+
+          @include media('1400', max) {
+            padding: rem(60) rem(80);
+          }
+        }
+      }
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+      width: calc(100% / 6);
+
+      @include media('1400', max) {
+        width: calc(100% / 4);
+      }
+
+      @include media('1200', max) {
+        width: calc(100% / 3);
+      }
+
+      @include media('900', max) {
+        width: calc(100% / 2);
+      }
+
+      @include media('600', max) {
+        width: 100%;
+      }
+    }
+  }
+}

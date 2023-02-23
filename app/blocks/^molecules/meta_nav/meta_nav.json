@@ -19,6 +19,7 @@
         }
       }, {
         "button": {
+          "class": "drawer-btn",
           "icon": {
             "class": "meta-nav__btn-icon",
             "name": "sprite-mono.svg#cart-shopping"

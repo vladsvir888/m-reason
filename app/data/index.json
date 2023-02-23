@@ -2,6 +2,21 @@
   "pages": [{
     "text": "Главная",
     "link": "home"
+  }, {
+    "text": "Попап \"Товар добавлен в корзину\"",
+    "link": "popup_basket"
+  }, {
+    "text": "Попап \"Спасибо\"",
+    "link": "popup_thanks"
+  }, {
+    "text": "Попап \"Вход/Регистрация\"",
+    "link": "popup_auth_and_registration"
+  }, {
+    "text": "Попап \"Вход\"",
+    "link": "popup_auth"
+  }, {
+    "text": "Попап \"Регистрация\"",
+    "link": "popup_registration"
   }],
   "meta": {
     "html_lang": "ru",

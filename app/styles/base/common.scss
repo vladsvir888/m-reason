@@ -59,11 +59,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 :focus-visible {
-  outline: rem(2) solid var(--pallette-atlantis);
-}
-
-.lock {
-  overflow: hidden;
+  outline: rem(2) dotted var(--pallette-atlantis);
+  outline-offset: rem(2);
 }
 
 html {
@@ -124,6 +121,9 @@ body {
     }
 
     .page-list {
+      @include flex-column;
+      gap: rem(18);
+
       &__link {
         font-size: rem(25);
 
@@ -190,24 +190,12 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-// делаем обычный курсор на оверлэе
-.fancybox__carousel.is-draggable .fancybox__slide,
-.fancybox__carousel.is-draggable .fancybox__slide .fancybox__content {
-  cursor: default;
-}
-
-// убираем фокус
-.fancybox__content :focus:not(.carousel__button.is-close) {
-  outline: none;
-}
-
-// делаем альтернативу фокусу
-.fancybox__content :focus-visible:not(.carousel__button.is-close) {
-  outline: rem(2) dotted var(--pallette-atlantis);
-  outline-offset: rem(2);
-}
-
 .container {
   max-width: rem(3840);
   margin: 0 auto;
+}
+
+.scroll-lock {
+  overflow: hidden !important;
+  padding-right: var(--scrollbar-size, 17px);
 }

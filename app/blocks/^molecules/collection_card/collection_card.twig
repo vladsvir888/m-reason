@@ -1,0 +1,31 @@
+<div class="collection-card">
+  <a
+    class="collection-card__link"
+    href="#"
+    {{ collection_card.link.attrs }}
+  >
+    {% view "@image" with {
+      image: collection_card.image|merge({
+        picture: {
+          class: "collection-card__media collection-card__media--1"
+        }
+      })
+    } %}
+
+    {% view "@image" with {
+      image: collection_card.image_2|merge({
+        picture: {
+          class: "collection-card__media collection-card__media--2"
+        }
+      })
+    } %}
+  </a>
+
+  <div class="collection-card__content">
+    <div class="btn btn--animate btn--primary collection-card__btn">
+      <span class="btn__text">
+        {{ collection_card.fake_btn.text }}
+      </span>
+    </div>
+  </div>
+</div>

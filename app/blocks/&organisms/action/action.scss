@@ -6,15 +6,20 @@
     display: grid;
     color: var(--pallette-cod-gray);
 
-    @include media('600', max) {
-      color: var(--pallette-white);
+    &:hover {
+      #{$this}__btn {
+        color: var(--pallette-white);
+
+        &::before {
+          transform: none;
+          animation: in var(--transition-2) cubic-bezier(0.4, 0, 0, 1);
+        }
+      }
     }
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-center-column;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     gap: rem(79);
@@ -54,11 +59,10 @@
   }
 
   &__btn {
-    width: rem(757);
-    margin: 0 auto;
+    pointer-events: none;
 
     @include media('600', max) {
-      display: none;
+      width: 100%;
     }
   }
 
@@ -69,6 +73,8 @@
     &-img {
       @include media('600', max) {
         width: 100%;
+        height: 100%; // убрать после замены картинки
+        object-fit: cover; // убрать после замены картинки
       }
     }
   }

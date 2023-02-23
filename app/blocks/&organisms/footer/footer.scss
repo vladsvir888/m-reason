@@ -1,7 +1,7 @@
 .main-footer {
   $this: &;
 
-  padding: rem(156) rem(338) rem(194);
+  padding: rem(156) rem(343) rem(194);
   color: var(--pallette-white);
   background-color: var(--pallette-cod-gray);
 
@@ -39,6 +39,7 @@
     @include media('600', max) {
       @include font-size(10, 15);
       gap: rem(11);
+      display: none;
     }
   }
 

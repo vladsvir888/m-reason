@@ -7,6 +7,10 @@
     height: rem(86);
     color: var(--pallette-cod-gray);
 
+    @include media('600', max) {
+      display: none;
+    }
+
     &::before,
     &::after {
       content: none;
@@ -22,12 +26,6 @@
 
     &--next {
       right: rem(-80);
-    }
-
-    &.swiper-button-disabled {
-      cursor: not-allowed;
-      pointer-events: auto;
-      opacity: 1;
     }
 
     &-icon {
@@ -48,6 +46,10 @@
     &-drag {
       background-color: var(--pallette-cod-gray);
       border-radius: 0;
+    }
+
+    @include media('600', max) {
+      display: none;
     }
   }
 }

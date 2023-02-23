@@ -1,0 +1,21 @@
+<div class="card-text {{ card_text.class }}">
+  {% view "@image" with {
+    image: card_text.image|merge({
+      picture: {
+        class: "card-text__media"
+      }
+    })
+  } %}
+
+  <div class="card-text__content">
+    {% view "@title" with {
+      title: card_text.title|merge({
+        class: "card-text__title"
+      })
+    } %}
+
+    <p class="card-text__text">
+      {{ card_text.text }}
+    </p>
+  </div>
+</div>

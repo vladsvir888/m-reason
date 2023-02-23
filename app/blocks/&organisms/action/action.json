@@ -7,11 +7,8 @@
         "level": 2,
         "text": "Акция 2+1"
       },
-      "button": {
-        "href": "#",
-        "text": {
-          "text": "Смотреть <span class='visually-hidden'>Акция 2+1</span>"
-        }
+      "fake_btn": {
+        "text": "Смотреть"
       }
     },
     "image": {
@@ -25,7 +22,7 @@
         }
       },
       "name": "action/01.jpg",
-      "name_2": "action/01_mobile.jpg",
+      "name_2": "action/01.jpg",
       "alt": "Девушка в красивом пиджаке, которая сидит на кресле."
     }
   }
