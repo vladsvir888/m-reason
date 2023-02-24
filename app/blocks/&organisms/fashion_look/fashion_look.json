@@ -1,5 +1,10 @@
 {
   "fashion_look": {
+    "title": {
+      "class": "visually-hidden",
+      "level": 2,
+      "text": "Современные образы одежды"
+    },
     "card": {
       "image": {
         "class": "media-card__media-img",

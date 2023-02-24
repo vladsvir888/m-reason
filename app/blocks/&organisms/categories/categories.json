@@ -1,5 +1,10 @@
 {
   "categories": {
+    "title": {
+      "level": 2,
+      "class": "visually-hidden",
+      "text": "Категории"
+    },
     "items": [{
       "title": {
         "link": true,
@@ -21,7 +26,7 @@
         "name": "categories/02.jpg",
         "alt": "Девушка, одетая в красивое черное платье."
       },
-      "text": "Тут будет что-то написано <br /> про этот раздел"
+      "text": "Тут будет что-то написано <br> про этот раздел"
     }, {
       "title": {
         "link": true,

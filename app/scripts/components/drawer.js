@@ -7,10 +7,10 @@ const drawer = () => {
   const btn = document.querySelector('.drawer-btn');
   const modal = document.querySelector('.drawer');
 
-  if (!btn && !modal) return;
+  if (!btn || !modal) return;
 
   const backdrop = modal.querySelector('.drawer__backdrop');
-  const close = modal.querySelector('.drawer__close');
+  const closeBtns = modal.querySelectorAll('.drawer-close');
 
   const trap = focusTrap.createFocusTrap(modal, {
     fallbackFocus: modal,
@@ -53,7 +53,9 @@ const drawer = () => {
 
   backdrop.addEventListener('click', hide);
 
-  close.addEventListener('click', hide);
+  closeBtns.forEach((closeBtn) => {
+    closeBtn.addEventListener('click', hide);
+  });
 
   window.addEventListener('keydown', (e) => handleEsc(e));
 };

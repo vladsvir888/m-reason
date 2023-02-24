@@ -23,6 +23,14 @@
         {% endfor %}
       </div>
     {% endif %}
+  {% elseif form.type == 'search' %}
+    {% view "@input" with {
+      input: form.input
+    } %}
+
+    {% view "@button" with {
+      button: form.clear_btn
+    } %}
   {% endif %}
 
   {% if form.submit_btn %}

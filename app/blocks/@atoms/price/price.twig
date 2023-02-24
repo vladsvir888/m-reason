@@ -1,0 +1,21 @@
+<div class="price">
+  {% if not price.with_discount %}
+    <p>
+      {{ price.text }}
+    </p>
+  {% else %}
+    <p>
+      <s>
+        {{ price.text }}
+      </s>
+    </p>
+    <p class="price__discount">
+      <span>
+        {{ price.with_discount.discount }}
+      </span>
+      <span>
+        {{ price.with_discount.text }}
+      </span>
+    </p>
+  {% endif %}
+</div>

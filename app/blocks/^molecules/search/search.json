@@ -1,0 +1,23 @@
+{
+  "search": {
+    "type": "search",
+    "class": "search__form",
+    "input": {
+      "element": {
+        "class": "search__input",
+        "type": "search",
+        "name": "q",
+        "text": "Я ищу...",
+        "attrs": "aria-label='Поиск'"
+      }
+    },
+    "clear_btn": {
+      "class": "search__clear",
+      "icon": {
+        "class": "search__icon",
+        "name": "sprite-mono.svg#close"
+      },
+      "attrs": "aria-label='Очистить строку запроса' type='button'"
+    }
+  }
+}

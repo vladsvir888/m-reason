@@ -1,11 +1,8 @@
 <section class="trends">
   {% view "@title" with {
-    title: {
-      level: 2,
-      class: "visually-hidden",
-      text: "Тренды"
-    }
+    title: trends.title
   } %}
+
   <div class="container">
     {% view "^trends_slider" %}
   </div>

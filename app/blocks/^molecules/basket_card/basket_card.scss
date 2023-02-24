@@ -1,0 +1,30 @@
+.basket-card {
+  display: flex;
+  padding: rem(50) rem(100);
+  gap: rem(20);
+
+  &__content {
+    @include flex-column;
+    gap: rem(40);
+  }
+
+  &__picture {
+    flex-shrink: 0;
+  }
+
+  &__inner {
+    @include flex-column;
+    gap: rem(15);
+  }
+
+  &__title {
+    @include font-size(24, 33);
+    letter-spacing: 0.05em;
+    font-weight: 400;
+  }
+
+  &__text {
+    @include font-size(24, 33);
+    letter-spacing: 0.05em;
+  }
+}

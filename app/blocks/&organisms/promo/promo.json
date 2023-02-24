@@ -3,6 +3,7 @@
     "content": {
       "text": "Комфортно и тепло",
       "title": {
+        "class": "promo__title",
         "link": true,
         "text": "Образы для прогулок"
       }

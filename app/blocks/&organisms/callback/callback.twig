@@ -1,10 +1,6 @@
 <section class="callback {{ callback.class }}">
   {% view "@title" with {
-    title: {
-      level: 2,
-      class: "visually-hidden",
-      text: "Обратная связь"
-    }
+    title: callback.title
   } %}
 
   {% view "@logo" with {
@@ -18,9 +14,7 @@
   <div class="callback__btns">
     {% for item in callback.btns.items %}
       {% view "@button" with {
-        button: item.button|merge({
-          class: "btn--secondary btn--animate callback__btn"
-        })
+        button: item.button
       } %}
     {% endfor %}
   </div>

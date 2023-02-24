@@ -3,7 +3,7 @@
     <div class="drawer__header">
       {% view "@button" with {
         button: {
-          class: "drawer__close",
+          class: "drawer__close drawer-close",
           text: {
             text: "Закрыть"
           },
@@ -15,8 +15,60 @@
         }
       } %}
     </div>
-    <div class="drawer__body"></div>
-    <div class="drawer__footer"></div>
+    <div class="drawer__body">
+      {% view "@title" with {
+        title: {
+          class: "drawer__title",
+          level: 2,
+          text: "Корзина"
+        }
+      } %}
+
+      {% for item in drawer.body.items %}
+        <div class="drawer__item">
+          {% view "^basket_card" with {
+            basket_card: item
+          } %}
+
+          {% view "@button" with {
+            button: {
+              class: "drawer__remove-btn",
+              icon: {
+                class: "drawer__close-icon",
+                name: "sprite-mono.svg#close"
+              },
+              attrs: "aria-label='Удалить товар'"
+            }
+          } %}
+        </div>
+      {% endfor %}
+
+      <p class="drawer__total">
+        {{ drawer.body.total }}
+      </p>
+    </div>
+    <div class="drawer__footer">
+      <div class="drawer__btns">
+        {% view "@button" with {
+          button: {
+            href: "#",
+            class: "btn--animate btn--tertiary drawer__btn",
+            text: {
+              text: "Перейти в корзину"
+            }
+          }
+        } %}
+
+        {% view "@button" with {
+          button: {
+            class: "btn--animate btn--quaternary drawer__btn drawer-close",
+            text: {
+              text: "Продолжить покупки"
+            }
+          }
+        } %}
+      </div>
+    </div>
   </div>
   <div class="drawer__backdrop"></div>
 </div>

@@ -144,3 +144,18 @@
     }
   }
 }
+
+.input-search {
+  @include font-size(24, 33);
+  letter-spacing: 0.05em;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &::placeholder {
+    @include font-size(24, 33);
+    letter-spacing: 0.05em;
+    font-style: italic;
+    color: var(--pallette-cod-gray-with-alpha-2);
+  }
+}

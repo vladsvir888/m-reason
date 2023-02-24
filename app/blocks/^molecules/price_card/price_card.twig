@@ -9,25 +9,9 @@
     </p>
 
     <div class="price-card__price">
-      {% if not price_card.content.price.with_discount %}
-        <p>
-          {{ price_card.content.price.text }}
-        </p>
-      {% else %}
-        <p>
-          <s>
-            {{ price_card.content.price.text }}
-          </s>
-        </p>
-        <p class="price-card__price--with-discount">
-          <span>
-            {{ price_card.content.price.with_discount.discount }}
-          </span>
-          <span>
-            {{ price_card.content.price.with_discount.text }}
-          </span>
-        </p>
-      {% endif %}
+      {% view "@price" with {
+        price: price_card.content.price
+      } %}
     </div>
   </div>
 </div>

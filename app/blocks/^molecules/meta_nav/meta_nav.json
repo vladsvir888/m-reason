@@ -3,6 +3,7 @@
     "list": {
       "items": [{
         "button": {
+          "class": "search-btn",
           "icon": {
             "class": "meta-nav__btn-icon",
             "name": "sprite-mono.svg#magnifying-glass"
@@ -23,6 +24,10 @@
           "icon": {
             "class": "meta-nav__btn-icon",
             "name": "sprite-mono.svg#cart-shopping"
+          },
+          "text": {
+            "class": "meta-nav__btn-num",
+            "text": 2
           },
           "attrs": "aria-label='Корзина'"
         }

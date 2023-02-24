@@ -16,26 +16,4 @@
       right: rem(10);
     }
   }
-
-  &__price {
-    @include flex-center-y;
-    flex-wrap: wrap;
-    gap: rem(15);
-
-    @include media('600', max) {
-      gap: rem(6);
-    }
-
-    &--with-discount {
-      @include flex-center-y;
-      gap: rem(21);
-      padding: rem(5) rem(13);
-      background-color: var(--pallette-atlantis);
-
-      @include media('600', max) {
-        gap: rem(6);
-        padding: rem(4);
-      }
-    }
-  }
 }

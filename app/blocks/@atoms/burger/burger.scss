@@ -5,16 +5,6 @@
   gap: rem(20);
   text-transform: uppercase;
 
-  &:hover {
-    #{$this}__text {
-      color: var(--pallette-atlantis);
-    }
-
-    #{$this}__icon {
-      stroke: var(--pallette-atlantis);
-    }
-  }
-
   &[aria-expanded=false] {
     #{$this}__text {
       &--close {

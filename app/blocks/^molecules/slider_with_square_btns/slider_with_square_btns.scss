@@ -39,11 +39,6 @@
       display: none;
     }
 
-    &:hover,
-    &:focus {
-      background-color: var(--pallette-atlantis);
-    }
-
     &::before,
     &::after {
       content: none;

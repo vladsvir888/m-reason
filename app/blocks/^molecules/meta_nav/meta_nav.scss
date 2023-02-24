@@ -10,19 +10,32 @@
     gap: rem(100);
   }
 
+  &__item {
+    position: relative;
+  }
+
   &__btn {
     display: flex;
     color: var(--pallette-cod-gray);
-
-    &:hover {
-      color: var(--pallette-atlantis);
-    }
 
     &-icon {
       width: rem(30);
       height: rem(30);
       fill: transparent;
       stroke: currentColor;
+    }
+
+    &-num {
+      @include flex-center;
+      font-size: rem(20);
+      position: absolute;
+      top: rem(-20);
+      right: rem(-32);
+      min-height: rem(36);
+      min-width: rem(36);
+      background-color: var(--pallette-atlantis);
+      border-radius: 50%;
+      aspect-ratio: 1 / 1;
     }
   }
 }

@@ -3,6 +3,10 @@
 
   visibility: hidden;
 
+  @include media('600', max) {
+    display: none;
+  }
+
   &--active {
     visibility: visible;
 
@@ -16,8 +20,6 @@
   }
 
   &__header {
-    display: flex;
-    align-self: flex-end;
     padding: rem(70) rem(100) rem(85);
   }
 
@@ -30,8 +32,13 @@
     width: rem(1297);
     height: 100vh;
     transform: translateX(100%);
+    overflow-y: auto;
     background-color: var(--pallette-white);
     transition: all var(--transition);
+
+    @include media('900', max) {
+      width: 100%;
+    }
   }
 
   &__backdrop {
@@ -48,11 +55,60 @@
     @include font-size(24, 33);
     letter-spacing: 0.15em;
     gap: rem(20);
+    margin-left: auto;
 
     &-icon {
       width: rem(30);
       height: rem(30);
       stroke: currentColor;
+    }
+  }
+
+  &__footer {
+    padding: rem(115) rem(100) rem(50);
+  }
+
+  &__btns {
+    display: flex;
+    gap: rem(20);
+  }
+
+  &__btn {
+    width: 50%;
+    min-width: unset;
+    padding: rem(20) rem(10);
+  }
+
+  &__title {
+    @include font-size(32, 44);
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: rem(0) rem(100) rem(40);
+  }
+
+  &__item {
+    position: relative;
+    border-bottom: rem(1) solid var(--pallette-cod-gray);
+
+    &:first-of-type {
+      border-top: rem(1) solid var(--pallette-cod-gray);
+    }
+  }
+
+  &__remove-btn {
+    position: absolute;
+    top: rem(50);
+    right: rem(60);
+  }
+
+  &__total {
+    @include font-size(24, 33);
+    letter-spacing: 0.05em;
+    padding: rem(77) rem(100) 0;
+
+    > span {
+      text-transform: uppercase;
     }
   }
 }

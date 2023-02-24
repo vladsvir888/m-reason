@@ -7,16 +7,14 @@
 
       <div class="action__content">
         {% view "@title" with {
-          title: action.content.title|merge({
-            class: "action__title"
-          })
+          title: action.content.title
         } %}
 
         <p class="action__text">
           {{ action.content.text }}
         </p>
 
-        <div class="btn btn--primary btn--animate action__btn">
+        <div class="btn btn--animate btn--primary action__btn">
           <span class="btn__text">
             {{ action.content.fake_btn.text }}
           </span>

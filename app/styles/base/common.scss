@@ -65,7 +65,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 html {
   height: 100%;
-  scrollbar-color: var(--pallette-atlantis) transparent;
+  scrollbar-color: var(--pallette-cod-gray) transparent;
   scrollbar-width: thin;
   scroll-behavior: smooth;
 }
@@ -170,8 +170,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--pallette-atlantis);
-  border-radius: 0.5rem;
+  background-color: var(--pallette-cod-gray);
 }
 
 address {

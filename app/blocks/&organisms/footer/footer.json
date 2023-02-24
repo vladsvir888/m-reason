@@ -124,6 +124,11 @@
     },
     "callback": {
       "class": "main-footer__callback",
+      "title": {
+        "level": 2,
+        "class": "visually-hidden",
+        "text": "Обратная связь"
+      },
       "logo": {
         "type": "footer",
         "class": "main-footer__logo",
@@ -180,6 +185,7 @@
       "btns": {
         "items": [{
           "button": {
+            "class": "btn--animate btn--secondary callback__btn",
             "href": "https://t.me/mreasonofficial",
             "text": {
               "text": "Телеграм"
@@ -188,6 +194,7 @@
           }
         }, {
           "button": {
+            "class": "btn--animate btn--secondary callback__btn",
             "href": "https://vk.com/mreason",
             "text": {
               "text": "Вконтакте"
@@ -196,6 +203,146 @@
           }
         }]
       }
+    },
+    "copyright": "© 2022 M.REASON. ВСЕ ПРАВА ЗАЩИЩЕНЫ",
+    "accordion": {
+      "items": [{
+        "heading": {
+          "text": "О БРЕНДЕ"
+        },
+        "list": {
+          "items": [{
+            "text": {
+              "text": "Новости"
+            }
+          }, {
+            "text": {
+              "text": "МАГАЗИНЫ"
+            }
+          }, {
+            "text": {
+              "text": "СТИЛИСТАМ"
+            }
+          }, {
+            "text": {
+              "text": "ВАКАНСИИ"
+            }
+          }, {
+            "text": {
+              "text": "ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ"
+            }
+          }, {
+            "text": {
+              "text": "ОФЕРТА"
+            }
+          }]
+        }
+      }, {
+        "heading": {
+          "text": "КАТАЛОГ"
+        },
+        "list": {
+          "items": [{
+            "text": {
+              "text": "НОВИНКИ"
+            }
+          }, {
+            "text": {
+              "text": "ВЕРХНЯЯ ОДЕЖДА"
+            }
+          }, {
+            "text": {
+              "text": "ЖАКЕТЫ"
+            }
+          }, {
+            "text": {
+              "text": "ЖИЛЕТЫ"
+            }
+          }, {
+            "text": {
+              "text": "ПЛАТЬЯ"
+            }
+          }, {
+            "text": {
+              "text": "ЮБКИ"
+            }
+          }, {
+            "text": {
+              "text": "БРЮКИ"
+            }
+          }, {
+            "text": {
+              "text": "ТОПЫ"
+            }
+          }, {
+            "text": {
+              "text": "ВЯЗАНЫЙ ТРИКОТАЖ"
+            }
+          }, {
+            "text": {
+              "text": "АКСЕССУАРЫ"
+            }
+          }]
+        }
+      }, {
+        "heading": {
+          "text": "КЛИЕНТСКИЙ СЕРВИС"
+        },
+        "list": {
+          "items": [{
+            "text": {
+              "text": "АКЦИИ"
+            }
+          }, {
+            "text": {
+              "text": "ПРОГРАММА ЛОЯЛЬНОСТИ"
+            }
+          }, {
+            "text": {
+              "text": "ДОСТАВКА И ОПЛАТА"
+            }
+          }, {
+            "text": {
+              "text": "ОБМЕН И ВОЗВРАТ"
+            }
+          }, {
+            "text": {
+              "text": "ТАБЛИЦА РАЗМЕРОВ"
+            }
+          }, {
+            "text": {
+              "text": "УХОД ЗА ОДЕЖДОЙ"
+            }
+          }, {
+            "text": {
+              "text": "ПОДАРОЧНЫЕ КАРТЫ"
+            }
+          }, {
+            "text": {
+              "text": "ОФОРМЛЕНИЕ ЗАКАЗА"
+            }
+          }]
+        }
+      }, {
+        "heading": {
+          "text": "КОНТАКТЫ"
+        },
+        "list": {
+          "items": [{
+            "text": {
+              "text": "ТЕЛЕФОНЫ МАГАЗИНОВ"
+            }
+          }, {
+            "text": {
+              "text": "ОПТОВЫМ КЛИЕНТАМ"
+            }
+          }, {
+            "text": {
+              "text": "ИНТЕРНЕТ-МАГАЗИН"
+            }
+          }]
+        }
+      }]
     }
   }
 }

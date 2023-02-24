@@ -34,6 +34,54 @@
       {% view "&callback" with {
         callback: footer.callback
       } %}
+
+      <div class="main-footer__accordion main-accordion">
+        {% for item in footer.accordion.items %}
+          <div class="main-footer__accordion-item main-accordion__item">
+            <a
+              class="main-footer__accordion-btn main-accordion__btn"
+              tabindex="0"
+              role="button"
+              data-href="/"
+            >
+              {{ item.heading.text }}
+
+              {% view "@icon" with {
+                icon: {
+                  class: "main-footer__accordion-icon main-footer__accordion-icon--plus",
+                  name: "sprite-mono.svg#plus"
+                }
+              } %}
+
+              {% view "@icon" with {
+                icon: {
+                  class: "main-footer__accordion-icon main-footer__accordion-icon--minus",
+                  name: "sprite-mono.svg#minus"
+                }
+              } %}
+            </a>
+
+            <ul class="main-footer__accordion-list main-accordion__list">
+              {% for item in item.list.items %}
+                <li class="main-footer__accordion-item">
+                  {% view "@button" with {
+                    button: item|merge({
+                      href: "#",
+                      class: "main-footer__accordion-link"
+                    })
+                  } %}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+
+      <p class="main-footer__copyright">
+        <small>
+          {{ footer.copyright }}
+        </small>
+      </p>
     </div>
   </div>
 </footer>

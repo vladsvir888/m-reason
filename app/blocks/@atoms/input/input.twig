@@ -18,6 +18,14 @@
       {{ input.label.text }}
     </label>
   </div>
+{% elseif input_type == 'search' %}
+  <input
+    class="input-search {{ input.element.class }}"
+    type="{{ input_type }}"
+    name="{{ input.element.name }}"
+    {% if input.element.text %}placeholder="{{ input.element.text }}"{% endif %}
+    {{ input.element.attrs }}
+  >
 {% else %}
   <div class="input-block {{ input.class }}">
     <label

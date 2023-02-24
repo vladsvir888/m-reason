@@ -2,10 +2,12 @@
   "collections_slider": {
     "items": [{
       "image": {
-        "name": "collections/01.jpg"
+        "name": "collections/01.jpg",
+        "alt": ""
       },
       "image_2": {
-        "name": "collections/07.jpg"
+        "name": "collections/07.jpg",
+        "alt": ""
       },
       "link": {
         "attrs": "aria-label='Смотреть образ'"
@@ -15,10 +17,12 @@
       }
     }, {
       "image": {
-        "name": "collections/02.jpg"
+        "name": "collections/02.jpg",
+        "alt": ""
       },
       "image_2": {
-        "name": "collections/08.jpg"
+        "name": "collections/08.jpg",
+        "alt": ""
       },
       "link": {
         "attrs": "aria-label='Смотреть образ'"
@@ -28,10 +32,12 @@
       }
     }, {
       "image": {
-        "name": "collections/03.jpg"
+        "name": "collections/03.jpg",
+        "alt": ""
       },
       "image_2": {
-        "name": "collections/10.jpg"
+        "name": "collections/10.jpg",
+        "alt": ""
       },
       "link": {
         "attrs": "aria-label='Смотреть образ'"
