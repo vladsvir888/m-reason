@@ -1,0 +1,32 @@
+<div class="main-accordion {{ accordion.class }}">
+  {% for item in accordion.items %}
+    <div class="main-accordion__item {{ item.class }}">
+      <a
+        class="main-accordion__btn {{ item.heading.class }}"
+        tabindex="0"
+        role="button"
+        data-href="/"
+      >
+        {{ item.heading.text }}
+
+        {% view "@icon" with {
+          icon: item.heading.icon_1
+        } %}
+
+        {% view "@icon" with {
+          icon: item.heading.icon_2
+        } %}
+      </a>
+
+      <ul class="main-accordion__list {{ item.list.class }}">
+        {% for item in item.list.items %}
+          <li>
+            {% view "@button" with {
+              button: item
+            } %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>

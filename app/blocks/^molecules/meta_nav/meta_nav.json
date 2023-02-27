@@ -8,7 +8,7 @@
             "class": "meta-nav__btn-icon",
             "name": "sprite-mono.svg#magnifying-glass"
           },
-          "attrs": "aria-label='Поиск'"
+          "attrs": "aria-label='Поиск' role='button'"
         }
       }, {
         "button": {
@@ -29,7 +29,7 @@
             "class": "meta-nav__btn-num",
             "text": 2
           },
-          "attrs": "aria-label='Корзина'"
+          "attrs": "aria-label='Корзина' role='button'"
         }
       }, {
         "button": {

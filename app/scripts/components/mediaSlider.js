@@ -10,7 +10,7 @@ const mediaSlider = () => {
       prevEl: '.media-slider__btn--prev',
     },
     scrollbar: {
-      el: '.swiper-scrollbar',
+      el: '.media-slider__scrollbar',
       draggable: true,
     },
     breakpoints: {

@@ -2,32 +2,32 @@ import * as focusTrap from 'focus-trap';
 import getScrollbarWidth from '../helpers/getScrollbarWidth';
 import removeAttributes from '../helpers/removeAttributes';
 
-const mobileMenu = () => {
+const menu = () => {
   const header = document.querySelector('.main-header');
 
   if (!header) return;
 
   const burger = header.querySelector('.burger');
-  const menu = header.querySelector('.main-mobile-menu');
+  const menuEl = header.querySelector('.main-menu');
 
   const trap = focusTrap.createFocusTrap(header, {
     fallbackFocus: header,
   });
 
   burger.addEventListener('click', () => {
-    if (!menu.classList.contains('main-mobile-menu--active')) {
+    if (!menuEl.classList.contains('main-menu--active')) {
       const scrollbarWidth = `${getScrollbarWidth()}px`;
 
       document.body.classList.add('scroll-lock');
       document.body.style.setProperty('--scrollbar-size', scrollbarWidth);
 
       burger.setAttribute('aria-expanded', true);
-      menu.classList.add('main-mobile-menu--active');
+      menuEl.classList.add('main-menu--active');
 
       trap.activate();
     } else {
       burger.setAttribute('aria-expanded', false);
-      menu.classList.remove('main-mobile-menu--active');
+      menuEl.classList.remove('main-menu--active');
 
       removeAttributes(document.body, 'style', 'class');
 
@@ -36,4 +36,4 @@ const mobileMenu = () => {
   });
 };
 
-export default mobileMenu;
+export default menu;

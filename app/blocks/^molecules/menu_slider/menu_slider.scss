@@ -1,0 +1,21 @@
+.menu-slider {
+  position: relative;
+
+  .swiper-scrollbar {
+    left: 0;
+    bottom: rem(-26);
+    width: 100%;
+    border-radius: 0;
+    background: var(--pallette-cod-gray-with-alpha);
+    height: rem(5);
+
+    &-drag {
+      background-color: var(--pallette-cod-gray);
+      border-radius: 0;
+    }
+
+    @include media('600', max) {
+      display: none;
+    }
+  }
+}

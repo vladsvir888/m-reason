@@ -3,7 +3,7 @@
     "items": [{
       "image": {
         "name": "fashion_look/02.jpg",
-        "alt": "Бежевое пальто."
+        "alt": "Бежевый жакет."
       },
       "content": {
         "text": "Жакет",
@@ -14,13 +14,13 @@
     }, {
       "image": {
         "name": "fashion_look/03.jpg",
-        "alt": "Бежевые штаны."
+        "alt": "Бежевые брюки."
       },
       "content": {
         "text": "Брюки",
         "price": {
           "with_discount": {
-            "discount": "-20%",
+            "discount": "<span class='visually-hidden'>Скидка</span> -20%",
             "text": "8 900 руб."
           },
           "text": "18 900 руб."
@@ -29,7 +29,7 @@
     }, {
       "image": {
         "name": "fashion_look/02.jpg",
-        "alt": "Бежевые пальто."
+        "alt": "Бежевый жакет."
       },
       "content": {
         "text": "Жакет",

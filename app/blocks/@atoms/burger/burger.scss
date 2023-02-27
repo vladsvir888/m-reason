@@ -28,10 +28,18 @@
       &--close {
         display: block;
       }
+
+      @include media('600', max) {
+        display: none;
+      }
     }
 
     #{$this}__icon {
       &--menu {
+        display: none;
+      }
+
+      &--menu-and-loupe {
         display: none;
       }
 

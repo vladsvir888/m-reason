@@ -4,7 +4,7 @@
       "items": [{
         "btns": [{
           "href": "#",
-          "class": "main-mobile-menu__menu-link main-mobile-menu__menu-link--uppercase",
+          "class": "main-menu__menu-link main-menu__menu-link--uppercase",
           "text": {
             "text": "Новинки"
           }
@@ -12,19 +12,19 @@
       }, {
         "btns": [{
           "href": "#",
-          "class": "main-mobile-menu__menu-link main-mobile-menu__menu-link--uppercase main-mobile-menu__menu-link--bold",
+          "class": "main-menu__menu-link main-menu__menu-link--uppercase main-menu__menu-link--bold",
           "text": {
             "text": "Коллекции"
           }
         }, {
           "href": "#",
-          "class": "main-mobile-menu__menu-link",
+          "class": "main-menu__menu-link",
           "text": {
             "text": "Лето 2023"
           }
         }, {
           "href": "#",
-          "class": "main-mobile-menu__menu-link",
+          "class": "main-menu__menu-link",
           "text": {
             "text": "Весна 2023"
           }
@@ -132,32 +132,32 @@
         },
         "btns": [{
           "href": "#",
-          "class": "main-mobile-menu__menu-link",
+          "class": "main-menu__menu-link",
           "text": {
             "text": "Жакеты"
           }
         }, {
           "href": "#",
-          "class": "main-mobile-menu__menu-link",
+          "class": "main-menu__menu-link",
           "text": {
             "text": "Жилеты"
           }
         }, {
           "href": "#",
-          "class": "main-mobile-menu__menu-link",
+          "class": "main-menu__menu-link",
           "text": {
             "text": "Платья"
           }
         }, {
           "href": "#",
-          "class": "main-mobile-menu__menu-link",
+          "class": "main-menu__menu-link",
           "text": {
             "text": "Юбки"
           }
         }],
         "btns_2": [{
           "href": "#",
-          "class": "main-mobile-menu__menu-link",
+          "class": "main-menu__menu-link",
           "text": {
             "text": "Вязаный трикотаж"
           }
@@ -165,13 +165,13 @@
       }, {
         "btns": [{
           "href": "#",
-          "class": "main-mobile-menu__menu-link main-mobile-menu__menu-link--uppercase main-mobile-menu__menu-link--bold",
+          "class": "main-menu__menu-link main-menu__menu-link--uppercase main-menu__menu-link--bold",
           "text": {
             "text": "АКЦИИ"
           }
         }, {
           "href": "#",
-          "class": "main-mobile-menu__menu-link main-mobile-menu__menu-link--uppercase main-mobile-menu__menu-link--bold main-mobile-menu__menu-link--color",
+          "class": "main-menu__menu-link main-menu__menu-link--uppercase main-menu__menu-link--bold main-menu__menu-link--color",
           "text": {
             "text": "SALE"
           }
@@ -179,7 +179,7 @@
       }, {
         "accordion_1": {
           "heading": {
-            "class": "main-mobile-menu__menu-link--uppercase",
+            "class": "main-menu__menu-link--uppercase",
             "text": "Тренды"
           },
           "list": {
@@ -204,7 +204,7 @@
         },
         "accordion_2": {
           "heading": {
-            "class": "main-mobile-menu__menu-link--uppercase",
+            "class": "main-menu__menu-link--uppercase",
             "text": "Клиентский сервис"
           },
           "list": {
@@ -242,7 +242,7 @@
       }, {
         "btns": [{
           "href": "#",
-          "class": "main-mobile-menu__menu-link main-mobile-menu__menu-link--uppercase main-mobile-menu__menu-link--bold",
+          "class": "main-menu__menu-link main-menu__menu-link--uppercase main-menu__menu-link--bold",
           "text": {
             "text": "OUTLET"
           }

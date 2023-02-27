@@ -87,6 +87,15 @@
       color: var(--pallette-white);
     }
   }
+
+  &--underline {
+    border-bottom: rem(1) dashed var(--pallette-cod-gray);
+    transition: border-bottom var(--transition);
+
+    &:hover {
+      border-bottom: rem(1) dashed var(--pallette-cod-gray-with-alpha-2);
+    }
+  }
 }
 
 @keyframes in {

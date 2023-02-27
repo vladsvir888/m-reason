@@ -206,137 +206,209 @@
     },
     "copyright": "© 2022 M.REASON. ВСЕ ПРАВА ЗАЩИЩЕНЫ",
     "accordion": {
+      "class": "main-footer__accordion",
       "items": [{
+        "class": "main-footer__accordion-item",
         "heading": {
-          "text": "О БРЕНДЕ"
+          "class": "main-footer__accordion-btn",
+          "text": "О БРЕНДЕ",
+          "icon_1": {
+            "class": "main-footer__accordion-icon main-footer__accordion-icon--plus",
+            "name": "sprite-mono.svg#plus"
+          },
+          "icon_2": {
+            "class": "main-footer__accordion-icon main-footer__accordion-icon--minus",
+            "name": "sprite-mono.svg#minus"
+          }
         },
         "list": {
+          "class": "main-footer__accordion-list",
           "items": [{
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "Новости"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "МАГАЗИНЫ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "СТИЛИСТАМ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ВАКАНСИИ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ОФЕРТА"
             }
           }]
         }
       }, {
+        "class": "main-footer__accordion-item",
         "heading": {
-          "text": "КАТАЛОГ"
+          "class": "main-footer__accordion-btn",
+          "text": "КАТАЛОГ",
+          "icon_1": {
+            "class": "main-footer__accordion-icon main-footer__accordion-icon--plus",
+            "name": "sprite-mono.svg#plus"
+          },
+          "icon_2": {
+            "class": "main-footer__accordion-icon main-footer__accordion-icon--minus",
+            "name": "sprite-mono.svg#minus"
+          }
         },
         "list": {
+          "class": "main-footer__accordion-list",
           "items": [{
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "НОВИНКИ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ВЕРХНЯЯ ОДЕЖДА"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ЖАКЕТЫ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ЖИЛЕТЫ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ПЛАТЬЯ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ЮБКИ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "БРЮКИ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ТОПЫ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ВЯЗАНЫЙ ТРИКОТАЖ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "АКСЕССУАРЫ"
             }
           }]
         }
       }, {
+        "class": "main-footer__accordion-item",
         "heading": {
-          "text": "КЛИЕНТСКИЙ СЕРВИС"
+          "class": "main-footer__accordion-btn",
+          "text": "КЛИЕНТСКИЙ СЕРВИС",
+          "icon_1": {
+            "class": "main-footer__accordion-icon main-footer__accordion-icon--plus",
+            "name": "sprite-mono.svg#plus"
+          },
+          "icon_2": {
+            "class": "main-footer__accordion-icon main-footer__accordion-icon--minus",
+            "name": "sprite-mono.svg#minus"
+          }
         },
         "list": {
+          "class": "main-footer__accordion-list",
           "items": [{
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "АКЦИИ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ПРОГРАММА ЛОЯЛЬНОСТИ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ДОСТАВКА И ОПЛАТА"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ОБМЕН И ВОЗВРАТ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ТАБЛИЦА РАЗМЕРОВ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "УХОД ЗА ОДЕЖДОЙ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ПОДАРОЧНЫЕ КАРТЫ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ОФОРМЛЕНИЕ ЗАКАЗА"
             }
           }]
         }
       }, {
+        "class": "main-footer__accordion-item",
         "heading": {
-          "text": "КОНТАКТЫ"
+          "class": "main-footer__accordion-btn",
+          "text": "КОНТАКТЫ",
+          "icon_1": {
+            "class": "main-footer__accordion-icon main-footer__accordion-icon--plus",
+            "name": "sprite-mono.svg#plus"
+          },
+          "icon_2": {
+            "class": "main-footer__accordion-icon main-footer__accordion-icon--minus",
+            "name": "sprite-mono.svg#minus"
+          }
         },
         "list": {
+          "class": "main-footer__accordion-list",
           "items": [{
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ТЕЛЕФОНЫ МАГАЗИНОВ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ОПТОВЫМ КЛИЕНТАМ"
             }
           }, {
+            "class": "main-footer__accordion-link",
             "text": {
               "text": "ИНТЕРНЕТ-МАГАЗИН"
             }

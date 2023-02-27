@@ -5,7 +5,7 @@
   color: var(--pallette-white);
   background-color: var(--pallette-cod-gray);
 
-  @include media('1400', max) {
+  @include media('1600', max) {
     padding: rem(70) rem(20);
   }
 
