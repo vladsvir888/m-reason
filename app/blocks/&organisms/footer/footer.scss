@@ -26,7 +26,6 @@
     }
 
     @include media('600', max) {
-      // gap: rem(30) rem(100);
       gap: 0;
       flex-direction: column;
     }

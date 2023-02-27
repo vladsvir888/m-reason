@@ -17,6 +17,9 @@
   }, {
     "text": "Попап \"Регистрация\"",
     "link": "popup_registration"
+  }, {
+    "text": "Попап \"Свяжитесь с нами\"",
+    "link": "popup_contact_with_us"
   }],
   "meta": {
     "html_lang": "ru",

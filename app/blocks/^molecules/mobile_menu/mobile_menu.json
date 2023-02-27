@@ -1,0 +1,253 @@
+{
+  "mobile_menu": {
+    "menu": {
+      "items": [{
+        "btns": [{
+          "href": "#",
+          "class": "main-mobile-menu__menu-link main-mobile-menu__menu-link--uppercase",
+          "text": {
+            "text": "Новинки"
+          }
+        }]
+      }, {
+        "btns": [{
+          "href": "#",
+          "class": "main-mobile-menu__menu-link main-mobile-menu__menu-link--uppercase main-mobile-menu__menu-link--bold",
+          "text": {
+            "text": "Коллекции"
+          }
+        }, {
+          "href": "#",
+          "class": "main-mobile-menu__menu-link",
+          "text": {
+            "text": "Лето 2023"
+          }
+        }, {
+          "href": "#",
+          "class": "main-mobile-menu__menu-link",
+          "text": {
+            "text": "Весна 2023"
+          }
+        }]
+      }, {
+        "accordion_1": {
+          "heading": {
+            "text": "Верхняя одежда"
+          },
+          "list": {
+            "items": [{
+              "text": {
+                "text": "Пальто"
+              }
+            }, {
+              "text": {
+                "text": "Полупальто"
+              }
+            }, {
+              "text": {
+                "text": "Плащи"
+              }
+            }, {
+              "text": {
+                "text": "Куртки"
+              }
+            }, {
+              "text": {
+                "text": "Пуховики"
+              }
+            }]
+          }
+        },
+        "accordion_2": {
+          "heading": {
+            "text": "Брюки"
+          },
+          "list": {
+            "items": [{
+              "text": {
+                "text": "Брюки"
+              }
+            }, {
+              "text": {
+                "text": "Кюлоты"
+              }
+            }, {
+              "text": {
+                "text": "Шорты"
+              }
+            }]
+          }
+        },
+        "accordion_3": {
+          "heading": {
+            "text": "Топы"
+          },
+          "list": {
+            "items": [{
+              "text": {
+                "text": "Лонгсливы"
+              }
+            }, {
+              "text": {
+                "text": "Топы"
+              }
+            }, {
+              "text": {
+                "text": "Футболки"
+              }
+            }, {
+              "text": {
+                "text": "Худи и толстовки"
+              }
+            }, {
+              "text": {
+                "text": "Блузки и рубашки"
+              }
+            }, {
+              "text": {
+                "text": "Блузоны"
+              }
+            }, {
+              "text": {
+                "text": "Водолазки"
+              }
+            }]
+          }
+        },
+        "accordion_4": {
+          "heading": {
+            "text": "Аксессуары"
+          },
+          "list": {
+            "items": [{
+              "text": {
+                "text": "Аксессуар 1"
+              }
+            }, {
+              "text": {
+                "text": "Аксессуар 2"
+              }
+            }]
+          }
+        },
+        "btns": [{
+          "href": "#",
+          "class": "main-mobile-menu__menu-link",
+          "text": {
+            "text": "Жакеты"
+          }
+        }, {
+          "href": "#",
+          "class": "main-mobile-menu__menu-link",
+          "text": {
+            "text": "Жилеты"
+          }
+        }, {
+          "href": "#",
+          "class": "main-mobile-menu__menu-link",
+          "text": {
+            "text": "Платья"
+          }
+        }, {
+          "href": "#",
+          "class": "main-mobile-menu__menu-link",
+          "text": {
+            "text": "Юбки"
+          }
+        }],
+        "btns_2": [{
+          "href": "#",
+          "class": "main-mobile-menu__menu-link",
+          "text": {
+            "text": "Вязаный трикотаж"
+          }
+        }]
+      }, {
+        "btns": [{
+          "href": "#",
+          "class": "main-mobile-menu__menu-link main-mobile-menu__menu-link--uppercase main-mobile-menu__menu-link--bold",
+          "text": {
+            "text": "АКЦИИ"
+          }
+        }, {
+          "href": "#",
+          "class": "main-mobile-menu__menu-link main-mobile-menu__menu-link--uppercase main-mobile-menu__menu-link--bold main-mobile-menu__menu-link--color",
+          "text": {
+            "text": "SALE"
+          }
+        }]
+      }, {
+        "accordion_1": {
+          "heading": {
+            "class": "main-mobile-menu__menu-link--uppercase",
+            "text": "Тренды"
+          },
+          "list": {
+            "items": [{
+              "text": {
+                "text": "Комфортный офис"
+              }
+            }, {
+              "text": {
+                "text": "Sport in the City"
+              }
+            }, {
+              "text": {
+                "text": "Вечерние костюмы"
+              }
+            }, {
+              "text": {
+                "text": "Total Black"
+              }
+            }]
+          }
+        },
+        "accordion_2": {
+          "heading": {
+            "class": "main-mobile-menu__menu-link--uppercase",
+            "text": "Клиентский сервис"
+          },
+          "list": {
+            "items": [{
+              "text": {
+                "text": "Доставка и оплата"
+              }
+            }, {
+              "text": {
+                "text": "Обмен и возврат"
+              }
+            }, {
+              "text": {
+                "text": "Таблица размеров"
+              }
+            }, {
+              "text": {
+                "text": "Уход за одеждой"
+              }
+            }, {
+              "text": {
+                "text": "Программа лояльности"
+              }
+            }, {
+              "text": {
+                "text": "Подарочные карты"
+              }
+            }, {
+              "text": {
+                "text": "Часто задаваемые вопросы"
+              }
+            }]
+          }
+        }
+      }, {
+        "btns": [{
+          "href": "#",
+          "class": "main-mobile-menu__menu-link main-mobile-menu__menu-link--uppercase main-mobile-menu__menu-link--bold",
+          "text": {
+            "text": "OUTLET"
+          }
+        }]
+      }]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "mobile_menu_slider": {
+    "items": [{
+      "class": "card-text--tertiary",
+      "title": {
+        "link": true,
+        "level": 2,
+        "text": "Офис: новый сезон"
+      },
+      "image": {
+        "name": "mobile_menu/01.jpg",
+        "alt": "Девушка в черном пальто сидит на желтом диване."
+      }
+    }, {
+      "class": "card-text--tertiary",
+      "title": {
+        "link": true,
+        "level": 2,
+        "text": "Топы и блузки из&nbsp;коллекции весна’23"
+      },
+      "image": {
+        "name": "mobile_menu/02.jpg",
+        "alt": "Девушка в салатовом пальто стоит возле кресла."
+      }
+    }, {
+      "class": "card-text--tertiary",
+      "title": {
+        "link": true,
+        "level": 2,
+        "text": "Офис: новый сезон"
+      },
+      "image": {
+        "name": "mobile_menu/01.jpg",
+        "alt": "Девушка в черном пальто сидит на желтом диване."
+      }
+    }]
+  }
+}

@@ -1,19 +1,29 @@
 <div class="promo">
   <div class="container">
     <div class="promo__inner">
-      {% view "@image" with {
-        image: promo.image
-      } %}
-
-      <div class="promo__content">
-        <p class="promo__text">
-          {{ promo.content.text }}
-        </p>
-
-        {% view "@title" with {
-          title: promo.content.title
+      {% if not promo.content %}
+        <a href="#">
+          {% view "@image" with {
+            image: promo.image
+          } %}
+        </a>
+      {% else %}
+        {% view "@image" with {
+          image: promo.image
         } %}
-      </div>
+      {% endif %}
+
+      {% if promo.content %}
+        <div class="promo__content">
+          <p class="promo__text">
+            {{ promo.content.text }}
+          </p>
+
+          {% view "@title" with {
+            title: promo.content.title
+          } %}
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>

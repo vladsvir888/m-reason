@@ -1,0 +1,45 @@
+.mobile-nav {
+  $this: &;
+
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  padding: rem(12) rem(24);
+  transform: translateY(100%);
+  background-color: var(--pallette-white);
+  transition: transform var(--transition);
+
+  &--active {
+    transform: translateY(0);
+  }
+
+  @include media('601', min) {
+    display: none;
+  }
+
+  @include media('360', max) {
+    padding: rem(12);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: rem(10);
+  }
+
+  &__btn {
+    @include flex-center-column;
+    @include font-size(10, 14);
+    letter-spacing: 0.05em;
+    gap: rem(5);
+
+    &-icon {
+      width: rem(23);
+      height: rem(19);
+      fill: transparent;
+      stroke: currentColor;
+    }
+  }
+}

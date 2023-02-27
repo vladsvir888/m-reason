@@ -4,7 +4,7 @@
   background-color: transparent;
   cursor: pointer;
   text-align: center;
-  color: inherit;
+  color: currentColor;
   transition: color var(--transition), background-color var(--transition);
 
   &__text {
@@ -18,7 +18,7 @@
     overflow: hidden;
     min-width: rem(757);
     padding: rem(40) rem(10);
-    transition: color var(--transition-2);
+    transition: color var(--transition-3);
 
     @include media('600', max) {
       @include font-size(10, 14);
@@ -31,14 +31,14 @@
       inset: 0;
       z-index: 1;
       transform: translate3d(-130%, 0, 0) skew(-25deg);
-      animation: out var(--transition-2) cubic-bezier(0.4, 0, 0, 1);
+      animation: out var(--transition-3) cubic-bezier(0.4, 0, 0, 1);
       content: '';
     }
 
     &:hover {
       &::before {
         transform: none;
-        animation: in var(--transition-2) cubic-bezier(0.4, 0, 0, 1);
+        animation: in var(--transition-3) cubic-bezier(0.4, 0, 0, 1);
       }
     }
   }

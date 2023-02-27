@@ -198,3 +198,11 @@ a {
   overflow: hidden !important;
   padding-right: var(--scrollbar-size, 17px);
 }
+
+.swiper-button-prev, .swiper-button-next {
+  z-index: 1;
+}
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  z-index: 1;
+}

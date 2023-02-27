@@ -2,10 +2,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 2;
   width: 100%;
   padding: rem(70) rem(343);
   background-color: var(--pallette-white);
+  border-bottom: rem(1) solid var(--pallette-cod-gray);
 
   @include media('1400', max) {
     padding: rem(70) rem(20);
@@ -13,9 +14,11 @@
 
   @include media('600', max) {
     padding: rem(20);
+    height: rem(60);
   }
 
   &__inner {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,7 +26,15 @@
   }
 
   &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
+
+    @include media('900', max) {
+      position: static;
+      transform: unset;
+    }
 
     @include media('600', max) {
       order: -1;
@@ -39,5 +50,9 @@
         height: rem(10);
       }
     }
+  }
+
+  &__meta-nav {
+    max-width: calc((100% - #{rem(405)}) / 2);
   }
 }

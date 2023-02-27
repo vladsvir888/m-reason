@@ -58,6 +58,19 @@
     }
   }
 
+  &--contact-with-us {
+    text-align: center;
+
+    #{$this}__btns {
+      flex-direction: column;
+      gap: rem(10);
+    }
+
+    #{$this}__btn {
+      width: 100%;
+    }
+  }
+
   &__title {
     @include font-size(24, 33);
     letter-spacing: 0.05em;

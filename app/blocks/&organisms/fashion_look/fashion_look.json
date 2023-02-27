@@ -8,13 +8,7 @@
     "card": {
       "image": {
         "class": "media-card__media-img",
-        "adaptive": {
-          "media": {
-            "value": 600
-          }
-        },
         "name": "fashion_look/01.jpg",
-        "name_2": "fashion_look/01.jpg",
         "alt": "Девушка, одетая в коричневый пиджак."
       },
       "link": {

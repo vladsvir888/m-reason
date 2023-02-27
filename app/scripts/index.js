@@ -9,6 +9,9 @@ import mediaSlider from './components/mediaSlider';
 import popup from './components/popup';
 import topBtn from './components/topBtn';
 import trendsSlider from './components/trendsSlider';
+import mobileNav from './components/mobileNav';
+import mobileMenu from './components/mobileMenu';
+import mobileMenuSlider from './components/mobileMenuSlider';
 
 document.addEventListener('DOMContentLoaded', () => {
   trendsSlider();
@@ -21,4 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   topBtn();
   accordion();
   search();
+  mobileNav();
+  mobileMenu();
+  mobileMenuSlider();
 });

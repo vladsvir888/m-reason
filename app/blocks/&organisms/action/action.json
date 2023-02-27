@@ -17,13 +17,7 @@
         "class": "action__media"
       },
       "class": "action__media-img",
-      "adaptive": {
-        "media": {
-          "value": 600
-        }
-      },
       "name": "action/01.jpg",
-      "name_2": "action/01.jpg",
       "alt": "Девушка в красивом пиджаке, которая сидит на кресле."
     }
   }

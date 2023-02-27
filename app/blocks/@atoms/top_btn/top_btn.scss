@@ -3,7 +3,7 @@
   @include font-size(16, 22);
   letter-spacing: 0.05em;
   position: fixed;
-  z-index: 10;
+  z-index: 1;
   width: rem(86);
   padding: rem(10);
   bottom: rem(45);
@@ -24,7 +24,7 @@
     @include font-size(6, 8);
     width: rem(45);
     padding: rem(5);
-    bottom: rem(10);
+    bottom: rem(80);
     gap: rem(3);
   }
 

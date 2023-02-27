@@ -11,7 +11,7 @@
 
       &::before {
         transform: none;
-        animation: in var(--transition-2) cubic-bezier(0.4, 0, 0, 1);
+        animation: in var(--transition-3) cubic-bezier(0.4, 0, 0, 1);
       }
     }
   }
@@ -50,9 +50,9 @@
     margin-top: auto;
     pointer-events: none;
     transition:
-      opacity var(--transition-2),
-      color var(--transition-2),
-      background-color var(--transition-2);
+      opacity var(--transition-3),
+      color var(--transition-3),
+      background-color var(--transition-3);
 
     @include media('1201', min) {
       opacity: 0;
@@ -72,7 +72,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     opacity: 0;
-    transition: opacity var(--transition);
+    transition: opacity var(--transition-3);
 
     &--1 {
       opacity: 1;

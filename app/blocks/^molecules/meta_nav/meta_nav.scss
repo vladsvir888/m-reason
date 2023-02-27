@@ -7,7 +7,8 @@
 
   &__list {
     display: flex;
-    gap: rem(100);
+    flex-wrap: wrap;
+    gap: rem(16) rem(100);
   }
 
   &__item {

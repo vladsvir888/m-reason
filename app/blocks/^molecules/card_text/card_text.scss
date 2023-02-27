@@ -31,12 +31,23 @@
     }
   }
 
+  &--tertiary {
+    #{$this}__title {
+      @include font-size(32, 44);
+      max-width: rem(580);
+    }
+
+    #{$this}__content {
+      padding: rem(80);
+    }
+  }
+
   &__media {
     position: relative;
     z-index: -1;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    transition: transform var(--transition);
+    transition: transform var(--transition-3);
   }
 
   &__content {

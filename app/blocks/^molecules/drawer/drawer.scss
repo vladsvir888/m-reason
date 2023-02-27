@@ -23,16 +23,20 @@
     padding: rem(70) rem(100) rem(85);
   }
 
+  &__body {
+    height: rem(2000);
+    overflow-y: auto;
+  }
+
   &__content {
     @include flex-column;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 3;
     width: rem(1297);
     height: 100vh;
     transform: translateX(100%);
-    overflow-y: auto;
     background-color: var(--pallette-white);
     transition: all var(--transition);
 
@@ -44,7 +48,7 @@
   &__backdrop {
     position: fixed;
     inset: 0;
-    z-index: 100;
+    z-index: 2;
     background-color: var(--pallette-cod-gray-with-alpha-2);
     opacity: 0;
     transition: opacity var(--transition);

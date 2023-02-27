@@ -1,0 +1,14 @@
+<nav class="mobile-nav" aria-label="Мобильная">
+  <ul class="mobile-nav__list">
+    {% for item in mobile_nav.items %}
+      <li class="mobile-nav__item">
+        {% view "@button" with {
+          button: item|merge({
+            href: "#",
+            class: "mobile-nav__btn"
+          })
+        } %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

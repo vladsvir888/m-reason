@@ -1,0 +1,47 @@
+{
+  "popup_contact_with_us": {
+    "type": "contact_with_us",
+    "id": "popup_contact_with_us",
+    "class": "popup--contact-with-us",
+    "title": "Свяжитесь с нами",
+    "btns": {
+      "items": [{
+        "href": "#",
+        "class": "btn--animate btn--quaternary popup__btn",
+        "text": {
+          "text": "Написать в Telegram"
+        }
+      }, {
+        "href": "#",
+        "class": "btn--animate btn--quaternary popup__btn",
+        "text": {
+          "text": "Написать в WhatsApp"
+        }
+      }, {
+        "href": "#",
+        "class": "btn--animate btn--quaternary popup__btn",
+        "text": {
+          "text": "Группа VKontakte"
+        }
+      }, {
+        "href": "#",
+        "class": "btn--animate btn--quaternary popup__btn",
+        "text": {
+          "text": "Он-лайн чат"
+        }
+      }, {
+        "href": "tel:88002228886",
+        "class": "btn--animate btn--quaternary popup__btn",
+        "text": {
+          "text": "Позвонить"
+        }
+      }, {
+        "href": "mailto:info@m-reason.ru",
+        "class": "btn--animate btn--quaternary popup__btn",
+        "text": {
+          "text": "Написать на почту"
+        }
+      }]
+    }
+  }
+}

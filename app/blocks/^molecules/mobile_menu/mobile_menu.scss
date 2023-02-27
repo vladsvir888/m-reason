@@ -1,0 +1,140 @@
+.main-mobile-menu {
+  $this: &;
+
+  position: fixed;
+  top: rem(170);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: rem(100) rem(343);
+  background-color: var(--pallette-white);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition);
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr rem(1878);
+    gap: 0 rem(20);
+  }
+
+  &__menu {
+    @include flex-column;
+    row-gap: rem(100);
+    @include font-size(24, 33);
+    letter-spacing: 0.05em;
+    direction: rtl;
+    height: rem(1400);
+    padding-left: rem(45);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: rem(5);
+      height: rem(5);
+      background-color: var(--pallette-cod-gray-with-alpha);
+    }
+
+    &-item {
+      direction: ltr;
+
+      > * {
+        &:not(:last-child) {
+          margin-bottom: rem(27);
+        }
+      }
+    }
+
+    &-link {
+      @include flex-center-y;
+      cursor: pointer;
+      text-align: left;
+      width: fit-content;
+
+      &--bold {
+        font-weight: 700;
+      }
+
+      &--uppercase {
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        color: var(--pallette-atlantis);
+      }
+
+      &--color {
+        color: var(--pallette-atlantis);
+
+        &:hover {
+          color: var(--pallette-cod-gray);
+        }
+      }
+    }
+  }
+
+  &__accordion {
+    &-item {
+      &.active {
+        #{$this}__accordion {
+          &-btn {
+            margin-bottom: rem(27);
+          }
+
+          &-list {
+            visibility: visible;
+          }
+
+          &-icon {
+            &--plus {
+              display: none;
+            }
+
+            &--minus {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    &-list {
+      padding-left: rem(27);
+      max-height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      transition: max-height var(--transition);
+
+      > * {
+        &:not(:last-child) {
+          margin-bottom: rem(27);
+        }
+      }
+    }
+
+    &-icon {
+      width: rem(10);
+      height: rem(10);
+      margin-left: rem(5);
+      stroke: currentColor;
+
+      &--minus {
+        display: none;
+      }
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: rem(20);
+  }
+
+  &__btn {
+    min-width: rem(316);
+    padding: rem(16) rem(10);
+  }
+}

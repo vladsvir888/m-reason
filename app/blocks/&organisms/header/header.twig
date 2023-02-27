@@ -7,9 +7,13 @@
         logo: header.logo
       } %}
 
-      {% view "^meta_nav" %}
+      {% view "^meta_nav" with {
+        meta_nav: header.meta_nav
+      } %}
     </div>
   </div>
 
   {% view "^search" %}
+
+  {% view "^mobile_menu" %}
 </header>
