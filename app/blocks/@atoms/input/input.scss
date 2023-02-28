@@ -1,3 +1,4 @@
+// дефолтный инпут
 .input-block {
   $this: &;
 
@@ -76,6 +77,7 @@
   }
 }
 
+// чекбокс
 .input-check {
   $this: &;
 
@@ -145,6 +147,7 @@
   }
 }
 
+// инпут в форме поиска
 .input-search {
   @include font-size(24, 33);
   letter-spacing: 0.05em;
@@ -157,5 +160,56 @@
     letter-spacing: 0.05em;
     font-style: italic;
     color: var(--pallette-cod-gray-with-alpha-2);
+
+    @include media('600', max) {
+      @include font-size(10, 14);
+    }
+  }
+
+  @include media('600', max) {
+    @include font-size(10, 14);
+  }
+}
+
+// радио-инпут
+.radio-btn {
+  $this: &;
+
+  &__input {
+    &:checked {
+      + #{$this}__label {
+        background-color: var(--pallette-atlantis);
+        border: rem(1) solid transparent;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      &:not(:disabled) {
+        + #{$this}__label {
+          color: var(--pallette-white);
+          background-color: var(--pallette-cod-gray);
+        }
+      }
+    }
+
+    &:disabled {
+      + #{$this}__label {
+        color: var(--pallette-cod-gray-with-alpha-2);
+        border: rem(1) solid var(--pallette-cod-gray-with-alpha-2);
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &__label {
+    @include font-size(24, 33);
+    @include flex-center;
+    width: rem(115);
+    height: rem(115);
+    padding: rem(10);
+    border: rem(1) solid var(--pallette-cod-gray);
+    cursor: pointer;
+    transition: color var(--transition), background-color var(--transition);
   }
 }

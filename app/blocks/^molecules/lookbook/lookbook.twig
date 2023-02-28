@@ -1,0 +1,94 @@
+<div class="lookbook">
+  <div class="container">
+    <div class="lookbook__header">
+      {% view "@button" with {
+        button: {
+          class: "lookbook__close",
+          icon: {
+            class: "lookbook__close-icon",
+            name: "sprite-mono.svg#close"
+          },
+          text: {
+            text: "Закрыть"
+          }
+        }
+      } %}
+    </div>
+
+    <div class="lookbook__body">
+      <div class="lookbook__start">
+
+        <div class="lookbook__item lookbook__item--1">
+          <p class="lookbook__text">
+            {{ lookbook.text }}
+          </p>
+
+          <h2 class="lookbook__title">
+            <a class="btn btn--underline" href="#">
+              {{ lookbook.name_collection }}
+            </a>
+          </h2>
+        </div>
+
+        <div class="lookbook__item lookbook__item--2">
+          <div class="lookbook__controls">
+            {% view "@button" with {
+              button: {
+                class: "lookbook__control lookbook__control--prev",
+                icon: {
+                  class: "lookbook__control-icon",
+                  name: "sprite-mono.svg#arrow-prev"
+                },
+                attrs: 'aria-label="Назад"'
+              }
+            } %}
+            <div class="lookbook__pagination-wrap">
+              Образ
+              <div class="lookbook__pagination"></div>
+            </div>
+            {% view "@button" with {
+              button: {
+                class: "lookbook__control lookbook__control--next",
+                icon: {
+                  class: "lookbook__control-icon",
+                  name: "sprite-mono.svg#arrow-next"
+                },
+                attrs: 'aria-label="Вперед"'
+              }
+            } %}
+          </div>
+
+          <div class="lookbook__btns">
+            {% view "@button" with {
+              button: lookbook.share_btn
+            } %}
+
+            {% view "@button" with {
+              button: lookbook.like_btn
+            } %}
+          </div>
+        </div>
+
+        <div class="swiper lookbook-slider lookbook__slider">
+          <div class="swiper-wrapper">
+            {% for item in lookbook.slider.items %}
+              <div class="swiper-slide">
+                {% view "@image" with {
+                  image: item
+                } %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="lookbook__cards">
+        {% for item in lookbook.cards.items %}
+          {% view "^lookbook_card" with {
+            lookbook_card: item
+          } %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

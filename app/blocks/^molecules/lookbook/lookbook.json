@@ -1,0 +1,338 @@
+{
+  "lookbook": {
+    "text": "Коллекция",
+    "name_collection": "Весна 2023",
+    "share_btn": {
+      "class": "btn--animate btn--quaternary lookbook__btn",
+      "href": "#",
+      "text": {
+        "text": "Поделиться образом"
+      }
+    },
+    "like_btn": {
+      "class": "btn--animate btn--quaternary lookbook__btn",
+      "href": "#",
+      "text": {
+        "text": "Нравится весь образ"
+      }
+    },
+    "slider": {
+      "items": [{
+        "name": "lookbook/01.jpg",
+        "alt": "Девушка в оранжевом пиджаке"
+      }, {
+        "name": "lookbook/01.jpg",
+        "alt": "Девушка в оранжевом пиджаке"
+      }, {
+        "name": "lookbook/01.jpg",
+        "alt": "Девушка в оранжевом пиджаке"
+      }, {
+        "name": "lookbook/01.jpg",
+        "alt": "Девушка в оранжевом пиджаке"
+      }]
+    },
+    "cards": {
+      "items": [{
+        "image": {
+          "picture": {
+            "class": "lookbook-card__picture"
+          },
+          "class": "lookbook-card__img",
+          "name": "lookbook/02.jpg",
+          "alt": "Брюки."
+        },
+        "content": {
+          "title": {
+            "class": "lookbook-card__title",
+            "level": 3,
+            "link": true,
+            "text": "Брюки"
+          },
+          "price": {
+            "with_discount": {
+              "discount": "<span class='visually-hidden'>Скидка</span> -20%",
+              "text": "8 900 руб."
+            },
+            "text": "12 000 руб."
+          },
+          "form": {
+            "type": "lookbook",
+            "class": "lookbook-card__form",
+            "legend": "Размеры",
+            "inputs": [{
+              "name": "trousers",
+              "label": {
+                "text": "42"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "42",
+                "attrs": "required"
+              }
+            }, {
+              "name": "trousers",
+              "label": {
+                "text": "44"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "44",
+                "attrs": "required"
+              }
+            }, {
+              "name": "trousers",
+              "label": {
+                "text": "46"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "46",
+                "attrs": "required"
+              }
+            }, {
+              "name": "trousers",
+              "label": {
+                "text": "48"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "48",
+                "attrs": "required disabled"
+              }
+            }, {
+              "name": "trousers",
+              "label": {
+                "text": "50"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "50",
+                "attrs": "required"
+              }
+            }, {
+              "name": "trousers",
+              "label": {
+                "text": "52"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "52",
+                "attrs": "required"
+              }
+            }]
+          }
+        }
+      }, {
+        "image": {
+          "picture": {
+            "class": "lookbook-card__picture"
+          },
+          "class": "lookbook-card__img",
+          "name": "lookbook/03.jpg",
+          "alt": "Жакет"
+        },
+        "content": {
+          "title": {
+            "class": "lookbook-card__title",
+            "level": 3,
+            "link": true,
+            "text": "Жакет"
+          },
+          "price": {
+            "text": "8 000 руб."
+          },
+          "form": {
+            "type": "lookbook",
+            "class": "lookbook-card__form",
+            "legend": "Размеры",
+            "inputs": [{
+              "name": "jacket",
+              "label": {
+                "text": "42"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "42",
+                "attrs": "required disabled"
+              }
+            }, {
+              "name": "jacket",
+              "label": {
+                "text": "44"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "44",
+                "attrs": "required"
+              }
+            }, {
+              "name": "jacket",
+              "label": {
+                "text": "46"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "46",
+                "attrs": "required"
+              }
+            }, {
+              "name": "jacket",
+              "label": {
+                "text": "48"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "48",
+                "attrs": "required disabled"
+              }
+            }, {
+              "name": "jacket",
+              "label": {
+                "text": "50"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "50",
+                "attrs": "required"
+              }
+            }, {
+              "name": "jacket",
+              "label": {
+                "text": "52"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "52",
+                "attrs": "required"
+              }
+            }]
+          }
+        }
+      }, {
+        "image": {
+          "picture": {
+            "class": "lookbook-card__picture"
+          },
+          "class": "lookbook-card__img",
+          "name": "lookbook/04.jpg",
+          "alt": "Пальто"
+        },
+        "content": {
+          "title": {
+            "class": "lookbook-card__title",
+            "level": 3,
+            "link": true,
+            "text": "Пальто"
+          },
+          "price": {
+            "text": "28 000 руб."
+          },
+          "form": {
+            "type": "lookbook",
+            "class": "lookbook-card__form",
+            "legend": "Размеры",
+            "inputs": [{
+              "name": "coat",
+              "label": {
+                "text": "42"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "42",
+                "attrs": "required"
+              }
+            }, {
+              "name": "coat",
+              "label": {
+                "text": "44"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "44",
+                "attrs": "required"
+              }
+            }, {
+              "name": "coat",
+              "label": {
+                "text": "46"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "46",
+                "attrs": "required"
+              }
+            }, {
+              "name": "coat",
+              "label": {
+                "text": "48"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "48",
+                "attrs": "required"
+              }
+            }, {
+              "name": "coat",
+              "label": {
+                "text": "50"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "50",
+                "attrs": "required"
+              }
+            }, {
+              "name": "coat",
+              "label": {
+                "text": "52"
+              },
+              "element": {
+                "type": "radio",
+                "name": "size",
+                "value": "52",
+                "attrs": "required"
+              }
+            }]
+          }
+        }
+      }, {
+        "image": {
+          "picture": {
+            "class": "lookbook-card__picture"
+          },
+          "class": "lookbook-card__img",
+          "name": "lookbook/04.jpg",
+          "alt": "Пальто"
+        },
+        "content": {
+          "title": {
+            "class": "lookbook-card__title",
+            "level": 3,
+            "link": true,
+            "text": "Пальто"
+          },
+          "price": {
+            "text": "28 000 руб."
+          }
+        }
+      }]
+    }
+  }
+}

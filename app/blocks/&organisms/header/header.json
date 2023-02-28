@@ -11,14 +11,17 @@
         "items": [{
           "button": {
             "class": "search-btn",
-            "svg_as_code":  "<svg class='meta-nav__btn-icon' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M28.8515 26.8878L21.5926 19.6289C21.022 20.3649 20.361 21.0259 19.625 21.5965L26.8839 28.8554C27.1463 29.1091 27.4978 29.2495 27.8628 29.2464C28.2278 29.2434 28.5769 29.097 28.835 28.8389C29.0931 28.5808 29.2395 28.2317 29.2425 27.8667C29.2456 27.5017 29.1052 27.1502 28.8515 26.8878Z' fill='#1E1E1E'/><path d='M12.525 24.0499C18.89 24.0499 24.0499 18.89 24.0499 12.525C24.0499 6.1599 18.89 1 12.525 1C6.1599 1 1 6.1599 1 12.525C1 18.89 6.1599 24.0499 12.525 24.0499Z' stroke-miterlimit='10'/></svg>",
+            "icon": {
+              "class": "meta-nav__btn-icon",
+              "name": "sprite-multi.svg#magnifying-glass"
+            },
             "attrs": "aria-label='Поиск' role='button'"
           }
         }, {
           "button": {
             "icon": {
               "class": "meta-nav__btn-icon",
-              "name": "sprite-mono.svg#heart"
+              "name": "sprite-multi.svg#heart"
             },
             "attrs": "aria-label='Избранное'"
           }
@@ -27,7 +30,7 @@
             "class": "drawer-btn",
             "icon": {
               "class": "meta-nav__btn-icon",
-              "name": "sprite-mono.svg#cart-shopping"
+              "name": "sprite-multi.svg#cart-shopping"
             },
             "text": {
               "class": "meta-nav__btn-num",
@@ -39,7 +42,7 @@
           "button": {
             "icon": {
               "class": "meta-nav__btn-icon",
-              "name": "sprite-mono.svg#user"
+              "name": "sprite-multi.svg#user"
             },
             "attrs": "aria-label='Профиль'"
           }

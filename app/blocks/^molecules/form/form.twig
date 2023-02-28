@@ -31,6 +31,48 @@
     {% view "@button" with {
       button: form.clear_btn
     } %}
+
+    {% if form.search_btn %}
+      {% view "@button" with {
+        button: form.search_btn
+      } %}
+    {% endif %}
+  {% elseif form.type == 'lookbook' %}
+    <fieldset>
+      <legend class="lookbook-card__legend">
+        {{ form.legend }}
+      </legend>
+
+      <div class="lookbook-card__radios">
+        {% for item in form.inputs %}
+          {% view "@input" with {
+            input: item
+          } %}
+        {% endfor %}
+      </div>
+    </fieldset>
+
+    <div class="lookbook-card__btns">
+      {% view "@button" with {
+        button: {
+          class: "btn--animate btn--tertiary lookbook-card__btn",
+          text: {
+            text: "В корзину"
+          },
+          attrs: "type='submit'"
+        }
+      } %}
+
+      {% view "@button" with {
+        button: {
+          class: "btn--animate btn--quaternary lookbook-card__btn",
+          text: {
+            text: "Нравится"
+          },
+          attrs: "type='button'"
+        }
+      } %}
+    </div>
   {% endif %}
 
   {% if form.submit_btn %}

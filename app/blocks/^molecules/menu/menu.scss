@@ -19,7 +19,7 @@
 
   @include media('600', max) {
     top: rem(60);
-    padding: rem(20) rem(20) rem(80);
+    padding: 0 rem(20) rem(80);
   }
 
   &--active {

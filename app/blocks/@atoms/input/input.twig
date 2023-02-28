@@ -26,6 +26,23 @@
     {% if input.element.text %}placeholder="{{ input.element.text }}"{% endif %}
     {{ input.element.attrs }}
   >
+{% elseif input_type == 'radio'  %}
+  <div class="radio-btn">
+    <input
+      id="{{ input.name }}_{{ loop.index }}"
+      class="radio-btn__input visually-hidden"
+      type="{{ input_type }}"
+      name="{{ input.element.name }}"
+      value="{{ input.element.value }}"
+      {{ input.element.attrs }}
+    >
+    <label
+      for="{{ input.name }}_{{ loop.index }}"
+      class="radio-btn__label {{ input.label.class }}"
+    >
+      {{ input.label.text }}
+    </label>
+  </div>
 {% else %}
   <div class="input-block {{ input.class }}">
     <label

@@ -3,6 +3,7 @@
     "body": {
       "items": [{
         "image": {
+          "class": "basket-card__img",
           "name": "basket_card/01.jpg",
           "alt": "Мужчина в клетчатом жакете"
         },
@@ -18,6 +19,7 @@
         }
       }, {
         "image": {
+          "class": "basket-card__img",
           "name": "basket_card/02.jpg",
           "alt": "Женщина в черном платье"
         },

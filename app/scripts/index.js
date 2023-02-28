@@ -12,6 +12,8 @@ import trendsSlider from './components/trendsSlider';
 import mobileNav from './components/mobileNav';
 import menu from './components/menu';
 import menuSlider from './components/menuSlider';
+import lookbookSlider from './components/lookbookSlider';
+import lookbookPopup from './components/lookbookPopup';
 
 document.addEventListener('DOMContentLoaded', () => {
   trendsSlider();
@@ -27,4 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
   mobileNav();
   menu();
   menuSlider();
+  lookbookSlider();
+  lookbookPopup();
 });

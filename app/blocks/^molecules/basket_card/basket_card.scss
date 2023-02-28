@@ -12,6 +12,12 @@
     flex-shrink: 0;
   }
 
+  &__img {
+    width: rem(258);
+    height: rem(380);
+    object-fit: contain;
+  }
+
   &__inner {
     @include flex-column;
     gap: rem(15);

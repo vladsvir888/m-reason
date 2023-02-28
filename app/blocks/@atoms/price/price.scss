@@ -1,9 +1,12 @@
 .price {
   @include flex-center-y;
+  @include font-size(24, 33);
+  letter-spacing: 0.05em;
   flex-wrap: wrap;
   gap: rem(15);
 
   @include media('600', max) {
+    @include font-size(8, 11);
     gap: rem(6);
   }
 

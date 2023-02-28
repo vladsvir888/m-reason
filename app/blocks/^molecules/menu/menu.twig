@@ -4,8 +4,12 @@
 >
   <div class="container main-menu__container">
     <div class="main-menu__wrap">
+      {% view "^search" with {
+        search: main_menu.search
+      } %}
+
       <div class="main-menu__menu main-accordion">
-        {% for item in mobile_menu.menu.items %}
+        {% for item in main_menu.menu.items %}
           <div class="main-menu__menu-item">
             {% if item.accordion_1 %}
               <div class="main-accordion__item main-menu__accordion-item">

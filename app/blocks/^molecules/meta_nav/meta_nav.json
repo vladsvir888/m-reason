@@ -6,7 +6,7 @@
           "class": "search-btn",
           "icon": {
             "class": "meta-nav__btn-icon",
-            "name": "sprite-mono.svg#magnifying-glass"
+            "name": "sprite-multi.svg#magnifying-glass"
           },
           "attrs": "aria-label='Поиск' role='button'"
         }
@@ -14,7 +14,7 @@
         "button": {
           "icon": {
             "class": "meta-nav__btn-icon",
-            "name": "sprite-mono.svg#heart"
+            "name": "sprite-multi.svg#heart"
           },
           "attrs": "aria-label='Избранное'"
         }
@@ -23,7 +23,7 @@
           "class": "drawer-btn",
           "icon": {
             "class": "meta-nav__btn-icon",
-            "name": "sprite-mono.svg#cart-shopping"
+            "name": "sprite-multi.svg#cart-shopping"
           },
           "text": {
             "class": "meta-nav__btn-num",
@@ -35,7 +35,7 @@
         "button": {
           "icon": {
             "class": "meta-nav__btn-icon",
-            "name": "sprite-mono.svg#user"
+            "name": "sprite-multi.svg#user"
           },
           "attrs": "aria-label='Профиль'"
         }

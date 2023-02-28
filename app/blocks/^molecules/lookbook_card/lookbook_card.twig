@@ -1,0 +1,22 @@
+<article class="lookbook-card">
+  {% view "@image" with {
+    image: lookbook_card.image
+  } %}
+
+  <div class="lookbook-card__content">
+    <div class="lookbook-card__header">
+      {% view "@title" with {
+        title: lookbook_card.content.title
+      } %}
+
+      {% view "@price" with {
+        price: lookbook_card.content.price
+      } %}
+    </div>
+    <div class="lookbook-card__body">
+      {% view "^form" with {
+        form: lookbook_card.content.form
+      } %}
+    </div>
+  </div>
+</article>
