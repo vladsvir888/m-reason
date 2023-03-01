@@ -1,0 +1,195 @@
+{
+  "home_5": {
+    "collections": {
+      "title": {
+        "class": "visually-hidden",
+        "level": 2,
+        "text": "Коллекции"
+      },
+      "type": "grid",
+      "data": {
+        "items": [{
+          "image": {
+            "name": "collections/01.jpg",
+            "alt": ""
+          },
+          "image_2": {
+            "name": "collections/02.jpg",
+            "alt": ""
+          },
+          "link": {
+            "attrs": "aria-label='Смотреть образ'"
+          },
+          "fake_btn": {
+            "text": "Смотреть образ"
+          }
+        }, {
+          "image": {
+            "name": "collections/02.jpg",
+            "alt": ""
+          },
+          "image_2": {
+            "name": "collections/03.jpg",
+            "alt": ""
+          },
+          "link": {
+            "attrs": "aria-label='Смотреть образ'"
+          },
+          "fake_btn": {
+            "text": "Смотреть образ"
+          }
+        }, {
+          "image": {
+            "name": "collections/03.jpg",
+            "alt": ""
+          },
+          "image_2": {
+            "name": "collections/01.jpg",
+            "alt": ""
+          },
+          "link": {
+            "attrs": "aria-label='Смотреть образ'"
+          },
+          "fake_btn": {
+            "text": "Смотреть образ"
+          }
+        }, {
+          "image": {
+            "name": "collections/04.jpg",
+            "alt": ""
+          },
+          "image_2": {
+            "name": "collections/02.jpg",
+            "alt": ""
+          },
+          "link": {
+            "attrs": "aria-label='Смотреть образ'"
+          },
+          "fake_btn": {
+            "text": "Смотреть образ"
+          }
+        }, {
+          "image": {
+            "name": "collections/05.jpg",
+            "alt": ""
+          },
+          "image_2": {
+            "name": "collections/03.jpg",
+            "alt": ""
+          },
+          "link": {
+            "attrs": "aria-label='Смотреть образ'"
+          },
+          "fake_btn": {
+            "text": "Смотреть образ"
+          }
+        }, {
+          "image": {
+            "name": "collections/06.jpg",
+            "alt": ""
+          },
+          "image_2": {
+            "name": "collections/04.jpg",
+            "alt": ""
+          },
+          "link": {
+            "attrs": "aria-label='Смотреть образ'"
+          },
+          "fake_btn": {
+            "text": "Смотреть образ"
+          }
+        }, {
+          "image": {
+            "name": "collections/07.jpg",
+            "alt": ""
+          },
+          "image_2": {
+            "name": "collections/05.jpg",
+            "alt": ""
+          },
+          "link": {
+            "attrs": "aria-label='Смотреть образ'"
+          },
+          "fake_btn": {
+            "text": "Смотреть образ"
+          }
+        }, {
+          "image": {
+            "name": "collections/08.jpg",
+            "alt": ""
+          },
+          "image_2": {
+            "name": "collections/06.jpg",
+            "alt": ""
+          },
+          "link": {
+            "attrs": "aria-label='Смотреть образ'"
+          },
+          "fake_btn": {
+            "text": "Смотреть образ"
+          }
+        }, {
+          "image": {
+            "name": "collections/09.jpg",
+            "alt": ""
+          },
+          "image_2": {
+            "name": "collections/07.jpg",
+            "alt": ""
+          },
+          "link": {
+            "attrs": "aria-label='Смотреть образ'"
+          },
+          "fake_btn": {
+            "text": "Смотреть образ"
+          }
+        }, {
+          "image": {
+            "name": "collections/10.jpg",
+            "alt": ""
+          },
+          "image_2": {
+            "name": "collections/08.jpg",
+            "alt": ""
+          },
+          "link": {
+            "attrs": "aria-label='Смотреть образ'"
+          },
+          "fake_btn": {
+            "text": "Смотреть образ"
+          }
+        }, {
+          "image": {
+            "name": "collections/11.jpg",
+            "alt": ""
+          },
+          "image_2": {
+            "name": "collections/09.jpg",
+            "alt": ""
+          },
+          "link": {
+            "attrs": "aria-label='Смотреть образ'"
+          },
+          "fake_btn": {
+            "text": "Смотреть образ"
+          }
+        }, {
+          "image": {
+            "name": "collections/12.jpg",
+            "alt": ""
+          },
+          "image_2": {
+            "name": "collections/10.jpg",
+            "alt": ""
+          },
+          "link": {
+            "attrs": "aria-label='Смотреть образ'"
+          },
+          "fake_btn": {
+            "text": "Смотреть образ"
+          }
+        }]
+      }
+    }
+  }
+}

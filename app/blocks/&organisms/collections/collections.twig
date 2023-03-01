@@ -5,7 +5,9 @@
 
   <div class="container">
     {% if collections.type == 'slider' %}
-      {% view "^collections_slider" %}
+      {% view "^collections_slider" with {
+        collections_slider: collections.data
+      } %}
     {% elseif collections.type == 'grid' %}
       <div class="collections__grid">
         {% for item in collections.data.items %}

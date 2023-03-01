@@ -9,6 +9,7 @@
             name: "sprite-mono.svg#close"
           },
           text: {
+            class: "lookbook__close-text",
             text: "Закрыть"
           }
         }
@@ -16,7 +17,7 @@
     </div>
 
     <div class="lookbook__body">
-      <div class="lookbook__start">
+      <div class="lookbook__content">
 
         <div class="lookbook__item lookbook__item--1">
           <p class="lookbook__text">
@@ -74,7 +75,9 @@
             {% for item in lookbook.slider.items %}
               <div class="swiper-slide">
                 {% view "@image" with {
-                  image: item
+                  image: item|merge({
+                    class: "lookbook__slider-img"
+                  })
                 } %}
               </div>
             {% endfor %}

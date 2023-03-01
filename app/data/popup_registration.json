@@ -7,42 +7,39 @@
       "form": {
         "type": "registration",
         "class": "form--popup",
-        "input_phone": {
+        "input": {
+          "id": "auth_code",
           "label": {
-            "id": "auth_code",
             "text": "Введите код из SMS"
           },
           "element": {
-            "id": "auth_code",
             "type": "text",
             "text": "000",
             "name": "code",
             "attrs": "required inputmode='numeric' autocomplete='one-time-code'"
           }
         },
-        "input_checkboxes": {
+        "checkboxes": {
           "items": [{
+            "id": "registration_checkbox",
             "class": "input-check--secondary",
             "label": {
-              "id": "registration_checkbox_1",
               "text": "Даю согласие на обработку персональных данных"
             },
             "element": {
-              "id": "registration_checkbox_1",
               "type": "checkbox",
-              "name": "registration_checkbox_1",
+              "name": "personal_data",
               "attrs": "required checked"
             }
           }, {
+            "id": "registration_checkbox",
             "class": "input-check--secondary",
             "label": {
-              "id": "registration_checkbox_2",
               "text": "Даю согласие на получение рекламно-информационных рассылок"
             },
             "element": {
-              "id": "registration_checkbox_2",
               "type": "checkbox",
-              "name": "registration_checkbox_2",
+              "name": "advert_info_mailings",
               "attrs": "required checked"
             }
           }]

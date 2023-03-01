@@ -136,14 +136,12 @@
       },
       "form": {
         "type": "callback",
-        "input_email": {
+        "inputs": [{
           "class": "input-block--with-btn",
           "label": {
-            "id": "callback_email",
             "text": "Дарим 1500 бонусных рублей на следующую покупку"
           },
           "element": {
-            "id": "callback_email",
             "type": "email",
             "text": "E-mail",
             "name": "email",
@@ -155,32 +153,27 @@
             },
             "attrs": "aria-label='Отправить'"
           }
-        },
-        "input_checkboxes": {
-          "items": [{
-            "label": {
-              "id": "callback_checkbox_1",
-              "text": "Даю согласие на получение рекламно-информационных рассылок"
-            },
-            "element": {
-              "id": "callback_checkbox_1",
-              "type": "checkbox",
-              "name": "callback_checkbox_1",
-              "attrs": "required checked"
-            }
-          }, {
-            "label": {
-              "id": "callback_checkbox_2",
-              "text": "Даю согласие на обработку персональных данных"
-            },
-            "element": {
-              "id": "callback_checkbox_2",
-              "type": "checkbox",
-              "name": "callback_checkbox_2",
-              "attrs": "required checked"
-            }
-          }]
-        }
+        }, {
+          "id": "callback_checkbox",
+          "label": {
+            "text": "Даю согласие на получение рекламно-информационных рассылок"
+          },
+          "element": {
+            "type": "checkbox",
+            "name": "advert_info_mailings",
+            "attrs": "required checked"
+          }
+        }, {
+          "id": "callback_checkbox",
+          "label": {
+            "text": "Даю согласие на обработку персональных данных"
+          },
+          "element": {
+            "type": "checkbox",
+            "name": "personal_data",
+            "attrs": "required checked"
+          }
+        }]
       },
       "btns": {
         "items": [{

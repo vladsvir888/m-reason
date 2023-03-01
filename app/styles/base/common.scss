@@ -195,7 +195,7 @@ a {
 
 .scroll-lock {
   overflow: hidden !important;
-  padding-right: var(--scrollbar-size, 17px);
+  padding-right: var(--scrollbar-size);
 }
 
 .swiper-button-prev,

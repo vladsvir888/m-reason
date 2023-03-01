@@ -3,7 +3,7 @@
 {% if input_type == 'checkbox' %}
   <div class="input-check {{ input.class }}">
     <input
-      {% if input.element.id %}id="{{ input.element.id }}"{% endif %}
+      {% if input.id %}id="{{ input.id }}_{{ loop.index is defined ? loop.index : 0 }}"{% endif %}
       class="input-check__input {{ input.element.class }}"
       type="{{ input_type }}"
       name="{{ input.element.name }}"
@@ -12,7 +12,7 @@
     >
 
     <label
-      {% if input.label.id %}for="{{ input.label.id }}"{% endif %}
+      {% if input.id %}for="{{ input.id }}_{{ loop.index is defined ? loop.index : 0 }}"{% endif %}
       class="input-check__label {{ input.label.class }}"
     >
       {{ input.label.text }}
@@ -29,7 +29,7 @@
 {% elseif input_type == 'radio'  %}
   <div class="radio-btn">
     <input
-      id="{{ input.name }}_{{ loop.index }}"
+      {% if input.id %}id="{{ input.id }}_{{ loop.index is defined ? loop.index : 0 }}"{% endif %}
       class="radio-btn__input visually-hidden"
       type="{{ input_type }}"
       name="{{ input.element.name }}"
@@ -37,7 +37,7 @@
       {{ input.element.attrs }}
     >
     <label
-      for="{{ input.name }}_{{ loop.index }}"
+      {% if input.id %}for="{{ input.id }}_{{ loop.index is defined ? loop.index : 0 }}"{% endif %}
       class="radio-btn__label {{ input.label.class }}"
     >
       {{ input.label.text }}
@@ -46,14 +46,14 @@
 {% else %}
   <div class="input-block {{ input.class }}">
     <label
-      {% if input.label.id %}for="{{ input.label.id }}"{% endif %}
+      {% if input.id %}for="{{ input.id }}_{{ loop.index is defined ? loop.index : 0 }}"{% endif %}
       class="input-block__label {{ input.label.class }}"
     >
       {{ input.label.text }}
     </label>
 
     <input
-      {% if input.element.id %}id="{{ input.element.id }}"{% endif %}
+      {% if input.id %}id="{{ input.id }}_{{ loop.index is defined ? loop.index : 0 }}"{% endif %}
       class="input-block__input {{ input.element.class }}"
       type="{{ input_type }}"
       name="{{ input.element.name }}"

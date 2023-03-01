@@ -1,0 +1,21 @@
+{
+  "home_6": {
+    "promo": {
+      "image": {
+        "picture": {
+          "class": "promo__media"
+        },
+        "class": "promo__media-img",
+        "adaptive": {
+          "media": {
+            "value": 600
+          }
+        },
+        "lazy": false,
+        "name": "promo/01.jpg",
+        "name_2": "promo/01_mobile.jpg",
+        "alt": "Девушки, одетые в красивое пальто."
+      }
+    }
+  }
+}

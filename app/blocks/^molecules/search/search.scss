@@ -50,12 +50,12 @@
 
   &__input {
     width: 100%;
-    padding: rem(91) rem(400) rem(46) rem(340);
+    padding: rem(35) rem(400) rem(35) rem(340);
     border-top: rem(1) solid var(--pallette-cod-gray);
     border-bottom: rem(1) solid var(--pallette-cod-gray);
 
-    @include media('1400', max) {
-      padding: rem(40) rem(140) rem(40) rem(40);
+    @include media('1600', max) {
+      padding: rem(35) rem(80) rem(35) rem(40);
     }
 
     @include media('900', max) {
@@ -74,8 +74,8 @@
     top: 50%;
     transform: translateY(-50%);
 
-    @include media('1400', max) {
-      right: rem(100);
+    @include media('1600', max) {
+      right: rem(40);
     }
 
     @include media('900', max) {

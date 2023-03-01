@@ -7,13 +7,12 @@
       "form": {
         "type": "auth",
         "class": "form--popup",
-        "input_phone": {
+        "input": {
+          "id": "auth_code",
           "label": {
-            "id": "auth_code",
             "text": "Введите код из SMS"
           },
           "element": {
-            "id": "auth_code",
             "type": "text",
             "text": "000",
             "name": "code",

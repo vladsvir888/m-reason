@@ -4,6 +4,7 @@ const lookbookSlider = () => {
   new Swiper('.lookbook-slider', {
     modules: [Navigation, Pagination],
     speed: 600,
+    slidesPerView: 1,
     pagination: {
       el: '.lookbook__pagination',
       type: 'fraction',

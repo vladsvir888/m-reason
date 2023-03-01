@@ -7,13 +7,12 @@
       "form": {
         "type": "auth_and_registration",
         "class": "form--popup",
-        "input_phone": {
+        "input": {
+          "id": "auth_and_registration_phone",
           "label": {
-            "id": "auth_and_registration_phone",
             "text": "Введите номер телефона"
           },
           "element": {
-            "id": "auth_and_registration_phone",
             "class": "input-phone",
             "type": "tel",
             "text": "+7 (000) 000-00-00",

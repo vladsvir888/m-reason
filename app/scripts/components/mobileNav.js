@@ -1,6 +1,10 @@
 import throttle from 'lodash-es/throttle';
 
 const mobileNav = () => {
+  const mql = window.matchMedia('(max-width: 600px)');
+
+  if (!mql.matches) return;
+
   const mobileNavEl = document.querySelector('.mobile-nav');
 
   if (!mobileNavEl) return;

@@ -12,6 +12,7 @@ const menu = () => {
 
   const trap = focusTrap.createFocusTrap(header, {
     fallbackFocus: header,
+    initialFocus: false,
   });
 
   burger.addEventListener('click', () => {

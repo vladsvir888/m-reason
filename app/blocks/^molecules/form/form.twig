@@ -1,22 +1,22 @@
-<form action="/" method="get" class="form {{ form.class }}">
+<form
+  action="/"
+  method="get"
+  class="form {{ form.class }}"
+>
   {% if form.type == 'callback' %}
-    {% view "@input" with {
-      input: form.input_email
-    } %}
-
-    {% for item in form.input_checkboxes.items %}
+    {% for item in form.inputs %}
       {% view "@input" with {
         input: item
       } %}
     {% endfor %}
   {% elseif form.type == 'auth_and_registration' or form.type == 'auth' or form.type == 'registration' %}
     {% view "@input" with {
-      input: form.input_phone
+      input: form.input
     } %}
 
-    {% if form.input_checkboxes %}
+    {% if form.checkboxes %}
       <div class="form__checkbox-wrap">
-        {% for item in form.input_checkboxes.items %}
+        {% for item in form.checkboxes.items %}
           {% view "@input" with {
             input: item
           } %}
