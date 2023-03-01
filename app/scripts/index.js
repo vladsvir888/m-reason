@@ -31,4 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
   menuSlider();
   lookbookSlider();
   lookbookPopup();
+
+  setTimeout(() => {
+    document.body.classList.remove('preload');
+  }, 450);
 });

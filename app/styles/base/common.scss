@@ -73,6 +73,17 @@ body {
   @include flex-column;
   height: 100%;
   font-family: var(--font-primary);
+
+  &.preload {
+    * {
+      .btn--animate {
+        &::before,
+        &::after {
+          animation-duration: 0s !important;
+        }
+      }
+    }
+  }
 }
 
 .header {
@@ -201,6 +212,14 @@ a {
 .swiper-button-prev,
 .swiper-button-next {
   z-index: 1;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
 }
 
 .swiper-scrollbar.swiper-scrollbar-horizontal {

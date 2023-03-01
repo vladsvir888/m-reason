@@ -4,7 +4,7 @@ const search = () => {
 
   if (!btn || !searchEl) return;
 
-  const clearBtn = searchEl.querySelector('.search__clear');
+  const closeBtn = searchEl.querySelector('.search__close');
 
   btn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -12,12 +12,8 @@ const search = () => {
     searchEl.classList.toggle('search--active');
   });
 
-  clearBtn.addEventListener('click', () => {
-    const input = clearBtn.previousElementSibling;
-
-    if (input.value !== '') {
-      input.value = '';
-    }
+  closeBtn.addEventListener('click', () => {
+    searchEl.classList.remove('search--active');
   });
 };
 

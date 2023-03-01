@@ -1,4 +1,6 @@
 .btn {
+  $this: &;
+
   padding: 0;
   border: none;
   background-color: transparent;
@@ -89,11 +91,13 @@
   }
 
   &--underline {
-    border-bottom: rem(1) dashed var(--pallette-cod-gray);
-    transition: border-bottom var(--transition);
+    #{$this}__text {
+      border-bottom: rem(1) dashed var(--pallette-cod-gray);
+      transition: border-bottom var(--transition);
 
-    &:hover {
-      border-bottom: rem(1) dashed var(--pallette-cod-gray-with-alpha-2);
+      &:hover {
+        border-bottom: rem(1) dashed var(--pallette-cod-gray-with-alpha-2);
+      }
     }
   }
 }

@@ -219,4 +219,41 @@
       margin-bottom: rem(10);
     }
   }
+
+  &__slider {
+    @include media('600', max) {
+      display: none;
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: rem(5);
+
+    @include media('601', min) {
+      display: none;
+    }
+
+    &-btn {
+      @include flex-center-y;
+      @include font-size(10, 15);
+      letter-spacing: 0.05em;
+
+      &::before {
+        position: absolute;
+        inset: 0;
+        content: '';
+      }
+    }
+
+    &-icon {
+      width: rem(20);
+      height: rem(20);
+      margin-left: rem(3);
+      stroke: currentColor;
+    }
+  }
 }

@@ -1,3 +1,9 @@
+input {
+  &:focus-visible {
+    outline: none;
+  }
+}
+
 // дефолтный инпут
 .input-block {
   $this: &;
@@ -38,6 +44,12 @@
     letter-spacing: 0.05em;
     border-radius: 0;
     border: rem(1) solid var(--pallette-cod-gray);
+
+    &:focus-visible {
+      border-color: var(--pallette-white);
+      outline: rem(4) solid var(--pallette-atlantis);
+      z-index: 1;
+    }
 
     @include media('600', max) {
       @include font-size(10, 15);
@@ -111,6 +123,10 @@
     border: rem(1) solid var(--pallette-white);
     border-radius: 0;
     transition: transform var(--transition);
+
+    &:focus-visible {
+      outline: rem(1) solid var(--pallette-atlantis);
+    }
 
     &:checked {
       transform: rotateX(180deg);

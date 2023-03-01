@@ -225,5 +225,23 @@
 
       {% view "^menu_slider" %}
     </div>
+    <div class="main-menu__info">
+      {% view "@image" with {
+        image: main_menu.info.image
+      } %}
+
+      <a class="btn btn--underline main-menu__info-btn" href="#">
+        <span class="btn__text">
+          {{ main_menu.info.text }}
+        </span>
+
+        {% view "@icon" with {
+          icon: {
+            class: "main-menu__info-icon",
+            name: "sprite-mono.svg#arrow-next"
+          }
+        } %}
+      </a>
+    </div>
   </div>
 </div>

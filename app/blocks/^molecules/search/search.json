@@ -14,7 +14,7 @@
         }
       },
       "clear_btn": {
-        "class": "search__clear",
+        "class": "search__close",
         "icon": {
           "class": "search__icon",
           "name": "sprite-mono.svg#close"
