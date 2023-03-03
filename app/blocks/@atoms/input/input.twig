@@ -63,9 +63,7 @@
 
     {% if input.button %}
       {% view "@button" with {
-        button: input.button|merge({
-          class: "input-block__btn"
-        })
+        button: input.button
       } %}
     {% endif %}
   </div>

@@ -6,10 +6,7 @@
           <li class="main-footer__item {{ item.class }}">
             {% if item.button %}
               {% view "@button" with {
-                button: item.button|merge({
-                  href: "#",
-                  class: "main-footer__btn"
-                })
+                button: item.button
               } %}
             {% endif %}
           </li>
@@ -21,10 +18,7 @@
           <li class="main-footer__item {{ item.class }}">
             {% if item.button %}
               {% view "@button" with {
-                button: item.button|merge({
-                  href: "#",
-                  class: "main-footer__btn"
-                })
+                button: item.button
               } %}
             {% endif %}
           </li>

@@ -26,7 +26,9 @@
 
           <h2 class="lookbook__title">
             <a class="btn btn--underline" href="#">
-              {{ lookbook.name_collection }}
+              <span class="btn__text lookbook__title-text">
+                {{ lookbook.name_collection }}
+              </span>
             </a>
           </h2>
         </div>
@@ -75,9 +77,7 @@
             {% for item in lookbook.slider.items %}
               <div class="swiper-slide">
                 {% view "@image" with {
-                  image: item|merge({
-                    class: "lookbook__slider-img"
-                  })
+                  image: item
                 } %}
               </div>
             {% endfor %}

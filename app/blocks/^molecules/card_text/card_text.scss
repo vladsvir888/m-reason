@@ -2,13 +2,14 @@
   $this: &;
 
   position: relative;
-  display: grid;
   overflow: hidden;
   color: var(--pallette-white);
 
   &:hover {
     #{$this}__media {
-      transform: scale(1.1);
+      &-img {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -51,18 +52,18 @@
   }
 
   &__media {
-    position: relative;
-    z-index: -1;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    transition: transform var(--transition-3);
+    &-img {
+      transition: transform var(--transition-3);
+    }
   }
 
   &__content {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     padding: rem(112) rem(71);
-    margin-top: auto;
 
     @include media('900', max) {
       padding: rem(42) rem(20);

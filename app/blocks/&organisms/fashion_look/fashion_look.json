@@ -7,6 +7,9 @@
     },
     "card": {
       "image": {
+        "picture": {
+          "class": "media-card__media"
+        },
         "class": "media-card__media-img",
         "name": "fashion_look/01.jpg",
         "alt": "Девушка, одетая в коричневый пиджак."
@@ -17,6 +20,7 @@
       "content": {
         "title": {
           "level": 3,
+          "class": "media-card__title",
           "text": "Офисный стиль"
         }
       },

@@ -5,20 +5,14 @@
     {{ media_card.link.attrs }}
   >
     {% view "@image" with {
-      image: media_card.image|merge({
-        picture: {
-          class: "media-card__media"
-        }
-      })
+      image: media_card.image
     } %}
   </a>
 
   <div class="media-card__content">
     {% if media_card.content.title %}
       {% view "@title" with {
-        title: media_card.content.title|merge({
-          class: "media-card__title"
-        })
+        title: media_card.content.title
       } %}
     {% endif %}
 

@@ -14,10 +14,15 @@ const mobileNav = () => {
   function toggle() {
     const currentScrollPos = window.pageYOffset;
 
-    if (prevScrollpos > currentScrollPos) {
+    if (currentScrollPos < 200) {
       mobileNavEl.classList.add('mobile-nav--active');
-    } else {
+      return;
+    }
+
+    if (currentScrollPos > prevScrollpos) {
       mobileNavEl.classList.remove('mobile-nav--active');
+    } else {
+      mobileNavEl.classList.add('mobile-nav--active');
     }
 
     prevScrollpos = currentScrollPos;

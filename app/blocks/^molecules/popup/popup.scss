@@ -20,22 +20,30 @@
 }
 
 .popup {
+  --fancybox-content-color: var(--pallette-cod-gray);
+
   $this: &;
 
   display: none;
   max-width: rem(1043);
   width: 100%;
-  padding: rem(29) rem(54) rem(54);
+  padding: rem(30) rem(54) rem(54);
 
   @include media('600', max) {
     padding: rem(11) rem(24) rem(30);
   }
 
   &--basket {
+    padding: rem(30) rem(34) rem(61);
+
     #{$this}__title {
       margin-bottom: rem(55);
       text-align: center;
       text-transform: unset;
+
+      @include media('600', max) {
+        margin-bottom: rem(23);
+      }
     }
 
     #{$this}__btn {

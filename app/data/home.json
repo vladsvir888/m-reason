@@ -5,5 +5,36 @@
     "description": "Образы для прогулок"
   },
   "home": {
+  },
+  "popup_auth_and_registration": {
+    "type": "auth_and_registration",
+    "id": "popup_auth_and_registration",
+    "title": "Вход/регистрация",
+    "data": {
+      "form": {
+        "type": "auth_and_registration",
+        "class": "form--popup",
+        "input": {
+          "id": "auth_and_registration_phone",
+          "label": {
+            "text": "Введите номер телефона"
+          },
+          "element": {
+            "class": "input-phone",
+            "type": "tel",
+            "text": "+7 (000) 000-00-00",
+            "name": "phone",
+            "attrs": "required"
+          }
+        },
+        "submit_btn": {
+          "class": "btn--animate btn--tertiary popup__btn",
+          "text": {
+            "text": "Получить код SMS"
+          },
+          "attrs": "type='submit'"
+        }
+      }
+    }
   }
 }

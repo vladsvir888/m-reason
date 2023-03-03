@@ -9,6 +9,7 @@
       },
       "image": {
         "name": "mobile_menu/01.jpg",
+        "class": "card-text__media-img",
         "alt": "Девушка в черном пальто сидит на желтом диване."
       }
     }, {
@@ -20,6 +21,7 @@
       },
       "image": {
         "name": "mobile_menu/02.jpg",
+        "class": "card-text__media-img",
         "alt": "Девушка в салатовом пальто стоит возле кресла."
       }
     }, {
@@ -31,6 +33,7 @@
       },
       "image": {
         "name": "mobile_menu/01.jpg",
+        "class": "card-text__media-img",
         "alt": "Девушка в черном пальто сидит на желтом диване."
       }
     }]

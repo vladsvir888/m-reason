@@ -1,6 +1,4 @@
 import * as focusTrap from 'focus-trap';
-import getScrollbarWidth from '../helpers/getScrollbarWidth';
-import removeAttributes from '../helpers/removeAttributes';
 
 const lookbookPopup = () => {
   const cards = document.querySelectorAll('.collection-card__full-btn');
@@ -15,26 +13,39 @@ const lookbookPopup = () => {
     initialFocus: false,
   });
 
-  const scrollbarWidth = `${getScrollbarWidth()}px`;
+  function hide() {
+    popup.classList.remove('lookbook--active');
+
+    document.body.removeAttribute('class');
+
+    trap.deactivate();
+  }
+
+  function show() {
+    document.body.classList.add('scroll-lock');
+
+    popup.classList.add('lookbook--active');
+
+    trap.activate();
+  }
+
+  function handleEsc(e) {
+    if (e.key === 'Escape') {
+      hide();
+    }
+  }
 
   cards.forEach((card) => {
     card.addEventListener('click', () => {
-      document.body.classList.add('scroll-lock');
-      document.body.style.setProperty('--scrollbar-size', scrollbarWidth);
-
-      popup.classList.add('lookbook--active');
-
-      trap.activate();
+      show();
     });
   });
 
   close.addEventListener('click', () => {
-    popup.classList.remove('lookbook--active');
-
-    removeAttributes(document.body, 'style', 'class');
-
-    trap.deactivate();
+    hide();
   });
+
+  window.addEventListener('keydown', (e) => handleEsc(e));
 };
 
 export default lookbookPopup;

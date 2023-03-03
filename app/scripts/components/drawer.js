@@ -1,5 +1,4 @@
 import * as focusTrap from 'focus-trap';
-import getScrollbarWidth from '../helpers/getScrollbarWidth';
 import removeAttributes from '../helpers/removeAttributes';
 import setAttributes from '../helpers/setAttributes';
 
@@ -17,11 +16,8 @@ const drawer = () => {
   });
 
   function show() {
-    const scrollbarWidth = `${getScrollbarWidth()}px`;
-
     modal.classList.add('drawer--active');
     document.body.classList.add('scroll-lock');
-    document.body.style.setProperty('--scrollbar-size', scrollbarWidth);
 
     setAttributes(modal, {
       'aria-modal': true,
@@ -33,7 +29,7 @@ const drawer = () => {
 
   function hide() {
     modal.classList.remove('drawer--active');
-    removeAttributes(document.body, 'style', 'class');
+    document.body.removeAttribute('class');
     removeAttributes(modal, 'aria-modal', 'role');
 
     trap.deactivate();

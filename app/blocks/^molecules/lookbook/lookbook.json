@@ -1,7 +1,7 @@
 {
   "lookbook": {
     "text": "Коллекция",
-    "name_collection": "Весна 2023",
+    "name_collection": "Весна&nbsp;2023",
     "share_btn": {
       "class": "btn--animate btn--quaternary lookbook__btn",
       "text": {
@@ -16,15 +16,19 @@
     },
     "slider": {
       "items": [{
+        "class": "lookbook__slider-img",
         "name": "lookbook/01.jpg",
         "alt": "Девушка в оранжевом пиджаке"
       }, {
+        "class": "lookbook__slider-img",
         "name": "lookbook/01.jpg",
         "alt": "Девушка в оранжевом пиджаке"
       }, {
+        "class": "lookbook__slider-img",
         "name": "lookbook/01.jpg",
         "alt": "Девушка в оранжевом пиджаке"
       }, {
+        "class": "lookbook__slider-img",
         "name": "lookbook/01.jpg",
         "alt": "Девушка в оранжевом пиджаке"
       }]

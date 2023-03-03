@@ -3,60 +3,80 @@
     "list_1": {
       "items": [{
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Каталог"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Акции"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Программа лояльности"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Доставка и оплата"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Обмен и возврат"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Таблица размеров"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Уход за одеждой"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Подарочные карты"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Оформление заказа"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Часто задаваемые вопросы"
           }
@@ -66,42 +86,56 @@
     "list_2": {
       "items": [{
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "О бренде"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Магазины"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Стилистам"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Новости"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Контакты"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Вакансии"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Оптовым покупателям"
           }
@@ -110,12 +144,16 @@
         "class": "main-footer__item--bottom"
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Политика конфиденциальности"
           }
         }
       }, {
         "button": {
+          "class": "main-footer__btn",
+          "href": "#",
           "text": {
             "text": "Оферта"
           }
@@ -148,6 +186,7 @@
             "attrs": "required"
           },
           "button": {
+            "class": "input-block__btn",
             "text": {
               "text": "OK"
             },

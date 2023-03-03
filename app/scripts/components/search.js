@@ -6,9 +6,7 @@ const search = () => {
 
   const closeBtn = searchEl.querySelector('.search__close');
 
-  btn.addEventListener('click', (e) => {
-    e.preventDefault();
-
+  btn.addEventListener('click', () => {
     searchEl.classList.toggle('search--active');
   });
 

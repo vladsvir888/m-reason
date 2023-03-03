@@ -10,6 +10,7 @@
       "items": [{
         "image": {
           "name": "collections/01.jpg",
+          "lazy": false,
           "alt": ""
         },
         "image_2": {
@@ -25,6 +26,7 @@
       }, {
         "image": {
           "name": "collections/02.jpg",
+          "lazy": false,
           "alt": ""
         },
         "image_2": {
@@ -40,6 +42,7 @@
       }, {
         "image": {
           "name": "collections/03.jpg",
+          "lazy": false,
           "alt": ""
         },
         "image_2": {

@@ -1,24 +1,22 @@
 <div class="collection-card">
-  <button
-    class="btn collection-card__full-btn"
-    {{ collection_card.link.attrs }}
-  >
-    {% view "@image" with {
-      image: collection_card.image|merge({
-        picture: {
-          class: "collection-card__media collection-card__media--1"
-        }
-      })
-    } %}
+  <button class="btn collection-card__full-btn" {{ collection_card.link.attrs }}></button>
 
-    {% view "@image" with {
-      image: collection_card.image_2|merge({
-        picture: {
-          class: "collection-card__media collection-card__media--2"
-        }
-      })
-    } %}
-  </button>
+  {% view "@image" with {
+    image: collection_card.image|merge({
+      picture: {
+        class: "collection-card__media collection-card__media--1"
+      }
+    })
+  } %}
+
+  {% view "@image" with {
+    image: collection_card.image_2|merge({
+      picture: {
+        class: "collection-card__media collection-card__media--2"
+      }
+    })
+  } %}
+
   <div class="collection-card__content">
     <div class="btn btn--animate btn--primary collection-card__btn" aria-hidden="true">
       <span class="btn__text">

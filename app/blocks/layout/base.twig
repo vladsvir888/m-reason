@@ -16,7 +16,7 @@
 
   <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body class="preload">
+<body>
   {% view "&header" %}
 
   {% block content %}{% endblock %}
@@ -30,6 +30,10 @@
   {% view "^mobile_nav" %}
 
   {% view "^lookbook" %}
+
+  {% view "^popup" with {
+    popup: popup_auth_and_registration
+  } %}
 <script src="./scripts/main.js"></script>
 </body>
 </html>

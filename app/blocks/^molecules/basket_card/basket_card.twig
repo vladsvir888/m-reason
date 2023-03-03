@@ -1,18 +1,12 @@
 <article class="basket-card">
   {% view "@image" with {
-    image: basket_card.image|merge({
-      picture: {
-        class: "basket-card__picture"
-      }
-    })
+    image: basket_card.image
   } %}
 
   <div class="basket-card__content">
     <div class="basket-card__inner">
       {% view "@title" with {
-        title: basket_card.content.title|merge({
-          class: "basket-card__title"
-        })
+        title: basket_card.content.title
       } %}
 
       <p class="basket-card__text">

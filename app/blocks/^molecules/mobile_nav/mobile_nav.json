@@ -5,6 +5,8 @@
         "class": "mobile-nav__btn-icon",
         "name": "sprite-multi.svg#house"
       },
+      "class": "mobile-nav__btn",
+      "href": "#",
       "text": {
         "text": "Главная"
       }
@@ -13,6 +15,8 @@
         "class": "mobile-nav__btn-icon",
         "name": "sprite-multi.svg#user"
       },
+      "class": "mobile-nav__btn",
+      "href": "#",
       "text": {
         "text": "Профиль"
       }
@@ -21,15 +25,17 @@
         "class": "mobile-nav__btn-icon",
         "name": "sprite-multi.svg#chat"
       },
+      "class": "mobile-nav__btn",
       "text": {
         "text": "Помощь"
-      },
-      "attrs": "role='button'"
+      }
     }, {
       "icon": {
         "class": "mobile-nav__btn-icon",
         "name": "sprite-multi.svg#heart"
       },
+      "class": "mobile-nav__btn",
+      "href": "#",
       "text": {
         "text": "Нравится"
       }
@@ -38,6 +44,8 @@
         "class": "mobile-nav__btn-icon",
         "name": "sprite-multi.svg#cart-shopping"
       },
+      "class": "mobile-nav__btn",
+      "href": "#",
       "text": {
         "text": "Корзина"
       }

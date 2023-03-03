@@ -84,6 +84,7 @@
 
   &__btns {
     display: flex;
+    flex-wrap: wrap;
     gap: rem(20);
 
     @include media('600', max) {
@@ -96,12 +97,13 @@
   }
 
   &__btn {
-    width: 50%;
+    width: calc(50% - #{rem(20)});
     padding: rem(15) rem(10);
     min-width: unset;
 
     @include media('600', max) {
       padding: rem(5) rem(10);
+      width: calc(50% - #{rem(10)});
     }
 
     @include media('360', max) {
@@ -110,9 +112,12 @@
   }
 
   &__price {
+    justify-content: flex-end;
+
     @include media('600', max) {
       flex-direction: column;
       align-items: flex-end;
+      justify-content: flex-start;
     }
   }
 }

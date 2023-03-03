@@ -8,6 +8,7 @@
         "text": "Офис: новый сезон"
       },
       "image": {
+        "class": "card-text__media-img",
         "name": "trends_slider/01.jpg",
         "alt": "Девушка в черном пальто сидит на желтом диване."
       }
@@ -19,6 +20,7 @@
         "text": "Топы и блузки из&nbsp;коллекции весна’23"
       },
       "image": {
+        "class": "card-text__media-img",
         "name": "trends_slider/02.jpg",
         "alt": "Девушка в салатовом пальто стоит возле кресла."
       }
@@ -30,6 +32,7 @@
         "text": "Пиджаки из&nbsp;коллекции&nbsp;осень’23"
       },
       "image": {
+        "class": "card-text__media-img",
         "name": "fashion_look/01.jpg",
         "alt": "Девушка в бежевом пиджаке."
       }

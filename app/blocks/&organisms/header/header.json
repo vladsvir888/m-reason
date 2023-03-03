@@ -2,7 +2,7 @@
   "header": {
     "logo": {
       "type": "header",
-      "class": "main-header__logo",
+      "class": "main-header__logo inert-element",
       "attrs": "aria-label='Главная'"
     },
     "meta_nav": {
@@ -10,15 +10,17 @@
       "list": {
         "items": [{
           "button": {
-            "class": "search-btn",
+            "class": "meta-nav__btn search-btn inert-element",
             "icon": {
               "class": "meta-nav__btn-icon",
               "name": "sprite-multi.svg#magnifying-glass"
             },
-            "attrs": "aria-label='Поиск' role='button'"
+            "attrs": "aria-label='Поиск'"
           }
         }, {
           "button": {
+            "class": "meta-nav__btn inert-element",
+            "href": "#",
             "icon": {
               "class": "meta-nav__btn-icon",
               "name": "sprite-multi.svg#heart"
@@ -27,7 +29,7 @@
           }
         }, {
           "button": {
-            "class": "drawer-btn",
+            "class": "meta-nav__btn drawer-btn inert-element",
             "icon": {
               "class": "meta-nav__btn-icon",
               "name": "sprite-multi.svg#cart-shopping"
@@ -36,15 +38,16 @@
               "class": "meta-nav__btn-num",
               "text": 2
             },
-            "attrs": "aria-label='Корзина' role='button'"
+            "attrs": "aria-label='Корзина'"
           }
         }, {
           "button": {
+            "class": "meta-nav__btn inert-element",
             "icon": {
               "class": "meta-nav__btn-icon",
               "name": "sprite-multi.svg#user"
             },
-            "attrs": "aria-label='Профиль'"
+            "attrs": "aria-label='Профиль' data-fancybox data-src='#popup_auth_and_registration'"
           }
         }]
       }

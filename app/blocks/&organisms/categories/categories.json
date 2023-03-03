@@ -12,6 +12,7 @@
         "text": "Акции"
       },
       "image": {
+        "class": "card-text__media-img",
         "name": "categories/01.jpg",
         "alt": "Девушки, одетые в красивое весеннее пальто."
       },
@@ -23,6 +24,7 @@
         "text": "Новости"
       },
       "image": {
+        "class": "card-text__media-img",
         "name": "categories/02.jpg",
         "alt": "Девушка, одетая в красивое черное платье."
       },
@@ -34,6 +36,7 @@
         "text": "Стилистам"
       },
       "image": {
+        "class": "card-text__media-img",
         "name": "categories/03.jpg",
         "alt": "Девушка, одетая в красивое бежевое пальто."
       },

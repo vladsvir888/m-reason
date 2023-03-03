@@ -32,7 +32,7 @@
       position: absolute;
       inset: 0;
       z-index: 1;
-      transform: translate3d(-130%, 0, 0) skew(-25deg);
+      transform: translateX(-130%) skew(-25deg);
       animation: out var(--transition-3) cubic-bezier(0.4, 0, 0, 1);
       content: '';
     }
@@ -91,20 +91,18 @@
   }
 
   &--underline {
-    #{$this}__text {
-      border-bottom: rem(1) dashed var(--pallette-cod-gray);
-      transition: border-bottom var(--transition);
+    border-bottom: rem(1) dashed var(--pallette-cod-gray);
+    transition: border-bottom var(--transition);
 
-      &:hover {
-        border-bottom: rem(1) dashed var(--pallette-cod-gray-with-alpha-2);
-      }
+    &:hover {
+      border-bottom: rem(1) dashed var(--pallette-cod-gray-with-alpha-2);
     }
   }
 }
 
 @keyframes in {
   from {
-    transform: translate3d(-110%, 0, 0) skew(-25deg);
+    transform: translateX(-110%) skew(-25deg);
   }
 
   to {
@@ -118,6 +116,6 @@
   }
 
   to {
-    transform: translate3d(110%, 0, 0) skew(25deg);
+    transform: translateX(110%) skew(25deg);
   }
 }

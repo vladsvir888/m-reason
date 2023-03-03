@@ -64,26 +64,18 @@ input[type="search"]::-webkit-search-results-decoration {
 
 html {
   height: 100%;
-  scrollbar-color: var(--pallette-cod-gray) transparent;
-  scrollbar-width: thin;
   scroll-behavior: smooth;
+
+  @media (hover: hover) {
+    scrollbar-color: var(--pallette-cod-gray) transparent;
+    scrollbar-width: thin;
+  }
 }
 
 body {
   @include flex-column;
   height: 100%;
   font-family: var(--font-primary);
-
-  &.preload {
-    * {
-      .btn--animate {
-        &::before,
-        &::after {
-          animation-duration: 0s !important;
-        }
-      }
-    }
-  }
 }
 
 .header {
@@ -165,24 +157,6 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.offset-x > *:not(:last-child) {
-  margin-right: var(--offset-x, 1rem);
-}
-
-.offset-y > *:not(:last-child) {
-  margin-bottom: var(--offset-y, 1rem);
-}
-
-::-webkit-scrollbar {
-  width: rem(18);
-  height: rem(18);
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--pallette-cod-gray);
-}
-
 address {
   font-style: normal;
 }
@@ -207,6 +181,16 @@ a {
 .scroll-lock {
   overflow: hidden !important;
   padding-right: var(--scrollbar-size);
+
+  .main-header {
+    width: calc(100% - var(--scrollbar-size));
+  }
+}
+
+.compensate-for-scrollbar {
+  .main-header {
+    width: calc(100% - var(--scrollbar-size, 9px));
+  }
 }
 
 .swiper-button-prev,
@@ -224,4 +208,16 @@ a {
 
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   z-index: 1;
+}
+
+@media (hover: hover) {
+  ::-webkit-scrollbar {
+    width: rem(18);
+    height: rem(18);
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--pallette-cod-gray);
+  }
 }

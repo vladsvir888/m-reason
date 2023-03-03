@@ -2,7 +2,7 @@
   $this: &;
 
   position: relative;
-  display: grid;
+  aspect-ratio: 638 / 941;
 
   &:hover {
     #{$this}__btn {
@@ -14,9 +14,7 @@
         animation: in var(--transition-3) cubic-bezier(0.4, 0, 0, 1);
       }
     }
-  }
 
-  &--active-media {
     #{$this}__media {
       &--1 {
         opacity: 0;
@@ -29,17 +27,20 @@
   }
 
   &__full-btn {
-    position: relative;
-    display: grid;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
   }
 
   &__content {
-    @include flex-center-column;
+    @include flex-center-x;
     padding: rem(121);
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 
     @include media('1200', max) {
       padding: rem(40);
@@ -47,7 +48,6 @@
   }
 
   &__btn {
-    margin-top: auto;
     pointer-events: none;
     transition:
       opacity var(--transition-3),
@@ -69,13 +69,12 @@
   }
 
   &__media {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    opacity: 0;
+    position: absolute;
+    inset: 0;
     transition: opacity var(--transition-3);
 
-    &--1 {
-      opacity: 1;
+    &--2 {
+      opacity: 0;
     }
   }
 }

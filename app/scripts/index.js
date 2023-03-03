@@ -3,7 +3,6 @@ import search from './components/search';
 import accordion from './components/accordion';
 import collectionsSlider from './components/collectionsSlider';
 import drawer from './components/drawer';
-import hoverOnCards from './components/hoverOnCards';
 import maskForPhoneInput from './components/maskForPhoneInput';
 import mediaSlider from './components/mediaSlider';
 import popup from './components/popup';
@@ -15,12 +14,16 @@ import menuSlider from './components/menuSlider';
 import lookbookSlider from './components/lookbookSlider';
 import lookbookPopup from './components/lookbookPopup';
 
+// helpers
+import getScrollbarWidth from './helpers/getScrollbarWidth';
+
 document.addEventListener('DOMContentLoaded', () => {
+  document.body.style.setProperty('--scrollbar-size', `${getScrollbarWidth()}px`);
+
   trendsSlider();
   mediaSlider();
   collectionsSlider();
   popup();
-  hoverOnCards();
   maskForPhoneInput();
   drawer();
   topBtn();
@@ -31,8 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
   menuSlider();
   lookbookSlider();
   lookbookPopup();
-
-  setTimeout(() => {
-    document.body.classList.remove('preload');
-  }, 450);
 });

@@ -40,10 +40,7 @@
                   {% for item in item.accordion_1.list.items %}
                     <li>
                       {% view "@button" with {
-                        button: item|merge({
-                          href: "#",
-                          class: "main-menu__menu-link"
-                        })
+                        button: item
                       } %}
                     </li>
                   {% endfor %}
@@ -88,10 +85,7 @@
                   {% for item in item.accordion_2.list.items %}
                     <li>
                       {% view "@button" with {
-                        button: item|merge({
-                          href: "#",
-                          class: "main-menu__menu-link"
-                        })
+                        button: item
                       } %}
                     </li>
                   {% endfor %}
@@ -128,10 +122,7 @@
                   {% for item in item.accordion_3.list.items %}
                     <li>
                       {% view "@button" with {
-                        button: item|merge({
-                          href: "#",
-                          class: "main-menu__menu-link"
-                        })
+                        button: item
                       } %}
                     </li>
                   {% endfor %}
@@ -176,10 +167,7 @@
                   {% for item in item.accordion_4.list.items %}
                     <li>
                       {% view "@button" with {
-                        button: item|merge({
-                          href: "#",
-                          class: "main-menu__menu-link"
-                        })
+                        button: item
                       } %}
                     </li>
                   {% endfor %}
@@ -231,7 +219,7 @@
       } %}
 
       <a class="btn btn--underline main-menu__info-btn" href="#">
-        <span class="btn__text">
+        <span class="btn__text main-menu__info-text">
           {{ main_menu.info.text }}
         </span>
 

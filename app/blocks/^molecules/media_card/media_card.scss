@@ -26,6 +26,7 @@
     padding: rem(121);
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    text-align: center;
 
     @include media('600', max) {
       padding: rem(20);
@@ -34,11 +35,12 @@
 
   &__title {
     @include font-size(20, 27);
-    margin-top: auto;
     color: var(--pallette-white);
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    margin-top: auto;
     position: relative;
+    pointer-events: none;
 
     @include media('601', min) {
       @include font-size(48, 65);

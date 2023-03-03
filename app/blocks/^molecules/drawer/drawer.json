@@ -3,6 +3,9 @@
     "body": {
       "items": [{
         "image": {
+          "picture": {
+            "class": "basket-card__picture"
+          },
           "class": "basket-card__img",
           "name": "basket_card/01.jpg",
           "alt": "Мужчина в клетчатом жакете"
@@ -10,6 +13,7 @@
         "content": {
           "title": {
             "level": 3,
+            "class": "basket-card__title",
             "text": "Жакет"
           },
           "article": "Артикул: 1.9330.G2161.212 SP23",
@@ -19,6 +23,9 @@
         }
       }, {
         "image": {
+          "picture": {
+            "class": "basket-card__picture"
+          },
           "class": "basket-card__img",
           "name": "basket_card/02.jpg",
           "alt": "Женщина в черном платье"
@@ -26,6 +33,7 @@
         "content": {
           "title": {
             "level": 3,
+            "class": "basket-card__title",
             "text": "Платье"
           },
           "article": "Артикул: 1.9330.G2161.212 SP23",

@@ -36,22 +36,32 @@
           },
           "list": {
             "items": [{
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Пальто"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Полупальто"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Плащи"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Куртки"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Пуховики"
               }
@@ -64,14 +74,20 @@
           },
           "list": {
             "items": [{
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Брюки"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Кюлоты"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Шорты"
               }
@@ -84,30 +100,44 @@
           },
           "list": {
             "items": [{
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Лонгсливы"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Топы"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Футболки"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Худи и толстовки"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Блузки и рубашки"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Блузоны"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Водолазки"
               }
@@ -120,10 +150,14 @@
           },
           "list": {
             "items": [{
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Аксессуар 1"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Аксессуар 2"
               }
@@ -184,18 +218,26 @@
           },
           "list": {
             "items": [{
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Комфортный офис"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Sport in the City"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Вечерние костюмы"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Total Black"
               }
@@ -209,30 +251,44 @@
           },
           "list": {
             "items": [{
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Доставка и оплата"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Обмен и возврат"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Таблица размеров"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Уход за одеждой"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Программа лояльности"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Подарочные карты"
               }
             }, {
+              "class": "main-menu__menu-link",
+              "href": "#",
               "text": {
                 "text": "Часто задаваемые вопросы"
               }
