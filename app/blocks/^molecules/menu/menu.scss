@@ -183,8 +183,9 @@
 
   &__btns {
     display: flex;
+    flex-wrap: wrap;
     gap: rem(20);
-    margin-top: auto;
+    margin-top: rem(100);
 
     @include media('600', max) {
       display: none;
