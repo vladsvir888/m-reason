@@ -2,23 +2,10 @@ import Swiper, { Navigation } from 'swiper';
 
 const collectionsSlider = () => {
   const collectionsSection = document.querySelector('.collections');
+  let numSlides = 3;
 
-  if (!collectionsSection) return;
-
-  const slider = collectionsSection.querySelector('.collections-slider');
-
-  if (!slider) {
-    collectionsSection.classList.add('collections--secondary');
-    return;
-  }
-
-  let numSlides = slider.querySelectorAll('.swiper-slide').length;
-
-  if (numSlides <= 5) {
-    numSlides = 3;
-  } else if (numSlides <= 11) {
+  if (collectionsSection.classList.contains('collections--secondary')) {
     numSlides = 6;
-    collectionsSection.classList.add('collections--secondary');
   }
 
   new Swiper('.collections-slider', {

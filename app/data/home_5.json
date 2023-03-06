@@ -1,6 +1,7 @@
 {
   "home_5": {
     "collections": {
+      "class": "collections--secondary",
       "title": {
         "class": "visually-hidden",
         "level": 2,

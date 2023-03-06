@@ -1,7 +1,33 @@
 .collections {
+  $this: &;
+
   overflow: hidden;
 
+  &-slider {
+    &:not(.swiper-initialized) {
+      .swiper-slide {
+        width: calc(100% / 3);
+
+        @include media('600', max) {
+          width: calc(100% / 2.2);
+        }
+      }
+    }
+  }
+
   &--secondary {
+    #{$this}-slider {
+      &:not(.swiper-initialized) {
+        .swiper-slide {
+          width: calc(100% / 6);
+
+          @include media('600', max) {
+            width: calc(100% / 2.2);
+          }
+        }
+      }
+    }
+
     .collection {
       &-card {
         &__btn {
