@@ -7,18 +7,15 @@
   width: rem(86);
   padding: rem(10);
   bottom: rem(45);
-  right: rem(340);
+  right: rem(30);
   background-color: var(--pallette-white);
+  border: rem(1) solid var(--pallette-cod-gray);
   opacity: 0;
   visibility: hidden;
   transition:
     color var(--transition),
     background-color var(--transition),
     opacity var(--transition);
-
-  @include media('900', max) {
-    right: rem(30);
-  }
 
   @include media('600', max) {
     @include font-size(6, 8);
@@ -34,7 +31,8 @@
   }
 
   &:hover {
-    background-color: var(--pallette-atlantis);
+    color: var(--pallette-white);
+    background-color: var(--pallette-cod-gray);
   }
 
   &__icon {

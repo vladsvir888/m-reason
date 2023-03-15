@@ -4,6 +4,8 @@ const collectionsSlider = () => {
   const collectionsSection = document.querySelector('.collections');
   let numSlides = 3;
 
+  if (!collectionsSection) return;
+
   if (collectionsSection.classList.contains('collections--secondary')) {
     numSlides = 6;
   }

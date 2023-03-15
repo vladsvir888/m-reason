@@ -65,11 +65,6 @@ input[type="search"]::-webkit-search-results-decoration {
 html {
   height: 100%;
   scroll-behavior: smooth;
-
-  @media (hover: hover) {
-    scrollbar-color: var(--pallette-cod-gray) transparent;
-    scrollbar-width: thin;
-  }
 }
 
 body {
@@ -208,16 +203,4 @@ a {
 
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   z-index: 1;
-}
-
-@media (hover: hover) {
-  ::-webkit-scrollbar {
-    width: rem(18);
-    height: rem(18);
-    background-color: transparent;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--pallette-cod-gray);
-  }
 }

@@ -74,6 +74,7 @@
     @include font-size(48, 65);
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    font-weight: 400;
 
     @include media('600', max) {
       @include font-size(14, 19);

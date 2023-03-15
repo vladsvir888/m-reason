@@ -29,7 +29,9 @@
     margin-bottom: rem(140);
 
     @include media('600', max) {
-      margin-bottom: rem(10);
+      position: absolute;
+      right: rem(20);
+      margin-bottom: 0;
     }
   }
 
@@ -153,6 +155,10 @@
       width: rem(5);
       height: rem(5);
       background-color: var(--pallette-cod-gray-with-alpha);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--pallette-cod-gray);
     }
 
     @include media('600', max) {

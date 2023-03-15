@@ -10,7 +10,7 @@
   }
 
   @include media('600', max) {
-    padding: rem(27) rem(20) rem(16);
+    padding: rem(27) rem(20) rem(40);
   }
 
   &__inner {
@@ -51,8 +51,10 @@
   }
 
   &__btn {
+    color: var(--pallette-silver-chalice);
+
     &:hover {
-      color: var(--pallette-atlantis);
+      color: var(--pallette-white);
     }
   }
 
@@ -102,6 +104,10 @@
 
     @include media('601', min) {
       display: none;
+    }
+
+    @include media('600', max) {
+      margin-bottom: rem(52);
     }
 
     &-item {

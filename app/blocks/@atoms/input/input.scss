@@ -80,7 +80,8 @@ input {
     border-left: unset;
 
     &:active {
-      background-color: var(--pallette-atlantis);
+      background-color: var(--pallette-mine-shaft);
+      color: var(--pallette-white);
     }
 
     @include media('600', max) {
@@ -122,15 +123,12 @@ input {
     flex-shrink: 0;
     border: rem(1) solid var(--pallette-white);
     border-radius: 0;
-    transition: transform var(--transition);
 
     &:focus-visible {
       outline: rem(1) solid var(--pallette-atlantis);
     }
 
     &:checked {
-      transform: rotateX(180deg);
-
       &::before {
         display: block;
         width: 100%;
@@ -192,13 +190,28 @@ input {
   $this: &;
 
   &__input {
-    &:hover,
-    &:focus-visible {
+    &:hover {
       &:not(:disabled) {
         + #{$this}__label {
           color: var(--pallette-white);
           background-color: var(--pallette-cod-gray);
         }
+      }
+
+      &:checked {
+        + #{$this}__label {
+          background-color: var(--pallette-atlantis);
+          border: rem(1) solid transparent;
+          color: var(--pallette-cod-gray);
+          cursor: default;
+        }
+      }
+    }
+
+    &:focus-visible {
+      + #{$this}__label {
+        color: var(--pallette-white);
+        background-color: var(--pallette-cod-gray);
       }
     }
 

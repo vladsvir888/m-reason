@@ -60,8 +60,12 @@
   &--secondary {
     background-color: var(--pallette-white);
 
+    &:hover {
+      color: var(--pallette-white);
+    }
+
     &::before {
-      background-color: var(--pallette-atlantis);
+      background-color: var(--pallette-mine-shaft);
     }
   }
 
@@ -70,11 +74,7 @@
     background-color: var(--pallette-cod-gray);
 
     &::before {
-      background-color: var(--pallette-atlantis);
-    }
-
-    &:hover {
-      color: var(--pallette-cod-gray);
+      background-color: var(--pallette-mine-shaft);
     }
   }
 

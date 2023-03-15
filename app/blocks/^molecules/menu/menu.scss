@@ -63,6 +63,10 @@
       background-color: var(--pallette-cod-gray-with-alpha);
     }
 
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--pallette-cod-gray);
+    }
+
     @include media('1400', max) {
       margin-bottom: rem(40);
     }

@@ -31,7 +31,7 @@
     transform: translateX(-50%);
     display: flex;
 
-    @include media('900', max) {
+    @include media('600', max) {
       position: static;
       transform: unset;
     }
@@ -42,8 +42,8 @@
 
     &-img {
       flex-shrink: 0;
-      width: rem(405);
-      height: rem(29);
+      width: rem(403);
+      height: rem(28);
 
       @include media('600', max) {
         width: rem(133);

@@ -20,7 +20,7 @@
   }
 
   &__header {
-    padding: rem(70) rem(100) rem(85);
+    padding: rem(70) rem(60) rem(85);
   }
 
   &__body {
@@ -58,6 +58,7 @@
     @include flex-center-y;
     @include font-size(24, 33);
     letter-spacing: 0.15em;
+    text-transform: uppercase;
     gap: rem(20);
     margin-left: auto;
 

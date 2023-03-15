@@ -1,7 +1,7 @@
 .meta-nav {
   $this: &;
 
-  @include media('900', max) {
+  @include media('600', max) {
     display: none;
   }
 
@@ -9,6 +9,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: rem(16) rem(100);
+
+    @include media('900', max) {
+      gap: rem(16) rem(60);
+    }
   }
 
   &__item {

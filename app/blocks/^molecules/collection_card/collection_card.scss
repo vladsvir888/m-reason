@@ -15,13 +15,15 @@
       }
     }
 
-    #{$this}__media {
-      &--1 {
-        opacity: 0;
-      }
+    @media (hover: hover) {
+      #{$this}__media {
+        &--1 {
+          opacity: 0;
+        }
 
-      &--2 {
-        opacity: 1;
+        &--2 {
+          opacity: 1;
+        }
       }
     }
   }
