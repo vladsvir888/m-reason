@@ -54,11 +54,6 @@
     border-top: rem(1) solid var(--pallette-cod-gray);
     border-bottom: rem(1) solid var(--pallette-cod-gray);
 
-    &:focus-visible {
-      border-top-color: var(--pallette-atlantis);
-      border-bottom-color: var(--pallette-atlantis);
-    }
-
     @include media('1600', max) {
       padding: rem(35) rem(80) rem(35) rem(40);
     }

@@ -108,15 +108,11 @@
       }
 
       &:hover {
-        color: var(--pallette-atlantis);
+        color: var(--pallette-silver-chalice);
       }
 
       &--color {
         color: var(--pallette-atlantis);
-
-        &:hover {
-          color: var(--pallette-cod-gray);
-        }
       }
     }
   }

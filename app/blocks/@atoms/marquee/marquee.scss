@@ -17,6 +17,12 @@
     padding-left: 100%;
     animation: marquee 25s linear infinite;
   }
+
+  a {
+    color: currentColor;
+    text-decoration: underline;
+    text-underline-offset: rem(8);
+  }
 }
 
 @keyframes marquee {
