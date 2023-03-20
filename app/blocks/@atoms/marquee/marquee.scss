@@ -1,4 +1,6 @@
 .marquee {
+  $this: &;
+
   @include font-size(24, 33);
   padding: rem(20) 0;
   color: var(--pallette-white);
@@ -7,21 +9,28 @@
   white-space: nowrap;
   overflow: hidden;
 
+  &:hover {
+    #{$this}__text {
+      animation-play-state: paused;
+    }
+  }
+
   @include media('600', max) {
     @include font-size(10, 14);
     padding: rem(4) 0;
   }
 
   &__text {
-    display: inline-block;
+    display: inline-flex;
+    column-gap: rem(20);
     padding-left: 100%;
-    animation: marquee 25s linear infinite;
+    animation: marquee 20s linear infinite;
   }
 
   a {
     color: currentColor;
     text-decoration: underline;
-    text-underline-offset: rem(8);
+    text-underline-offset: rem(3);
   }
 }
 

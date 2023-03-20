@@ -1,7 +1,10 @@
 .categories {
   &__inner {
     display: flex;
-    flex-wrap: wrap;
+
+    @include media('600', max) {
+      flex-direction: column;
+    }
 
     > * {
       width: calc(100% / 3);

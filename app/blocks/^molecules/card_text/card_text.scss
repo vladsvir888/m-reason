@@ -76,6 +76,10 @@
     text-transform: uppercase;
     font-weight: 400;
 
+    @include media('767', max) {
+      @include font-size(32, 44);
+    }
+
     @include media('600', max) {
       @include font-size(14, 19);
     }
