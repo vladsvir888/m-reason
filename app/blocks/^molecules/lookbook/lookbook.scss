@@ -5,24 +5,24 @@
   z-index: 3;
   width: 100%;
   height: 100%;
-  padding: rem(100) rem(343);
+  padding: rem(100) rem(50) rem(20);
   overflow-y: auto;
   opacity: 0;
   visibility: hidden;
   background-color: var(--pallette-white);
   transition: all var(--transition);
 
-  @include media('1800', max) {
-    padding: rem(100) rem(40);
+  &--active {
+    opacity: 1;
+    visibility: visible;
   }
 
   @include media('600', max) {
     padding: rem(20);
   }
 
-  &--active {
-    opacity: 1;
-    visibility: visible;
+  &__container {
+    max-width: rem(3120);
   }
 
   &__header {
@@ -270,6 +270,11 @@
     height: 100%;
     grid-area: slider;
     max-width: rem(934);
+
+    &-img {
+      height: 100%;
+      object-fit: cover;
+    }
 
     @include media('1400', max) {
       max-width: 100%;

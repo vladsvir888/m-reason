@@ -4,7 +4,7 @@ import imageminPngquant from 'imagemin-pngquant';
 import imageminWebp from 'imagemin-webp';
 import gulpif from 'gulp-if';
 import gulpWebp from 'gulp-webp';
-import gulpAvif from 'gulp-avif';
+// import gulpAvif from 'gulp-avif';
 import {
   config, src, dest, watch, series,
 } from '../config';
@@ -30,13 +30,14 @@ const convertImagesToWebp = () => (
     .pipe(dest(`${config.build.assets}/images`))
 );
 
-const convertImagesToAvif = () => (
-  src(config.app.imagesAfterCopy)
-    .pipe(changed(config.build.assets, { extension: '.avif' }))
-    .pipe(gulpAvif({ quality: 80 }))
-    .pipe(dest(`${config.build.assets}/images`))
-);
+// const convertImagesToAvif = () => (
+//   src(config.app.imagesAfterCopy)
+//     .pipe(changed(config.build.assets, { extension: '.avif' }))
+//     .pipe(gulpAvif({ quality: 80 }))
+//     .pipe(dest(`${config.build.assets}/images`))
+// );
 
-export const imagesBuild = series(copyImages, convertImagesToWebp, convertImagesToAvif);
+// export const imagesBuild = series(copyImages, convertImagesToWebp, convertImagesToAvif);
+export const imagesBuild = series(copyImages, convertImagesToWebp);
 
 export const imagesWatch = () => watch(config.watch.images, imagesBuild);
