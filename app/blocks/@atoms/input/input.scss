@@ -190,20 +190,22 @@ input {
   $this: &;
 
   &__input {
-    &:hover {
-      &:not(:disabled) {
-        + #{$this}__label {
-          color: var(--pallette-white);
-          background-color: var(--pallette-cod-gray);
+    @media (hover: hover) {
+      &:hover {
+        &:not(:disabled) {
+          + #{$this}__label {
+            color: var(--pallette-white);
+            background-color: var(--pallette-cod-gray);
+          }
         }
-      }
 
-      &:checked {
-        + #{$this}__label {
-          background-color: var(--pallette-atlantis);
-          border: rem(1) solid transparent;
-          color: var(--pallette-cod-gray);
-          cursor: default;
+        &:checked {
+          + #{$this}__label {
+            background-color: var(--pallette-atlantis);
+            border: rem(1) solid transparent;
+            color: var(--pallette-cod-gray);
+            cursor: default;
+          }
         }
       }
     }

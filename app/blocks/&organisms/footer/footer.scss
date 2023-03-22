@@ -53,8 +53,10 @@
   &__btn {
     color: var(--pallette-silver-chalice);
 
-    &:hover {
-      color: var(--pallette-white);
+    @media (hover: hover) {
+      &:hover {
+        color: var(--pallette-white);
+      }
     }
   }
 

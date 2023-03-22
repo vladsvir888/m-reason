@@ -128,8 +128,10 @@ body {
           font-size: rem(14);
         }
 
-        &:hover {
-          color: var(--pallette-atlantis);
+        @media (hover: hover) {
+          &:hover {
+            color: var(--pallette-mine-shaft);
+          }
         }
       }
     }

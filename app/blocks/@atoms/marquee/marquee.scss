@@ -9,9 +9,11 @@
   white-space: nowrap;
   overflow: hidden;
 
-  &:hover {
-    #{$this}__text {
-      animation-play-state: paused;
+  @media (hover: hover) {
+    &:hover {
+      #{$this}__text {
+        animation-play-state: paused;
+      }
     }
   }
 

@@ -30,9 +30,11 @@
     visibility: visible;
   }
 
-  &:hover {
-    color: var(--pallette-white);
-    background-color: var(--pallette-cod-gray);
+  @media (hover: hover) {
+    &:hover {
+      color: var(--pallette-white);
+      background-color: var(--pallette-cod-gray);
+    }
   }
 
   &__icon {

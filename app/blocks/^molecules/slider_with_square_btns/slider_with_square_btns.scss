@@ -1,15 +1,17 @@
 .slider-with-square-btns {
   $this: &;
 
-  &:hover,
-  &:focus {
-    #{$this}__btn {
-      opacity: 1;
-      visibility: visible;
-      transform: translateX(0);
+  @media (hover: hover) {
+    &:hover,
+    &:focus {
+      #{$this}__btn {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
 
-      &.swiper-button-disabled {
-        opacity: 0.35;
+        &.swiper-button-disabled {
+          opacity: 0.35;
+        }
       }
     }
   }

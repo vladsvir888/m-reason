@@ -77,6 +77,11 @@
     justify-content: space-between;
     column-gap: rem(10);
 
+    @include media('1400', max) {
+      column-gap: rem(30);
+      justify-content: unset;
+    }
+
     @include media('600', max) {
       gap: rem(5);
     }
@@ -105,9 +110,8 @@
     justify-content: flex-end;
 
     @include media('600', max) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: flex-end;
-      justify-content: flex-start;
     }
   }
 }

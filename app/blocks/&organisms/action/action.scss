@@ -24,13 +24,15 @@
     display: grid;
     color: var(--pallette-cod-gray);
 
-    &:hover {
-      #{$this}__btn {
-        color: var(--pallette-white);
+    @media (hover: hover) {
+      &:hover {
+        #{$this}__btn {
+          color: var(--pallette-white);
 
-        &::before {
-          transform: none;
-          animation: in var(--transition-3) cubic-bezier(0.4, 0, 0, 1);
+          &::before {
+            transform: none;
+            animation: in var(--transition-3) cubic-bezier(0.4, 0, 0, 1);
+          }
         }
       }
     }

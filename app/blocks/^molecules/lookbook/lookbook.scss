@@ -73,7 +73,7 @@
       grid-template-columns: 40% calc(60% - #{rem(25)});
     }
 
-    @include media('900', max) {
+    @include media('1024', max) {
       grid-template-columns: 1fr;
     }
   }
@@ -274,6 +274,11 @@
     &-img {
       height: 100%;
       object-fit: cover;
+      margin: 0 auto;
+
+      @include media('1400', max) {
+        height: auto;
+      }
     }
 
     @include media('1400', max) {

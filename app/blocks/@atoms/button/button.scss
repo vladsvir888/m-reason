@@ -37,10 +37,12 @@
       content: '';
     }
 
-    &:hover {
-      &::before {
-        transform: none;
-        animation: in var(--transition-3) cubic-bezier(0.4, 0, 0, 1);
+    @media (hover: hover) {
+      &:hover {
+        &::before {
+          transform: none;
+          animation: in var(--transition-3) cubic-bezier(0.4, 0, 0, 1);
+        }
       }
     }
   }
@@ -52,16 +54,20 @@
       background-color: var(--pallette-cod-gray);
     }
 
-    &:hover {
-      color: var(--pallette-white);
+    @media (hover: hover) {
+      &:hover {
+        color: var(--pallette-white);
+      }
     }
   }
 
   &--secondary {
     background-color: var(--pallette-white);
 
-    &:hover {
-      color: var(--pallette-white);
+    @media (hover: hover) {
+      &:hover {
+        color: var(--pallette-white);
+      }
     }
 
     &::before {
@@ -85,8 +91,10 @@
       background-color: var(--pallette-cod-gray);
     }
 
-    &:hover {
-      color: var(--pallette-white);
+    @media (hover: hover) {
+      &:hover {
+        color: var(--pallette-white);
+      }
     }
   }
 
