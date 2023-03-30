@@ -8,7 +8,7 @@
       "content": {
         "text": "Жакет",
         "price": {
-          "text": "18 900 руб."
+          "text": "18 900 &#8381;"
         }
       }
     }, {
@@ -21,9 +21,9 @@
         "price": {
           "with_discount": {
             "discount": "<span class='visually-hidden'>Скидка</span> -20%",
-            "text": "8 900 руб."
+            "text": "8 900 &#8381;"
           },
-          "text": "18 900 руб."
+          "text": "18 900 &#8381;"
         }
       }
     }, {
@@ -34,7 +34,7 @@
       "content": {
         "text": "Жакет",
         "price": {
-          "text": "18 900 руб."
+          "text": "18 900 &#8381;"
         }
       }
     }]

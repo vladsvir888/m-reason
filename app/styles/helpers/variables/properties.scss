@@ -15,9 +15,6 @@
   --transition-2: 0.2s;
   --transition-3: 0.8s;
 
-  // fonts
-  --font-primary: 'OpenSans', sans-serif;
-
   font-size: 50%;
 
   @include media('600', max) {

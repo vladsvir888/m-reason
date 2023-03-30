@@ -45,12 +45,6 @@ input {
     border-radius: 0;
     border: rem(1) solid var(--pallette-cod-gray);
 
-    &:focus-visible {
-      border-color: var(--pallette-white);
-      outline: rem(4) solid var(--pallette-atlantis);
-      z-index: 1;
-    }
-
     @include media('600', max) {
       @include font-size(10, 15);
       letter-spacing: 0.15em;
@@ -125,7 +119,7 @@ input {
     border-radius: 0;
 
     &:focus-visible {
-      outline: rem(1) solid var(--pallette-atlantis);
+      outline: rem(1) solid var(--pallette-silver-chalice);
     }
 
     &:checked {
@@ -195,7 +189,8 @@ input {
         &:not(:disabled) {
           + #{$this}__label {
             color: var(--pallette-white);
-            background-color: var(--pallette-cod-gray);
+            background-color: var(--pallette-mine-shaft);
+            border-color: var(--pallette-mine-shaft);
           }
         }
 
@@ -205,6 +200,14 @@ input {
             border: rem(1) solid transparent;
             color: var(--pallette-cod-gray);
             cursor: default;
+          }
+        }
+      }
+
+      &:active {
+        &:not(:disabled) {
+          + #{$this}__label {
+            background-color: var(--pallette-cod-gray);
           }
         }
       }

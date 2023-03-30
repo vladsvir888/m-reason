@@ -54,9 +54,9 @@
             "class": "lookbook-card__price",
             "with_discount": {
               "discount": "<span class='visually-hidden'>Скидка</span> -20%",
-              "text": "8 900 руб."
+              "text": "8 900 &#8381;"
             },
-            "text": "12 000 руб."
+            "text": "12 000 &#8381;"
           },
           "form": {
             "type": "lookbook",
@@ -149,7 +149,7 @@
           },
           "price": {
             "class": "lookbook-card__price",
-            "text": "8 000 руб."
+            "text": "8 000 &#8381;"
           },
           "form": {
             "type": "lookbook",
@@ -242,7 +242,7 @@
           },
           "price": {
             "class": "lookbook-card__price",
-            "text": "28 000 руб."
+            "text": "28 000 &#8381;"
           },
           "form": {
             "type": "lookbook",
@@ -335,7 +335,7 @@
           },
           "price": {
             "class": "lookbook-card__price",
-            "text": "28 000 руб."
+            "text": "28 000 &#8381;"
           }
         }
       }]

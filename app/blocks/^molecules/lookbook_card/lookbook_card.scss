@@ -100,6 +100,21 @@
     width: 50%;
     padding: rem(15) rem(10);
     min-width: unset;
+    transition:
+      background-color var(--transition),
+      border-color var(--transition),
+      color var(--transition);
+
+    &::before {
+      content: none;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--pallette-mine-shaft);
+        border-color: var(--pallette-mine-shaft);
+      }
+    }
 
     @include media('600', max) {
       padding: rem(5) rem(10);

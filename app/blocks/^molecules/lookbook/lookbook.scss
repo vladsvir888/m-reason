@@ -221,6 +221,11 @@
         height: rem(20);
       }
     }
+
+    &[disabled] {
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 
   &__pagination-wrap {
@@ -272,13 +277,7 @@
     max-width: rem(934);
 
     &-img {
-      height: 100%;
-      object-fit: cover;
       margin: 0 auto;
-
-      @include media('1400', max) {
-        height: auto;
-      }
     }
 
     @include media('1400', max) {

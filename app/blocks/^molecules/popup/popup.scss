@@ -10,8 +10,8 @@
 }
 
 // делаем альтернативу фокусу
-.fancybox__content :focus-visible:not(.carousel__button.is-close) {
-  outline: rem(4) solid var(--pallette-atlantis);
+.fancybox__content :focus-visible:not(.carousel__button.is-close):not(.input-block__input) {
+  outline: rem(4) solid var(--pallette-silver-chalice);
 }
 
 // меняем фон оверлэя

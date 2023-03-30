@@ -29,6 +29,10 @@
       height: rem(45);
       stroke: currentColor;
     }
+
+    &[disabled] {
+      display: none;
+    }
   }
 
   .swiper-scrollbar {

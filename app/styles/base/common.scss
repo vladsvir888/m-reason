@@ -59,7 +59,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 :focus-visible {
-  outline: rem(4) solid var(--pallette-atlantis);
+  outline: rem(4) solid var(--pallette-silver-chalice);
 }
 
 html {
@@ -70,7 +70,7 @@ html {
 body {
   @include flex-column;
   height: 100%;
-  font-family: var(--font-primary);
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header {
