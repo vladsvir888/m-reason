@@ -196,9 +196,9 @@ input {
 
         &:checked {
           + #{$this}__label {
-            background-color: var(--pallette-atlantis);
-            border: rem(1) solid transparent;
-            color: var(--pallette-cod-gray);
+            color: var(--pallette-white);
+            background-color: var(--pallette-cod-gray);
+            border-color: var(--pallette-cod-gray);
             cursor: default;
           }
         }
@@ -230,8 +230,9 @@ input {
 
     &:checked {
       + #{$this}__label {
-        background-color: var(--pallette-atlantis);
-        border: rem(1) solid transparent;
+        background-color: var(--pallette-cod-gray);
+        border-color: transparent;
+        color: var(--pallette-white);
       }
     }
   }
