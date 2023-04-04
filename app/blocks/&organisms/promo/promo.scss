@@ -35,7 +35,7 @@
     }
 
     @include media('600', max) {
-      @include font-size(14, 19);
+      @include font-size(15, 20);
     }
   }
 
@@ -48,7 +48,7 @@
     }
 
     @include media('600', max) {
-      @include font-size(20, 27);
+      @include font-size(21, 29);
     }
   }
 

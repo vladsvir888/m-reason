@@ -36,7 +36,7 @@
   }
 
   &__title {
-    @include font-size(20, 27);
+    @include font-size(21, 29);
     color: var(--pallette-white);
     text-transform: uppercase;
     letter-spacing: 0.1em;

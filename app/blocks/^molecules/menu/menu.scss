@@ -66,11 +66,11 @@
     }
 
     @include media('600', max) {
-      @include font-size(10, 14);
+      @include font-size(11, 15);
       row-gap: rem(36);
-      padding-left: rem(15);
-      margin-bottom: rem(20);
-      max-height: 100%;
+      padding-left: 0;
+      margin-bottom: 0;
+      max-height: unset;
     }
 
     &-item {
@@ -226,7 +226,7 @@
 
     &-btn {
       @include flex-center-y;
-      @include font-size(10, 15);
+      @include font-size(11, 15);
       letter-spacing: 0.05em;
 
       &::before {
@@ -234,13 +234,6 @@
         inset: 0;
         content: '';
       }
-    }
-
-    &-text {
-      // background-image: url('../assets/images/line.svg');
-      // background-repeat: repeat-x;
-      // background-position: left bottom;
-      // background-size: 300px 1px;
     }
 
     &-icon {

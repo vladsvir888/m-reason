@@ -64,7 +64,7 @@
     text-transform: uppercase;
 
     @include media('600', max) {
-      @include font-size(20, 27);
+      @include font-size(21, 29);
       letter-spacing: 0.15em;
       margin-top: auto;
     }

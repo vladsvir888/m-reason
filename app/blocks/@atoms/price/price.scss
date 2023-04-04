@@ -6,7 +6,7 @@
   gap: rem(15);
 
   @include media('600', max) {
-    @include font-size(8, 11);
+    @include font-size(9, 12);
     gap: rem(6);
   }
 

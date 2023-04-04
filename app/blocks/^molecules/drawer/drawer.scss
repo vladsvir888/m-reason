@@ -111,9 +111,5 @@
     @include font-size(24, 33);
     letter-spacing: 0.05em;
     padding: rem(77) rem(100) 0;
-
-    > span {
-      text-transform: uppercase;
-    }
   }
 }
