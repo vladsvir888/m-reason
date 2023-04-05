@@ -55,8 +55,8 @@
   }
 
   &__close {
-    @include flex-center-y;
     @include font-size(24, 33);
+    display: flex;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     gap: rem(20);

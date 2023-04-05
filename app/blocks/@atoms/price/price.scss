@@ -21,4 +21,14 @@
       padding: rem(0.5) rem(4);
     }
   }
+
+  s {
+    > .rub {
+      font-size: rem(26);
+
+      @include media('600', max) {
+        font-size: rem(10.5);
+      }
+    }
+  }
 }

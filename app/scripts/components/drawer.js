@@ -3,10 +3,10 @@ import removeAttributes from '../helpers/removeAttributes';
 import setAttributes from '../helpers/setAttributes';
 
 const drawer = () => {
-  const btn = document.querySelector('.drawer-btn');
+  const header = document.querySelector('.main-header');
   const modal = document.querySelector('.drawer');
 
-  if (!btn || !modal) return;
+  if (!header || !modal) return;
 
   const backdrop = modal.querySelector('.drawer__backdrop');
   const closeBtns = modal.querySelectorAll('.drawer-close');
@@ -41,8 +41,12 @@ const drawer = () => {
     }
   }
 
-  btn.addEventListener('click', (e) => {
-    e.preventDefault();
+  header.addEventListener('click', (e) => {
+    const { target } = e;
+
+    const closestEl = target.closest('.drawer-btn');
+
+    if (!closestEl) return;
 
     show();
   });
