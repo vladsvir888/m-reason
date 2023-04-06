@@ -22,13 +22,19 @@
     }
   }
 
-  s {
-    > .rub {
-      font-size: rem(26);
+  &__old {
+    position: relative;
 
-      @include media('600', max) {
-        font-size: rem(10.5);
-      }
+    &::before {
+      height: 1px;
+      left: 0;
+      margin-left: -1px;
+      position: absolute;
+      top: calc(50% + 0px);
+      width: calc(100% + 2px);
+      background-color: var(--pallette-cod-gray);
+      display: block;
+      content: "";
     }
   }
 }

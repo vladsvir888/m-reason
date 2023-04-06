@@ -1,0 +1,21 @@
+{% extends "../blocks/layout/base.twig" %}
+
+{% block content %}
+<main class="main">
+  {% view "@marquee" %}
+
+  {% view "&promo" with {
+    promo: home_9.promo
+  } %}
+
+  {% view "&collections" %}
+
+  {% view "&action" %}
+
+  {% view "&fashion_look" %}
+
+  {% view "&trends" %}
+
+  {% view "&categories" %}
+</main>
+{% endblock %}

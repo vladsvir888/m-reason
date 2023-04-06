@@ -1,19 +1,11 @@
 <div class="promo">
   <div class="container">
     <div class="promo__inner">
-      {% if not promo.content %}
-        <a href="#">
-          {% view "@image" with {
-            image: promo.image
-          } %}
-        </a>
-      {% else %}
+      {% if promo.content and promo.image %}
         {% view "@image" with {
           image: promo.image
         } %}
-      {% endif %}
 
-      {% if promo.content %}
         <div class="promo__content">
           <p class="promo__text">
             {{ promo.content.text }}
@@ -23,6 +15,18 @@
             title: promo.content.title
           } %}
         </div>
+      {% elseif promo.image and not promo.content %}
+        <a href="#">
+          {% view "@image" with {
+            image: promo.image
+          } %}
+        </a>
+      {% elseif promo.video and not promo.image and not promo.content %}
+        <a class="promo__video-link" href="#">
+          <video class="video" autoplay loop muted playsInline>
+            <source src="./assets/main_video.mp4" type="video/mp4">
+          </video>
+        </a>
       {% endif %}
     </div>
   </div>
