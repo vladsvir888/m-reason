@@ -12,10 +12,7 @@
   border: rem(1) solid var(--pallette-cod-gray);
   opacity: 0;
   visibility: hidden;
-  transition:
-    color var(--transition),
-    background-color var(--transition),
-    opacity var(--transition);
+  transition: all var(--transition);
 
   @include media('600', max) {
     @include font-size(6, 8);
@@ -33,6 +30,11 @@
   @media (hover: hover) {
     &:hover {
       color: var(--pallette-white);
+      background-color: var(--pallette-mine-shaft);
+      border-color: transparent;
+    }
+
+    &:active {
       background-color: var(--pallette-cod-gray);
     }
   }
@@ -40,7 +42,6 @@
   &__icon {
     width: rem(45);
     height: rem(45);
-    fill: currentColor;
     stroke: currentColor;
 
     @include media('600', max) {

@@ -1,0 +1,37 @@
+{
+  "tooltip": {
+    "menu": {
+      "items": [{
+        "text": {
+          "class": "tooltip__btn-text",
+          "text": "Написать в Telegram"
+        }
+      }, {
+        "text": {
+          "class": "tooltip__btn-text",
+          "text": "Написать в WhatsApp"
+        }
+      }, {
+        "text": {
+          "class": "tooltip__btn-text",
+          "text": "Группа Вконтакте"
+        }
+      }, {
+        "text": {
+          "class": "tooltip__btn-text",
+          "text": "Он-лайн чат"
+        }
+      }, {
+        "text": {
+          "class": "tooltip__btn-text",
+          "text": "Позвонить"
+        }
+      }, {
+        "text": {
+          "class": "tooltip__btn-text",
+          "text": "Написать на почту"
+        }
+      }]
+    }
+  }
+}

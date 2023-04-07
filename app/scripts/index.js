@@ -1,3 +1,6 @@
+// helpers
+import getScrollbarWidth from './helpers/getScrollbarWidth';
+
 // components
 import search from './components/search';
 import accordion from './components/accordion';
@@ -13,9 +16,7 @@ import menu from './components/menu';
 import menuSlider from './components/menuSlider';
 import lookbookSlider from './components/lookbookSlider';
 import lookbookPopup from './components/lookbookPopup';
-
-// helpers
-import getScrollbarWidth from './helpers/getScrollbarWidth';
+import tooltipToggle from './components/tooltipToggle';
 
 document.addEventListener('DOMContentLoaded', () => {
   document.body.style.setProperty('--scrollbar-size', `${getScrollbarWidth()}px`);
@@ -34,4 +35,5 @@ document.addEventListener('DOMContentLoaded', () => {
   menuSlider();
   lookbookSlider();
   lookbookPopup();
+  tooltipToggle();
 });
