@@ -10,9 +10,11 @@
           title: action.content.title
         } %}
 
-        <p class="action__text">
-          {{ action.content.text }}
-        </p>
+        {% if action.content.text %}
+          <p class="action__text">
+            {{ action.content.text }}
+          </p>
+        {% endif %}
 
         <div class="btn btn--animate btn--primary action__btn" aria-hidden="true">
           <span class="btn__text">
