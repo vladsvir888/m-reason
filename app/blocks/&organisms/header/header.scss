@@ -11,6 +11,16 @@
   border-bottom: rem(1) solid var(--pallette-cod-gray);
 
   &#{$this}--container-small {
+    padding: rem(70) 0;
+
+    @include media('1600', max) {
+      padding: rem(70) rem(40);
+    }
+
+    @include media('600', max) {
+      padding: rem(20);
+    }
+
     .container {
       max-width: rem(3120);
     }
