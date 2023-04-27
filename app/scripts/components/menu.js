@@ -1,4 +1,4 @@
-import * as focusTrap from 'focus-trap';
+import focusTrapObj from '../helpers/focusTrapObj';
 
 const menu = () => {
   const header = document.querySelector('.main-header');
@@ -9,22 +9,19 @@ const menu = () => {
   const menuEl = header.querySelector('.main-menu');
   const inertEls = header.querySelectorAll('.inert-element');
 
-  const trap = focusTrap.createFocusTrap(header, {
-    fallbackFocus: header,
-    initialFocus: false,
-  });
-
   function hide() {
     burger.setAttribute('aria-expanded', false);
     menuEl.classList.remove('main-menu--active');
 
     document.body.removeAttribute('class');
 
+    header.classList.remove('main-header--container-small');
+
     inertEls.forEach((inertEl) => {
       inertEl.removeAttribute('tabindex');
     });
 
-    trap.deactivate();
+    focusTrapObj.header.deactivate();
   }
 
   function show() {
@@ -33,16 +30,18 @@ const menu = () => {
     burger.setAttribute('aria-expanded', true);
     menuEl.classList.add('main-menu--active');
 
+    header.classList.add('main-header--container-small');
+
     inertEls.forEach((inertEl) => {
       // eslint-disable-next-line no-param-reassign
       inertEl.tabIndex = -1;
     });
 
-    trap.activate();
+    focusTrapObj.header.activate();
   }
 
   function handleEsc(e) {
-    if (e.key === 'Escape') {
+    if (e.key === 'Escape' && !document.querySelector('.fancybox__container')) {
       hide();
     }
   }

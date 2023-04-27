@@ -4,8 +4,9 @@
   letter-spacing: 0.05em;
   position: fixed;
   z-index: 1;
-  width: rem(86);
-  padding: rem(10);
+  min-width: rem(86);
+  min-height: rem(86);
+  padding: rem(5);
   bottom: rem(45);
   right: rem(30);
   background-color: var(--pallette-white);
@@ -16,8 +17,9 @@
 
   @include media('600', max) {
     @include font-size(6, 8);
-    width: rem(45);
-    padding: rem(5);
+    min-width: rem(36);
+    min-height: rem(36);
+    padding: rem(2.5);
     bottom: rem(80);
     gap: rem(3);
   }

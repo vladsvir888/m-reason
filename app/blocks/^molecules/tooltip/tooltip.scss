@@ -29,8 +29,9 @@
     @include flex-center-column;
     @include font-size(16, 22);
     letter-spacing: 0.05em;
-    width: rem(86);
-    padding: rem(10);
+    min-width: rem(86);
+    min-height: rem(86);
+    padding: rem(5);
     background-color: var(--pallette-white);
     border: rem(1) solid var(--pallette-cod-gray);
     transition: all var(--transition);

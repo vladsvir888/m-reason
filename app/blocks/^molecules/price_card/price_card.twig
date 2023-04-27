@@ -4,9 +4,15 @@
   } %}
 
   <div class="price-card__content">
-    <p class="price-card__text">
+    {# <p class="price-card__text">
       {{ price_card.content.text }}
-    </p>
+    </p> #}
+
+    {% view "@title" with {
+      title: price_card.content.title|merge({
+        class: "price-card__text"
+      })
+    } %}
 
     <div class="price-card__price">
       {% view "@price" with {

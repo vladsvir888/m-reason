@@ -4,14 +4,14 @@
   &__inner {
     display: flex;
 
-    @include media('1200', max) {
+    @include media('900', max) {
       flex-direction: column;
     }
 
     > * {
       width: 50%;
 
-      @include media('1200', max) {
+      @include media('900', max) {
         width: 100%;
       }
     }
@@ -22,6 +22,14 @@
 
     @include media('1400', max) {
       padding: rem(100) rem(250);
+    }
+
+    @include media('1200', max) {
+      padding: rem(100);
+    }
+
+    @include media('1024', max) {
+      padding: 0;
     }
 
     @include media('600', max) {

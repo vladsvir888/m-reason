@@ -1,4 +1,6 @@
 .main-header {
+  $this: &;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -7,6 +9,12 @@
   padding: rem(70) rem(343);
   background-color: var(--pallette-white);
   border-bottom: rem(1) solid var(--pallette-cod-gray);
+
+  &#{$this}--container-small {
+    .container {
+      max-width: rem(3120);
+    }
+  }
 
   @include media('1600', max) {
     padding: rem(70) rem(20);

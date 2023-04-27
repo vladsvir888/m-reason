@@ -192,6 +192,10 @@
 
     &-text {
       margin-right: -0.49em;
+
+      @include media('600', max) {
+        margin-right: -0.3em;
+      }
     }
   }
 

@@ -2,22 +2,30 @@
   "media_slider": {
     "items": [{
       "image": {
-        "name": "fashion_look/02.jpg",
+        "name": "fashion_look/04.jpg",
         "alt": "Бежевый жакет."
       },
       "content": {
-        "text": "Жакет",
+        "title": {
+          "level": 3,
+          "link": true,
+          "text": "Жакет"
+        },
         "price": {
           "text": "18 900 <span class='rub'>i</span>"
         }
       }
     }, {
       "image": {
-        "name": "fashion_look/03.jpg",
+        "name": "fashion_look/05.jpg",
         "alt": "Бежевые брюки."
       },
       "content": {
-        "text": "Брюки",
+        "title": {
+          "level": 3,
+          "link": true,
+          "text": "Брюки"
+        },
         "price": {
           "with_discount": {
             "discount": "<span class='visually-hidden'>Скидка</span> -20%",
@@ -28,11 +36,15 @@
       }
     }, {
       "image": {
-        "name": "fashion_look/02.jpg",
+        "name": "fashion_look/04.jpg",
         "alt": "Бежевый жакет."
       },
       "content": {
-        "text": "Жакет",
+        "title": {
+          "level": 3,
+          "link": true,
+          "text": "Жакет"
+        },
         "price": {
           "text": "18 900 <span class='rub'>i</span>"
         }

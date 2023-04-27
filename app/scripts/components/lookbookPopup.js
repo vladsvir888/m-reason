@@ -1,4 +1,4 @@
-import * as focusTrap from 'focus-trap';
+import focusTrapObj from '../helpers/focusTrapObj';
 
 const lookbookPopup = () => {
   const cards = document.querySelectorAll('.collection-card__full-btn');
@@ -8,17 +8,12 @@ const lookbookPopup = () => {
 
   const close = popup.querySelector('.lookbook__close');
 
-  const trap = focusTrap.createFocusTrap(popup, {
-    fallbackFocus: popup,
-    initialFocus: false,
-  });
-
   function hide() {
     popup.classList.remove('lookbook--active');
 
     document.body.removeAttribute('class');
 
-    trap.deactivate();
+    focusTrapObj.popup.deactivate();
   }
 
   function show() {
@@ -26,11 +21,11 @@ const lookbookPopup = () => {
 
     popup.classList.add('lookbook--active');
 
-    trap.activate();
+    focusTrapObj.popup.activate();
   }
 
   function handleEsc(e) {
-    if (e.key === 'Escape') {
+    if (e.key === 'Escape' && !document.querySelector('.fancybox__container')) {
       hide();
     }
   }
