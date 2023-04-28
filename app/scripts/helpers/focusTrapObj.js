@@ -9,4 +9,8 @@ export default {
     fallbackFocus: '.lookbook',
     initialFocus: false,
   }),
+  drawer: focusTrap.createFocusTrap('.drawer', {
+    fallbackFocus: '.drawer',
+    initialFocus: false,
+  }),
 };

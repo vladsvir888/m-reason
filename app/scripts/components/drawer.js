@@ -1,21 +1,17 @@
-import * as focusTrap from 'focus-trap';
 import removeAttributes from '../helpers/removeAttributes';
 import setAttributes from '../helpers/setAttributes';
+import focusTrapObj from '../helpers/focusTrapObj';
 
 const drawer = () => {
   const header = document.querySelector('.main-header');
-  const modal = document.querySelector('.drawer');
 
-  if (!header || !modal) return;
-
-  const backdrop = modal.querySelector('.drawer__backdrop');
-  const closeBtns = modal.querySelectorAll('.drawer-close');
-
-  const trap = focusTrap.createFocusTrap(modal, {
-    fallbackFocus: modal,
-  });
+  if (!header) return;
 
   function show() {
+    const modal = header.querySelector('.drawer');
+
+    if (!modal) return;
+
     modal.classList.add('drawer--active');
     document.body.classList.add('scroll-lock');
 
@@ -24,15 +20,19 @@ const drawer = () => {
       role: 'dialog',
     });
 
-    trap.activate();
+    focusTrapObj.drawer.activate();
   }
 
   function hide() {
+    const modal = header.querySelector('.drawer');
+
+    if (!modal) return;
+
     modal.classList.remove('drawer--active');
     document.body.removeAttribute('class');
     removeAttributes(modal, 'aria-modal', 'role');
 
-    trap.deactivate();
+    focusTrapObj.drawer.deactivate();
   }
 
   function handleEsc(e) {
@@ -44,17 +44,17 @@ const drawer = () => {
   header.addEventListener('click', (e) => {
     const { target } = e;
 
-    const closestEl = target.closest('.drawer-btn');
+    if (target.closest('.drawer-btn')) {
+      show();
+    }
 
-    if (!closestEl) return;
+    if (target.classList.contains('drawer__backdrop')) {
+      hide();
+    }
 
-    show();
-  });
-
-  backdrop.addEventListener('click', hide);
-
-  closeBtns.forEach((closeBtn) => {
-    closeBtn.addEventListener('click', hide);
+    if (target.closest('.drawer-close')) {
+      hide();
+    }
   });
 
   window.addEventListener('keydown', (e) => handleEsc(e));

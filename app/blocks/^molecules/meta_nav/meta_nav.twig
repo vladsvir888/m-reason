@@ -8,6 +8,10 @@
         {% view "@button" with {
           button: item.button
         } %}
+
+        {% if item.button.basket %}
+          {% view "^drawer" %}
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

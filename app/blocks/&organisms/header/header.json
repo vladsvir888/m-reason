@@ -29,6 +29,7 @@
           }
         }, {
           "button": {
+            "basket": true,
             "class": "meta-nav__btn drawer-btn inert-element",
             "icon": {
               "class": "meta-nav__btn-icon",
