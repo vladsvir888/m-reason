@@ -22,9 +22,15 @@
           } %}
         </a>
       {% elseif promo.video and not promo.image and not promo.content %}
-        <a class="promo__video-link" href="#">
+        <a class="promo__video-link only-desktop" href="#">
           <video class="video" autoplay loop muted playsInline>
             <source src="./assets/main_video.mp4" type="video/mp4">
+          </video>
+        </a>
+
+        <a class="promo__video-link only-mobile" href="#">
+          <video class="video" autoplay loop muted playsInline>
+            <source src="./assets/main_video_mobile.mp4" type="video/mp4">
           </video>
         </a>
       {% endif %}

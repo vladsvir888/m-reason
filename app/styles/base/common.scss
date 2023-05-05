@@ -220,3 +220,15 @@ a {
   height: 100%;
   object-fit: cover;
 }
+
+.only-desktop {
+  @include media('600', max) {
+    display: none;
+  }
+}
+
+.only-mobile {
+  @include media('601', min) {
+    display: none;
+  }
+}

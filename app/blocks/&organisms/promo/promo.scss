@@ -64,6 +64,8 @@
   }
 
   &__video-link {
-    min-height: min(100vh, 1080px);
+    @include media('601', min) {
+      min-height: min(100vh, 1080px);
+    }
   }
 }
