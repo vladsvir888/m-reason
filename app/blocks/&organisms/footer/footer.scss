@@ -14,20 +14,32 @@
   }
 
   &__inner {
-    display: flex;
-    gap: rem(284);
+    display: grid;
+    grid-template-areas:
+      'list-1 list-2 callback'
+      'copyright copyright copyright';
+    gap: rem(105) rem(284);
+    grid-template-columns: repeat(2, auto) 1fr;
 
     @include media('1200', max) {
-      gap: rem(100) rem(200);
+      gap: rem(105);
     }
 
     @include media('900', max) {
-      flex-wrap: wrap;
+      grid-template-areas:
+        'callback callback'
+        'list-1 list-2'
+        'copyright copyright';
+      grid-template-columns: repeat(2, 1fr);
     }
 
     @include media('600', max) {
+      grid-template-areas:
+        'callback'
+        'accordion'
+        'copyright';
+      grid-template-columns: 1fr;
       gap: 0;
-      flex-direction: column;
     }
   }
 
@@ -36,6 +48,14 @@
     @include flex-column;
     gap: rem(37);
     letter-spacing: 0.05em;
+
+    &:first-of-type {
+      grid-area: list-1;
+    }
+
+    &:last-of-type {
+      grid-area: list-2;
+    }
 
     @include media('600', max) {
       @include font-size(11, 15);
@@ -63,11 +83,10 @@
   &__callback {
     margin-left: auto;
     width: rem(935);
+    grid-area: callback;
 
     @include media('900', max) {
       width: 100%;
-      margin-left: unset;
-      order: -1;
     }
 
     @include media('600', max) {
@@ -89,13 +108,14 @@
   }
 
   &__copyright {
-    @include font-size(7, 10);
+    @include font-size(12, 17);
     letter-spacing: 0.16em;
     text-transform: uppercase;
     font-weight: 300;
+    grid-area: copyright;
 
-    @include media('601', min) {
-      display: none;
+    @include media('600', max) {
+      @include font-size(7, 10);
     }
   }
 
@@ -103,6 +123,7 @@
     margin-bottom: rem(28);
     width: calc(100% + #{rem(40)});
     margin-left: rem(-20);
+    grid-area: accordion;
 
     @include media('601', min) {
       display: none;

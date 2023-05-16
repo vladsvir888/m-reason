@@ -64,12 +64,13 @@
 
   &__media {
     &-img {
-      height: 100%;
-      object-fit: cover;
-
-      @include media('600', max) {
-        height: unset;
-        object-fit: unset;
+      @include media('901', min) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
   }
